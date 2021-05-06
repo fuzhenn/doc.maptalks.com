@@ -7,14 +7,17 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #e8542b;
+  --ifm-color-primary-dark: #c5340c;
   --ifm-code-font-size: 95%;
+  --ifm-background-color: #292929 !important;
+  --ifm-navbar-background-color: #333333;
+  --ifm-footer-background-color: #232323;
+  --ifm-toc-border-color: #737373;
+}
+
+body {
+  font-family:  "Microsoft YaHei", "微软雅黑" , Arial, sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -22,4 +25,33 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.footer {
+  line-height: 16px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+.doc-page {
+  background-color: var(--ifm-background-color);
+}
+
+.menu {
+  background-color: #3e3e3e;
+}
+
+/** scroll style **/
+::-webkit-scrollbar {
+  width: 17px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #757575;
+}
+::-webkit-scrollbar-thumb {
+  background: #252525;
 }
