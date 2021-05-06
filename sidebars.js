@@ -8,7 +8,6 @@
 
  Create as many sidebars as you want.
  */
-
 module.exports = {
   // But you can create a sidebar manually
 
@@ -30,7 +29,9 @@ module.exports = {
       type: "category",
       label: "中级教程",
       collapsed: false,
-      items: ["studio/medium/hello"],
+      items: [
+        "studio/medium/pbr"
+      ],
     },
   ],
   designer:    [{
