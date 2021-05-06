@@ -1,7 +1,7 @@
 ---
 id: shadow-water
 hide_title: true
-sidebar_label: 给水面增加倒影
+title: 给水面增加倒影
 ---
 
 ## 给水面增加倒影

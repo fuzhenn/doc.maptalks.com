@@ -1,7 +1,7 @@
 ---
 id: pbr
 hide_title: true
-sidebar_label: 什么是PBR?
+title: 什么是PBR?
 ---
 
 ## 什么是PBR?　　

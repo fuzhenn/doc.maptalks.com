@@ -28,6 +28,10 @@ module.exports = {
       copyright: `2020&ensp;&copy;&ensp;MapTalks&ensp;3D.com版权所有&ensp;&ensp;&ensp;&ensp;鄂ICP备14002653号-6&ensp;&ensp;&ensp;&ensp;鄂公网安备&ensp;35020302033941号`, // You can also put own HTML here
     },
   },
+  i18n: {
+    defaultLocale: 'zh-cn',
+    locales: ['zh-cn',"en"],
+  },
   presets: [
     [
       '@docusaurus/preset-classic',

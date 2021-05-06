@@ -1,7 +1,7 @@
 ---
 id: intro
 hide_title: true
-sidebar_label: 入门
+title: 入门
 ---
 
 ## Studio

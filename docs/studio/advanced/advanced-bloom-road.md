@@ -1,7 +1,7 @@
 ---
 id: advanced-bloom-road
 hide_title: true
-sidebar_label: 实现道路加强版泛光效果
+title: 实现道路加强版泛光效果
 ---
 
 ## 实现道路加强版泛光效果

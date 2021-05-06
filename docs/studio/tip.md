@@ -1,7 +1,7 @@
 ---
 id: tip
 hide_title: true
-sidebar_label: 小技巧
+title: 小技巧
 ---
 
 ## 小技巧

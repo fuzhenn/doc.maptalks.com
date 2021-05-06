@@ -1,7 +1,7 @@
 ---
 id: bloom-road
 hide_title: true
-sidebar_label: 实现道路泛光效果
+title: 实现道路泛光效果
 ---
 
 ## 实现道路泛光效果

@@ -1,7 +1,7 @@
 ---
 id: import-material
 hide_title: true
-sidebar_label: 导入新的材质球
+title: 导入新的材质球
 ---
 
 ## 导入新的材质球

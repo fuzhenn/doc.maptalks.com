@@ -1,7 +1,7 @@
 ---
 id: bloom-material
 hide_title: true
-sidebar_label: 制作泛光材质球
+title: 制作泛光材质球
 ---
 
 ## 制作泛光材质球

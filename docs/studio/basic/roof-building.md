@@ -1,7 +1,7 @@
 ---
 id: roof-building
 hide_title: true
-sidebar_label: 给建筑物添加屋顶
+title: 给建筑物添加屋顶
 ---
 
 ## 给建筑物添加屋顶
