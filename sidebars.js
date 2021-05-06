@@ -30,7 +30,7 @@ module.exports = {
       label: "中级教程",
       collapsed: false,
       items: [
-        "studio/medium/pbr"
+        "studio/medium/pbr"　//这个顺序是右侧的展示顺序，它对应docs/studio/medium/xxx
       ],
     },
   ],
