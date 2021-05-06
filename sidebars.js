@@ -11,33 +11,44 @@
 module.exports = {
   // But you can create a sidebar manually
 
-  tutorial: [
-    {
-      type: "category",
-      label: "tutorial",
-      items: ["tutorial/version", "tutorial/translate"],
-    },
-  ],
   studio: [
+    {
+      type: "doc",
+      id: "studio/intro",
+      label: "入门"
+    },
     {
       type: "category",
       label: "初级教程",
       collapsed: false,
-      items: ["studio/intro"],
+      items: [
+        "studio/basic/pbr",
+        "studio/basic/roof-building",
+        "studio/basic/shadow-water",
+        "studio/basic/bloom-material",
+        "studio/basic/import-material"
+      ],
     },
     {
       type: "category",
       label: "中级教程",
       collapsed: false,
       items: [
-        "studio/medium/pbr"　//这个顺序是右侧的展示顺序，它对应docs/studio/medium/xxx
+        "studio/intermediate/bloom-road",
       ],
     },
+    {
+      type: "category",
+      label: "高级教程",
+      collapsed: false,
+      items: [
+        "studio/advanced/advanced-bloom-road",
+      ],
+    },
+    {
+      type: "doc",
+      id: "studio/tip",
+      label: "小技巧"
+    },
   ],
-  designer:    [{
-    type: "category",
-    label: "designer",
-    collapsed: false,
-    items: ["designer/index", "designer/intro", "designer/hello"],
-  }]
 };

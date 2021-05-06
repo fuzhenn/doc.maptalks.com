@@ -21,11 +21,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          to: '/docs/tutorial/version', activeBasePath: '/docs/tutorial', label: 'Tutorial', position: 'left'
-        },
         {to: '/docs/studio/intro', activeBasePath: '/docs/studio', label: 'Studio', position: 'left'},
-        {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
       ],
     },
     footer: {
