@@ -27,6 +27,21 @@ module.exports = {
     footer: {
       copyright: `2020&ensp;&copy;&ensp;MapTalks&ensp;3D.com版权所有&ensp;&ensp;&ensp;&ensp;鄂ICP备14002653号-6&ensp;&ensp;&ensp;&ensp;鄂公网安备&ensp;35020302033941号`, // You can also put own HTML here
     },
+    algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
   },
   i18n: {
     defaultLocale: 'zh-cn',
