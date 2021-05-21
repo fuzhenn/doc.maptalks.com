@@ -22,6 +22,7 @@ module.exports = {
       label: "初级教程",
       collapsed: false,
       items: [
+        "studio/basic/size",
         "studio/basic/pbr",
         "studio/basic/roof-building",
         "studio/basic/shadow-water",
