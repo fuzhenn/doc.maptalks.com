@@ -18,6 +18,11 @@ module.exports = {
       label: "入门"
     },
     {
+      type: "doc",
+      id: "studio/basic/full-demo",
+      label: "完整示例"
+    },
+    {
       type: "category",
       label: "初级教程",
       collapsed: false,
