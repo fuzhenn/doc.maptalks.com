@@ -16,6 +16,7 @@ html[data-theme='light'] {
   --ifm-color-primary-dark: #c5340c;
   --ifm-navbar-background-color: #333333;
   --ifm-footer-background-color: #232323;
+  --ifm-navbar-link-color: #e7e7e7;
 }
 
 html[data-theme='dark'] {
