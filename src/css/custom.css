@@ -7,6 +7,18 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-navbar-background-color: #333333;
+  --ifm-footer-background-color: #232323;
+}
+
+html[data-theme='light'] {
+  --ifm-color-primary: #e8542b;
+  --ifm-color-primary-dark: #c5340c;
+  --ifm-navbar-background-color: #333333;
+  --ifm-footer-background-color: #232323;
+}
+
+html[data-theme='dark'] {
   --ifm-color-primary: #e8542b;
   --ifm-color-primary-dark: #c5340c;
   --ifm-code-font-size: 95%;
@@ -28,6 +40,11 @@ body {
   padding: 0 var(--ifm-pre-padding);
 }
 
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  /* Color which works with dark mode syntax highlighting theme */
+  background-color: rgb(100, 100, 100);
+}
+
 .footer {
   line-height: 16px;
 }
@@ -37,22 +54,34 @@ body {
   color: #a9a9a9;
 }
 
-.doc-page {
+html[data-theme='dark'] .doc-page {
   background-color: var(--ifm-background-color);
 }
 
-.menu {
+html[data-theme='dark'] .menu {
   background-color: #3e3e3e;
 }
 
+html[data-theme='light'] .doc-page {
+  background-color: #fefefe;
+}
+
+html[data-theme='light'] .navbar {
+  color: #fff;
+}
+
+html[data-theme='light'] .navbar__brand {
+  color: #fff;
+}
+
 /** scroll style **/
-::-webkit-scrollbar {
+html[data-theme='dark'] ::-webkit-scrollbar {
   width: 17px;
   height: 6px;
 }
-::-webkit-scrollbar-track {
+html[data-theme='dark'] ::-webkit-scrollbar-track {
   background: #757575;
 }
-::-webkit-scrollbar-thumb {
+html[data-theme='dark'] ::-webkit-scrollbar-thumb {
   background: #252525;
 }

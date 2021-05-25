@@ -12,7 +12,7 @@ module.exports = {
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,
+      disableSwitch: false,
     },
     navbar: {
       title: 'maptalks doc',

@@ -28,6 +28,7 @@ module.exports = {
       collapsed: false,
       items: [
         "studio/basic/soft",
+        "studio/basic/layer",
         "studio/basic/environment",
         "studio/basic/gltf",
         "studio/basic/size",
