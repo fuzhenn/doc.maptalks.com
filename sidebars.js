@@ -27,13 +27,14 @@ module.exports = {
       label: "初级教程",
       collapsed: false,
       items: [
+        "studio/basic/environment",
         "studio/basic/gltf",
         "studio/basic/size",
+        "studio/basic/import-material",
         "studio/basic/pbr",
         "studio/basic/roof-building",
         "studio/basic/shadow-water",
         "studio/basic/bloom-material",
-        "studio/basic/import-material"
       ],
     },
     {
