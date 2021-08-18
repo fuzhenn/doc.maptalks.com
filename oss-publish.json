@@ -1,0 +1,7 @@
+{
+  "type": "ali",
+  "bucket": "maptalks-doc",
+  "region": "oss-cn-shanghai",
+  "baseDir": "build",
+  "defaultWebsiteEntry": "index.html"
+}
