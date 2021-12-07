@@ -22,6 +22,7 @@ module.exports = {
       },
       items: [
         {to: '/docs/studio/intro', activeBasePath: '/docs/studio', label: 'Studio', position: 'left'},
+        {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
     },
@@ -40,8 +41,9 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          editLocalizedFiles: true,
           editUrl:
-            'https://github.com/fuzhenn/com.maptalks.com/edit/master',
+            'https://github.com/fuzhenn/doc.maptalks.com/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
