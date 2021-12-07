@@ -22,6 +22,7 @@ module.exports = {
       },
       items: [
         {to: '/docs/studio/intro', activeBasePath: '/docs/studio', label: 'Studio', position: 'left'},
+        {type: 'localeDropdown', position: 'right'},
       ],
     },
     footer: {
