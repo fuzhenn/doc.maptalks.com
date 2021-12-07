@@ -6,5 +6,9 @@
   "item.label.Studio": {
     "message": "Studio",
     "description": "Navbar item with label Studio"
+  },
+  "item.label.Designer": {
+    "message": "Designer",
+    "description": "Navbar item with label Designer"
   }
 }

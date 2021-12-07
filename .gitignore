@@ -18,3 +18,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# i18n
+i18n/en/code.json
+i18n/zh-cn/
+!i18n/zh-cn/code.json

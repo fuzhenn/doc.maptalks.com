@@ -3,14 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.studio.doc.入门": {
-    "message": "Intro",
-    "description": "The label for doc 入门 in sidebar studio"
-  },
-  "sidebar.studio.doc.完整示例": {
-    "message": "Full Demo",
-    "description": "The label for doc 完整示例 in sidebar studio"
-  },
   "sidebar.studio.category.初级教程": {
     "message": "Basic",
     "description": "The label for category 初级教程 in sidebar studio"
@@ -22,9 +14,5 @@
   "sidebar.studio.category.高级教程": {
     "message": "Advanced",
     "description": "The label for category 高级教程 in sidebar studio"
-  },
-  "sidebar.studio.doc.小技巧": {
-    "message": "Tips",
-    "description": "The label for category 小技巧 in sidebar studio"
   }
 }
