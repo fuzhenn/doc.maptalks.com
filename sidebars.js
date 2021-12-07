@@ -15,12 +15,10 @@ module.exports = {
     {
       type: "doc",
       id: "studio/intro",
-      label: "入门"
     },
     {
       type: "doc",
       id: "studio/basic/full-demo",
-      label: "完整示例"
     },
     {
       type: "category",
@@ -58,14 +56,12 @@ module.exports = {
     {
       type: "doc",
       id: "studio/tip",
-      label: "小技巧"
     },
   ],
   designer: [
     {
       type: "doc",
-      id: "designer/intro",
-      label: "入门"
+      id: "designer/intro"
     },
   ],
 };

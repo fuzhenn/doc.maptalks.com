@@ -1,7 +1,7 @@
 ---
 id: full-demo
 hide_title: true
-title: 一个完整示例
+title: 完整示例
 ---
 
 ## 一个完整示例
