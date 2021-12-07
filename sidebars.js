@@ -61,4 +61,11 @@ module.exports = {
       label: "小技巧"
     },
   ],
+  designer: [
+    {
+      type: "doc",
+      id: "designer/intro",
+      label: "入门"
+    },
+  ],
 };
