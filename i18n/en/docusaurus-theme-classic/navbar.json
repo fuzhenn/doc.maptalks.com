@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "maptalks doc",
+    "description": "The title in the navbar"
+  },
+  "item.label.Studio": {
+    "message": "Studio",
+    "description": "Navbar item with label Studio"
+  }
+}
