@@ -23,6 +23,7 @@ module.exports = {
       items: [
         {to: '/docs/studio/intro', activeBasePath: '/docs/studio', label: 'Studio', position: 'left'},
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
+        {to: '/docs/bds/intro', activeBasePath: '/docs/bds', label: 'BDS', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
     },
