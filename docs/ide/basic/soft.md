@@ -1,12 +1,12 @@
 ---
 id: soft
 hide_title: true
-title: studio软件介绍
+title: IDE软件介绍
 ---
 
-## studio软件介绍
+## IDE软件介绍
 
-　　本教程中，我们为您介绍studio软件。
+　　本教程中，我们为您介绍IDE软件。
 
 ### 菜单栏
 
@@ -14,28 +14,28 @@ title: studio软件介绍
 
 　　首页中可用的功能：
 
-![studio](../assets/soft-1.png)
+![IDE](../assets/soft-1.png)
 
-![studio](../assets/soft-2.png)
+![IDE](../assets/soft-2.png)
 *<small>仅在首页可用，设计页不能使用</small>*  
 
 　　在设计页面可用的功能：
 
-![studio](../assets/soft-3.png) ![studio](../assets/soft-4.png)
+![IDE](../assets/soft-3.png) ![IDE](../assets/soft-4.png)
 
 ### 首页
 
 　　首页的功能并不多，我们提供了退出登录，新建，打开，搜索，列表排序，切换布局为平铺和列表，打开项目所在目录夹，以及删除项目等功能。
 
-![studio](../assets/soft-5.png)
+![IDE](../assets/soft-5.png)
 
 ### 设计页
 
-　　studio的核心功能都在这个页面内，它提供了各种功能。
+　　IDE的核心功能都在这个页面内，它提供了各种功能。
 
 　　在您新建一个msd之后，进入设计内页，您将默认看到如下页面。
 
-![studio](../assets/soft-6.png)
+![IDE](../assets/soft-6.png)
 
 * 新建图层面板：
 
@@ -49,7 +49,7 @@ title: studio软件介绍
 
 　　双击图层面板名字，您能修改图层名字，比如您默认创建一个"vt0"的矢量瓦片图层，双击图层名称后可修改为"矢量底图"。
 
-![studio](../assets/soft-7.png)
+![IDE](../assets/soft-7.png)
 
 　　在矢量底图图层，您按后面的加号图标，可以继续在本图层里添加矢量图层。
 
@@ -71,7 +71,7 @@ title: studio软件介绍
 
 　　在矢量瓦片中，我们有二维渲染和三维渲染。二维渲染中，提供了基础色，图层样式，图标，文字的选项面板。三维渲染中，您可以根据需要设计顶面材质和侧面材质。
 
-![studio](../assets/soft-8.png)
+![IDE](../assets/soft-8.png)
 
 　　在gltf模型渲染面板中，有pbr和wireframe的渲染模式，具体的设置您可以参考gltf的文章。
 
@@ -81,7 +81,7 @@ title: studio软件介绍
 
 　　点击环境面板，展开环境光，点击HDR后面的文件夹按钮，就可以看到环境光库。
 
-![studio](../assets/soft-9.png)
+![IDE](../assets/soft-9.png)
 
 　　我们默认提供了一些系统环境光(HDR)，如果不符合您的设计要求，您可以导入您需要的环境光。
 
@@ -97,7 +97,7 @@ title: studio软件介绍
 
 　　创建一个模型图层，默认会为您打开模型库，如果您不知道如何打开它，也可以点击图层面板任意一个模型图层。
 
-![studio](../assets/soft-10.png)
+![IDE](../assets/soft-10.png)
 
 　　我们为您提供了一个默认模型，以及导入模型，删除模型，修改模型名称的功能。
 
@@ -107,7 +107,7 @@ title: studio软件介绍
 
 　　当您使用了三维渲染的时候，我们为您打开材质库面板。比如，在创建矢量瓦片图层后，选择建筑，采用三维渲染。
 
-![studio](../assets/soft-11.png)
+![IDE](../assets/soft-11.png)
 
 　　我们为您提供了导入材质球，编辑和删除等功能，您可以根据需要把材质球进行分类。
 
@@ -115,4 +115,4 @@ title: studio软件介绍
 
 ## 总结
 
-　　以上就是我们目前对于studio总体的设计，未来可能会有许多其他的功能更新。如果您对此有疑问，欢迎在菜单栏帮助选项里报告问题。或者直接点击[此处](https://support.qq.com/products/324753)来反馈。
+　　以上就是我们目前对于IDE总体的设计，未来可能会有许多其他的功能更新。如果您对此有疑问，欢迎在菜单栏帮助选项里报告问题。或者直接点击[此处](https://support.qq.com/products/324753)来反馈。

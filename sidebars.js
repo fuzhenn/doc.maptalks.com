@@ -11,30 +11,30 @@
 module.exports = {
   // But you can create a sidebar manually
 
-  studio: [
+  ide: [
     {
       type: "doc",
-      id: "studio/intro",
+      id: "ide/intro",
     },
     {
       type: "doc",
-      id: "studio/basic/full-demo",
+      id: "ide/basic/full-demo",
     },
     {
       type: "category",
       label: "初级教程",
       collapsed: false,
       items: [
-        "studio/basic/soft",
-        "studio/basic/layer",
-        "studio/basic/environment",
-        "studio/basic/gltf",
-        "studio/basic/size",
-        "studio/basic/import-material",
-        "studio/basic/pbr",
-        "studio/basic/roof-building",
-        "studio/basic/shadow-water",
-        "studio/basic/bloom-material",
+        "ide/basic/soft",
+        "ide/basic/layer",
+        "ide/basic/environment",
+        "ide/basic/gltf",
+        "ide/basic/size",
+        "ide/basic/import-material",
+        "ide/basic/pbr",
+        "ide/basic/roof-building",
+        "ide/basic/shadow-water",
+        "ide/basic/bloom-material",
       ],
     },
     {
@@ -42,7 +42,7 @@ module.exports = {
       label: "中级教程",
       collapsed: false,
       items: [
-        "studio/intermediate/bloom-road",
+        "ide/intermediate/bloom-road",
       ],
     },
     {
@@ -50,12 +50,12 @@ module.exports = {
       label: "高级教程",
       collapsed: false,
       items: [
-        "studio/advanced/advanced-bloom-road",
+        "ide/advanced/advanced-bloom-road",
       ],
     },
     {
       type: "doc",
-      id: "studio/tip",
+      id: "ide/tip",
     },
   ],
   designer: [

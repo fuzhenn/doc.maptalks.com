@@ -4,6 +4,6 @@ hide_title: true
 title: Intro
 ---
 
-## Studio
+## IDE
 
-Studio is a 3D design software for rich content maps.
+IDE is a 3D design software for rich content maps.

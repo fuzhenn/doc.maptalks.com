@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Maptalks Doc',
-  tagline: 'Maptalks are cool',
+  title: 'MapTalks Doc',
+  tagline: 'MapTalks are cool',
   url: 'http://doc.maptalks.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -15,13 +15,13 @@ module.exports = {
       disableSwitch: false,
     },
     navbar: {
-      title: 'maptalks doc',
+      title: 'MapTalks Doc',
       logo: {
-        alt: 'maptalks doc',
+        alt: 'MapTalks Doc',
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/docs/studio/intro', activeBasePath: '/docs/studio', label: 'Studio', position: 'left'},
+        {to: '/docs/ide/intro', activeBasePath: '/docs/ide', label: 'IDE', position: 'left'},
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],

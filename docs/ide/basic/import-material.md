@@ -13,7 +13,7 @@ title: 导入新的材质球
 
 ![新建图层](../assets/import-material-1.png)
 
-　　Studio支持第一种工作流，即金属/粗糙度工作流（Metal/Roughness）。所以我们可以导入Base Color-基础色纹理、Roughness-粗糙度纹理、Metallic-金属度纹理、Normal-法线纹理、Height-高度纹理、Ambient Occiusion-环境光遮蔽纹理、Emission-自发光纹理，一共7种纹理图片，但是粗糙度和金属度实际会最终合并为一个金属粗糙度纹理。
+　　IDE支持第一种工作流，即金属/粗糙度工作流（Metal/Roughness）。所以我们可以导入Base Color-基础色纹理、Roughness-粗糙度纹理、Metallic-金属度纹理、Normal-法线纹理、Height-高度纹理、Ambient Occiusion-环境光遮蔽纹理、Emission-自发光纹理，一共7种纹理图片，但是粗糙度和金属度实际会最终合并为一个金属粗糙度纹理。
 
 * 基础色: TODO
 
@@ -35,7 +35,7 @@ title: 导入新的材质球
 
 ### 1、 准备导入材质球
 
-* 启动Studio，，新建一个文件，新建VT图层，VT图层里添加建筑数据。
+* 启动IDE，，新建一个文件，新建VT图层，VT图层里添加建筑数据。
 
 ![新建图层](../assets/import-material-2.png)
 

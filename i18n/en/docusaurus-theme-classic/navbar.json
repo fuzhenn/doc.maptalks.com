@@ -1,11 +1,11 @@
 {
   "title": {
-    "message": "maptalks doc",
+    "message": "MapTalks Doc",
     "description": "The title in the navbar"
   },
-  "item.label.Studio": {
-    "message": "Studio",
-    "description": "Navbar item with label Studio"
+  "item.label.IDE": {
+    "message": "IDE",
+    "description": "Navbar item with label IDE"
   },
   "item.label.Designer": {
     "message": "Designer",

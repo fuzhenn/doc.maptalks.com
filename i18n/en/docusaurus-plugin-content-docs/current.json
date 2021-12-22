@@ -3,16 +3,16 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.studio.category.初级教程": {
+  "sidebar.ide.category.初级教程": {
     "message": "Basic",
-    "description": "The label for category 初级教程 in sidebar studio"
+    "description": "The label for category 初级教程 in sidebar ide"
   },
-  "sidebar.studio.category.中级教程": {
+  "sidebar.ide.category.中级教程": {
     "message": "Intermediate",
-    "description": "The label for category 中级教程 in sidebar studio"
+    "description": "The label for category 中级教程 in sidebar ide"
   },
-  "sidebar.studio.category.高级教程": {
+  "sidebar.ide.category.高级教程": {
     "message": "Advanced",
-    "description": "The label for category 高级教程 in sidebar studio"
+    "description": "The label for category 高级教程 in sidebar ide"
   }
 }
