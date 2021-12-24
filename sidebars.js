@@ -63,5 +63,25 @@ module.exports = {
       type: "doc",
       id: "designer/intro"
     },
+    {
+      type: "doc",
+      id: "designer/full-demo",
+    },
+    {
+      type: "doc",
+      id: "designer/skill-help",
+    },
+    {
+      type: "doc",
+      id: "designer/style",
+    },
+    {
+      type: "doc",
+      id: "designer/filter",
+    },
+    {
+      type: "doc",
+      id: "designer/faq",
+    },
   ],
 };

@@ -10,6 +10,11 @@ module.exports = {
   organizationName: 'maptalks', // Usually your GitHub org/user name.
   projectName: 'doc.maptalks.com', // Usually your repo name.
   themeConfig: {
+    prism: {
+      defaultLanguage: 'javascript',
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/vsDark')
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
