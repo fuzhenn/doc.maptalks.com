@@ -54,7 +54,6 @@ title: 完整示例
         <script src="./js/maptalksgl.js"></script>
         <script src="./js/maptalks.vt.js"></script>
         <script src="./js/maptalks.vt.basic.js"></script>
-        <script src="./js/stats.min.js"></script>
       </head>
       <body>
         <div id="mapContainer" style="width: 100vw; height: 100vh;"></div>
@@ -90,18 +89,6 @@ title: 完整示例
             console.log(JSON.stringify(result));
           });
 
-          const stats = new Stats();
-          stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
-          document.body.appendChild(stats.dom);
-
-          map.on("framestart", function(e) {
-            stats.begin();
-          });
-
-          map.on("frameend", function(e) {
-            stats.end();
-          });
-
           new maptalks.control.Toolbar({
             position: { bottom: "40", right: "10" },
             items: [
@@ -127,94 +114,70 @@ title: 完整示例
 
 ### 2、自主部署
 
-　　不需要发布样式，只需要在设计内页，"文件"菜单，"导出"，您会得到如下的资源：
+　　不需要发布样式，只需要在设计内页，点击"文件"菜单，点击"导出"，您会得到如下的资源：
 
 ![完整示例](./assets/full-demo-4.png)
 
-　　然后在您的项目中，引入资源，使用这个样式
+　　如下，你将得到index.html文件和index-batch.html文件，他们的不同之处在于一个引入的style.js，一个引入的style-batch.js，关于他们两者的不同，您可以参考"两种style"篇，里头有详细说明，您可以根据需要选择性部署。
 ```
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>designer export</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <link rel="stylesheet" href="./css/maptalks.css" />
-    <script src="./js/maptalks.js"></script>
-    <script src="./js/maptalksgl.js"></script>
-    <script src="./js/maptalks.vt.js"></script>
-    <script src="./js/maptalks.vt.basic.js"></script>
-    <script src="./js/stats.min.js"></script>
-  </head>
-  <body>
-    <div id="mapContainer" style="width: 100vw; height: 100vh"></div>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>designer export</title>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+        <link rel="stylesheet" href="./css/maptalks.css" />
+        <script src="./js/maptalks.js"></script>
+        <script src="./js/maptalksgl.js"></script>
+        <script src="./js/maptalks.vt.js"></script>
+        <script src="./js/maptalks.vt.basic.js"></script>
+        <script src="./style.js"></script>
+      </head>
+      <body>
+        <div id="mapContainer" style="width: 100vw; height: 100vh;"></div>
 
-    <script>
-      //init map
-      fetch("./style.json")
-        .then((data) => {
-          return data.json();
-        })
-        .then((data) => {
+        <script>
           //init map
           var map = new maptalks.Map("mapContainer", {
-            center: [114.27419435046454, 30.5679303378798],
+            center: [114.24069764086062,30.671986027911572],
             minZoom: 1,
-            zoom: 14.63645632619806,
-            maxZoom: 20,
+            zoom: 12.26683389072155,
+            maxZoom : 20,
             zoomControl: {
               position: { bottom: "76", right: "10" },
               slider: false,
-              zoomLevel: true,
+              zoomLevel: true
             },
             defaultRendering: true,
             seamlessZoom: true,
-            spatialReference: "preset-vt-3857",
+            spatialReference: "preset-vt-3857"
           });
 
           //init layer
           var layer = new maptalks.VectorTileLayer("vt", {
-            urlTemplate:
-              "http://116.63.251.32:8080/tile/planet-single/{z}/{x}/{y}.mvt",
-            spatialReference: "preset-vt-3857",
+            urlTemplate: "http://116.63.251.32:8080/tile/planet-single/{z}/{x}/{y}.mvt",
+            spatialReference: 'preset-vt-3857',
           }).addTo(map);
 
           window.layer = layer;
 
           layer.setStyle({
-            $root: "./",
-            $iconset: "./",
-            style: data,
-            background: {
-              enable: true,
-              color: [0.945, 0.953, 0.957, 1],
-              opacity: 1,
-              depthRange: [1,1]
-            },
+            $root: './',
+            $iconset: './iconset',
+            style,
+            background: {"enable":true,"color":[0.945,0.953,0.957,1],"opacity":1,"depthRange":[1,1]}
           });
 
-          map.on("click", function (e) {
+          map.on('click', function(e) {
             const result = layer.identify(e.coordinate);
             console.log(JSON.stringify(result));
-          });
-
-          const stats = new Stats();
-          stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
-          document.body.appendChild(stats.dom);
-
-          map.on("framestart", function (e) {
-            stats.begin();
-          });
-
-          map.on("frameend", function (e) {
-            stats.end();
           });
 
           new maptalks.control.Toolbar({
@@ -222,18 +185,19 @@ title: 完整示例
             items: [
               {
                 item: "reset",
-                click: function () {
+                click: function() {
                   map.setPitch(0);
                   map.setBearing(0);
-                },
-              },
-            ],
+                }
+              }
+            ]
           }).addTo(map);
-        });
-    </script>
-  </body>
-</html>
+
+        </script>
+      </body>
+    </html>
 ```
+
 　　最终会得到一样的效果。
 
 　　注意，不要缺少background.depthRange: [1,1], 这个非常重要。
