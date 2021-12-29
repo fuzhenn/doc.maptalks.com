@@ -21,17 +21,28 @@ module.exports = {
       id: "ide/basic/full-demo",
     },
     {
+      type: "doc",
+      id: "ide/basic/size",
+    },
+    {
       type: "category",
-      label: "初级教程",
+      label: "概览",
       collapsed: false,
       items: [
         "ide/basic/soft",
         "ide/basic/layer",
         "ide/basic/environment",
+        "ide/basic/post-processing",
         "ide/basic/gltf",
-        "ide/basic/size",
-        "ide/basic/import-material",
+        "ide/basic/material",
         "ide/basic/pbr",
+      ],
+    },
+    {
+      type: "category",
+      label: "初级教程",
+      collapsed: false,
+      items: [
         "ide/basic/roof-building",
         "ide/basic/shadow-water",
         "ide/basic/bloom-material",
