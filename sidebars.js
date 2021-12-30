@@ -31,11 +31,14 @@ module.exports = {
       items: [
         "ide/basic/soft",
         "ide/basic/layer",
+        "ide/basic/mode",
+        "ide/basic/data-properties",
         "ide/basic/environment",
         "ide/basic/post-processing",
         "ide/basic/gltf",
         "ide/basic/material",
         "ide/basic/pbr",
+        "ide/basic/animation",
       ],
     },
     {
@@ -67,6 +70,10 @@ module.exports = {
     {
       type: "doc",
       id: "ide/tip",
+    },
+    {
+      type: "doc",
+      id: "ide/faq",
     },
   ],
   designer: [
