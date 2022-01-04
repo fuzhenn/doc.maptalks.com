@@ -29,7 +29,7 @@ title: 实现道路泛光效果
 ![二维渲染](../assets/bloom-road-4.png)
 ![二维渲染](../assets/bloom-road-5.png)
 
-现在地图上就可以看到道路泛光的效果了。
+　　现在地图上就可以看到道路泛光的效果了。
 
 ![二维渲染](../assets/bloom-road-6.png)
 
@@ -37,7 +37,7 @@ title: 实现道路泛光效果
 
 ![二维渲染](../assets/bloom-road-7.png)
 
-也可以通过渲染面板下基础色里，调整透明度来增减泛光的效果。
+　　也可以通过渲染面板下基础色里，调整透明度来增减泛光的效果。
 
 ![二维渲染](../assets/bloom-road-8.png)
 
