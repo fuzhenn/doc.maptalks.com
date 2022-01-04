@@ -17,11 +17,14 @@ title: IDE软件介绍
 ![IDE](../assets/soft-1.png)
 
 ![IDE](../assets/soft-2.png)
+
 *<small>仅在首页可用，设计页不能使用</small>*  
 
 　　在设计页面可用的功能：
 
-![IDE](../assets/soft-3.png) ![IDE](../assets/soft-4.png)
+![IDE](../assets/soft-3.png) 
+
+![IDE](../assets/soft-4.png)
 
 ### 首页
 
@@ -39,7 +42,7 @@ title: IDE软件介绍
 
 * 新建图层面板：
 
-　　我们提供了四种图层，矢量瓦片图层，GeoJson格式和csv格式图层，三维模型图层，矢量点线面图层。具体的图层介绍，请参考图层章节。
+　　我们提供了四种图层，矢量瓦片图层，GeoJson图层，三维模型图层，矢量点线面图层。具体的图层介绍，请参考图层章节。
 
 * 图层面板：
 
