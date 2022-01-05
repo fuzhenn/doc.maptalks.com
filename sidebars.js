@@ -39,6 +39,7 @@ module.exports = {
         "ide/basic/pbr",
         "ide/basic/material",
         "ide/basic/animation",
+        "ide/basic/mime",
       ],
     },
     {

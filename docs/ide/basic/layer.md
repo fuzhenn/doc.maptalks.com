@@ -10,19 +10,19 @@ title: 如何创建合适的图层
 
 　　每个的效果如下。
 
-![模型](../assets/layer-1.png)  
+![图层](../assets/layer-1.png)  
 *<small>矢量瓦片二维渲染</small>*  
 
-![模型](../assets/layer-2.png)  
+![图层](../assets/layer-2.png)  
 *<small>矢量瓦片三维渲染</small>*
 
-![模型](../assets/layer-3.png)  
+![图层](../assets/layer-3.png)  
 *<small>gltf图层</small>*
 
-TODO geojson图层图片  
+![图层](../assets/layer-t-1.png)  
 *<small>geojson图层</small>*
 
-![模型](../assets/layer-4.png)  
+![图层](../assets/layer-4.png)  
 *<small>矢量点线面图层</small>*
 
 ### 矢量瓦片图层
@@ -33,7 +33,9 @@ TODO geojson图层图片
 
 ### geojson图层
 
-　　TODO
+　　geojson数据导入后，根据数据点线面进行判断，支持多种渲染模式。它导入后本身是单体数据，您也可以在地图上右键，针对某一块，设置featureStyle。
+![图层](../assets/layer-t-2.png)  
+
 
 ### gltf模型图层
 
