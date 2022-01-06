@@ -11,7 +11,7 @@ title: 数据格式
 
 　　mvt是一种矢量瓦片格式，相较传统的栅格瓦片，它可以随意设计图层样式，尺寸也更小，更新方便。
 
-　　https://github.com/jingsam/vector-tile-spec/blob/master/2.1/README_zh.md，这是此格式的文档规范。
+　　https://github.com/jingsam/vector-tile-spec/blob/master/2.1/README_zh.md ，这是此格式的文档规范。
 
 　　在IDE中，vt图层作为一个基础的图层，可以选中其中一些需要的图层，进行各种设计。在Designer中设计的底图，可以作为IDE的背景底图使用，使得在旋转缩放倾斜地图的过程中，背景底图仍然是矢量的。
 
@@ -165,7 +165,7 @@ long,latitude,altitude,geometry,name
 
 ### gltf、glb
 
-　　glTF是一种可以减少3D格式中与渲染无关的冗余数据并且在更加适合OpenGL簇加载的一种3D文件格式。 glTF的提出是源自于3D工业和媒体发展的过程中，对3D格式统一化的急迫需求。 如果用一句话来描述：glTF 就是三维文件的JPEG ，三维格式的MP3。
+　　gltf是一种可以减少3D格式中与渲染无关的冗余数据并且在更加适合OpenGL簇加载的一种3D文件格式。 gltf的提出是源自于3D工业和媒体发展的过程中，对3D格式统一化的急迫需求。 如果用一句话来描述：gltf 就是三维文件的JPEG ，三维格式的MP3。
 
 ```
 {
@@ -270,7 +270,7 @@ long,latitude,altitude,geometry,name
 
 　　如果您在导入数据时候报错，可以考虑采用在线工具把这种格式转换成GeoJSON，再次导入，如果能正常导入，请给我们反馈，并且提供该数据，我们会对这种数据分析，修复我们的程序漏洞。我们采用的开源的数据转换GeoJSON库，我们会尽可能修复这里面存在的数据转换问题。
 
-　　反馈途径为https://support.qq.com/products/324753，如果您的数据有隐私，无法提供，如果您能自行定位并给出对应的处理方式，我们对此表示感激。
+　　反馈途径为https://support.qq.com/products/324753 ，如果您的数据有隐私，无法提供，如果您能自行定位并给出对应的处理方式，我们对此表示感激。
 
 　　这是我们用到的格式转GeoJSON的库。
 ```

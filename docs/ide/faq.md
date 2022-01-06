@@ -102,6 +102,27 @@ TODO
 
 ### 设计成果发布注意事项
 
-IIS发布时要添加MIME类型
+　　如果您采用IIS发布您的设计成果，需要修改MIME，如果不设置，下列资源是无法被加载的。
 
-TODO
+```
+hdr image/x-hdr
+gltf model/gltf+json
+glb model/gltf-binary
+bin application/octet-stream
+webp images/webp
+geojson application/geo+json
+```
+
+　　方法如下。
+
+　　打开IIS, 在右侧找到MIME类型。
+
+![faq](./assets/faq-5.png)
+
+　　双击进入MIME页面，右侧有个添加按钮，点击它，添加上诉MIME。
+
+![faq](./assets/faq-t-1.png)
+
+　　最终，打开的静态页面就能看到相应类型的资源能被加载。
+
+![faq](./assets/faq-6.png)
