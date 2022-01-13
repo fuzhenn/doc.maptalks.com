@@ -5,21 +5,9 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ .content {
+   font-size: 38px;
+   height: calc(100vh - 60px - 80px);
+   line-height: calc(100vh - 60px - 80px);
+   text-align: center;
+ }
