@@ -91,6 +91,9 @@ html[data-theme='dark'] ::-webkit-scrollbar-track {
 html[data-theme='dark'] ::-webkit-scrollbar-thumb {
   background: #252525;
 }
+html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #252525;
+}
 
 /** code block **/
 

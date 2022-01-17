@@ -31,6 +31,7 @@ module.exports = {
       items: [
         "ide/basic/soft",
         "ide/basic/layer",
+        "ide/basic/coord",
         "ide/basic/mode",
         "ide/basic/data-properties",
         "ide/basic/environment",
@@ -66,6 +67,14 @@ module.exports = {
       collapsed: false,
       items: [
         "ide/advanced/advanced-bloom-road",
+      ],
+    },
+    {
+      type: "category",
+      label: "数据",
+      collapsed: false,
+      items: [
+        "ide/data/geojson",
       ],
     },
     {
