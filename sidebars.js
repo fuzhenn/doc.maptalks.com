@@ -14,7 +14,37 @@ module.exports = {
   ide: [
     {
       type: "doc",
-      id: "ide/intro",
+      id: "ide/guide/intro",
+    },
+    {
+      type: "doc",
+      id: "ide/guide/compare",
+    },
+    {
+      type: "doc",
+      id: "ide/guide/install",
+    },
+    {
+      type: "doc",
+      id: "ide/guide/purchase",
+    },
+    {
+      type: "category",
+      label: "入门指南",
+      collapsed: false,
+      items: [
+        "ide/guide/tutorial/create",
+        
+      ],
+    },
+    {
+      type: "category",
+      label: "基础知识",
+      collapsed: false,
+      items: [
+        "ide/guide/basic/gltf",
+        
+      ],
     },
     {
       type: "doc",

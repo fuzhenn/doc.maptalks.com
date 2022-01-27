@@ -26,7 +26,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/docs/ide/intro', activeBasePath: '/docs/ide', label: 'IDE', position: 'left'},
+        {to: '/docs/ide/guide/intro', activeBasePath: '/docs/ide', label: 'IDE', position: 'left'},
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
