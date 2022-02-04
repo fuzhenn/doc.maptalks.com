@@ -29,6 +29,10 @@ module.exports = {
       id: "ide/guide/purchase",
     },
     {
+      type: "doc",
+      id: "ide/guide/ui",
+    },
+    {
       type: "category",
       label: "入门指南",
       collapsed: false,
@@ -42,6 +46,7 @@ module.exports = {
       label: "基础知识",
       collapsed: false,
       items: [
+        "ide/guide/basic/vt",
         "ide/guide/basic/gltf",
         
       ],
