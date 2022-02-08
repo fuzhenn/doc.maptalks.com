@@ -86,6 +86,14 @@ module.exports = {
     },
     {
       type: "category",
+      label: "性能优化",
+      collapsed: false,
+      items: [
+        "ide/guide/performance/resource",
+      ],
+    },
+    {
+      type: "category",
       label: "崩溃处理",
       collapsed: false,
       items: [
