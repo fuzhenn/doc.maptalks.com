@@ -22,6 +22,10 @@ module.exports = {
     },
     {
       type: "doc",
+      id: "ide/guide/browser",
+    },
+    {
+      type: "doc",
       id: "ide/guide/install",
     },
     {
