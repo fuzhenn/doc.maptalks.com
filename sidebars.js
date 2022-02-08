@@ -85,7 +85,17 @@ module.exports = {
       collapsed: false,
       items: [
         "ide/guide/useInProgram/intro",
-        "ide/guide/useInProgram/path"
+        "ide/guide/useInProgram/path",
+        {
+          type: 'link',
+          label: 'API接口说明',
+          href: 'https://github.com/maptalks/MSDJSONLoader',
+        },
+        {
+          type: 'link',
+          label: '示例',
+          href: 'https://github.com/maptalks/MSDJSONLoader',
+        },
       ],
     },
     {
