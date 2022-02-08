@@ -46,14 +46,34 @@ module.exports = {
       label: "基础知识",
       collapsed: false,
       items: [
+        {
+          type: 'link',
+          label: 'GIS知识入门',
+          href: 'https://mp.weixin.qq.com/s/UkQvMFEWyHDbsmh7LDWU7A',
+        },
         "ide/guide/basic/vt",
         "ide/guide/basic/gltf",
         
       ],
     },
     {
-      type: "doc",
-      id: "ide/guide/formats",
+      type: "category",
+      label: "导入数据",
+      collapsed: false,
+      items: [
+        "ide/guide/data/formats",
+        "ide/guide/data/errors",
+        "ide/guide/data/coord",
+      ],
+    },
+    {
+      type: "category",
+      label: "发布",
+      collapsed: false,
+      items: [
+        "ide/guide/publish/publish",
+        "ide/guide/publish/iis"
+      ],
     },
     {
       type: "category",
