@@ -17,9 +17,9 @@ MapTalks IDE是基于以Chrominum为核心的[Electron](https://www.electronjs.o
 
 我们放弃了对IE浏览器（包括IE11）的支持，主要考虑到以下几个原因：
 * IE不支持最新的Javascript标准，极大的增加了工程的开发和维护难度。
-* IE的WebGL性能很弱。
+* IE11的WebGL性能很弱。
 * IE不支持WASM，很多基于WASM的功能或优化都无法支持。
 * IE的市场占有率已经小到可以忽略了。
 * 2022年6月15日起，IE11将会停止维护。
 
-如果您的应用因为某些原因必须采用IE浏览器，推荐您基于 [maptalks](https://maptalks.org) 开源库开发您的地图应用。
+如果您的应用因为某些原因必须采用IE浏览器，推荐您基于 [maptalks.js](https://maptalks.org) 开源库开发您的地图应用。
