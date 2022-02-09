@@ -48,7 +48,7 @@ module.exports = {
     {
       type: "category",
       label: "基础知识",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: 'link',
@@ -88,12 +88,12 @@ module.exports = {
         "ide/guide/useInProgram/path",
         {
           type: 'link',
-          label: 'API接口说明',
+          label: 'MSDJSONLoader接口',
           href: 'https://github.com/maptalks/MSDJSONLoader',
         },
         {
           type: 'link',
-          label: '示例',
+          label: '程序加载示例',
           href: 'https://github.com/maptalks/MSDJSONLoader',
         },
       ],
