@@ -213,4 +213,22 @@ module.exports = {
       id: "designer/faq",
     },
   ],
+  bds: [
+    {
+      type: "doc",
+      id: "bds/intro"
+    },
+    {
+      type: "doc",
+      id: "bds/install"
+    },
+    {
+      type: "doc",
+      id: "bds/configuration"
+    },
+    {
+      type: "doc",
+      id: "bds/api"
+    },
+  ],
 };
