@@ -10,6 +10,13 @@
 * id* **String** 图层id
 
 :::
+
+* [静态方法](#静态方法)
+* [成员方法](#成员方法)
+* [继承的TileLayer方法#](#继承的TileLayer方法#)
+* [继承的Layer方法](#继承的Layer方法)
+* [事件](#事件)
+
 ## 构造函数
 
 ```javascript
@@ -58,418 +65,9 @@ new VectorTileLayer('vt0', {
 </p>
 </details>
 
-## 事件
-
-### iblupdated
-
-环境光更新事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "iblupdated"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### canvasisdirty
-
-画布产生绘制的事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "canvasisdirty"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### workerready
-
-worker准备就绪事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "workerready"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### datareceived
-
-获取到瓦片数据事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "datareceived"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### pluginsinited
-
-渲染插件初始化结束事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "pluginsinited"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### setstyle
-
-设置样式事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "dataerror"  |
-|target   | VectorTileLayer |   this     |
-|styles   | Object[] |   样式对象     |
-|computedStyles   | Object[] |   Feature样式对象     |
-
-</p>
-</details>
-
------------
-
-### updatesceneconfig
-
-updatesceneconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesceneconfig"  |
-|target   | VectorTileLayer |   this                  |
-|index    | Number          |   样式序号              |
-|sceneConfig | Object          |   scene config对象     |
-
-</p>
-</details>
-
------------
-
-### updatefeaturesceneconfig
-
-updatefeaturesceneconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesceneconfig"  |
-|target   | VectorTileLayer |   this                  |
-|index    | Number          |   Feature样式序号        |
-|styleIdx | Number          |   Feature渲染插件序号    |
-|sceneConfig | Object          |   scene config对象     |
-
-</p>
-</details>
-
------------
-
-### updatedataconfig
-
-updatedataconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatedataconfig"  |
-|target   | VectorTileLayer |   this                  |
-|index    | Number          |   样式序号              |
-|dataConfig | Object        |   data config对象     |
-
-</p>
-</details>
-
------------
-
-### updatefeaturesdataconfig
-
-updatefeaturesdataconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesdataconfig"  |
-|target   | VectorTileLayer |   this                  |
-|index    | Number          |   Feature样式序号        |
-|styleIdx | Number          |   Feature渲染插件序号    |
-|dataConfig | Object        |   data config对象     |
-
-</p>
-</details>
-
------------
-
-### updatesymbol
-
-updatesymbol事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesymbol"  |
-|target   | VectorTileLayer |   this            |
-|index    | Number          |   样式序号        |
-|symbol   | Object          |   symbol对象      |
-
-</p>
-</details>
-
------------
-
-### updatefeaturesymbol
-
-updatefeaturesymbol事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesymbol"  |
-|target   | VectorTileLayer |   this                  |
-|index    | Number          |   Feature样式序号        |
-|styleIdx | Number          |   Feature渲染插件序号    |
-|symbol   | Object          |     symbol对象     |
-
-</p>
-</details>
-
------------
-
-### tileload
-
-瓦片载入事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesymbol"  |
-|target   | VectorTileLayer |   this            |
-|tile     | Object          |   瓦片对象          |
-|tileImage| Object          |   瓦片数据     |
-
-</p>
-</details>
-
------------
-
-### tileerror
-
-瓦片载入错误事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "updatesymbol"  |
-|target   | VectorTileLayer |   this            |
-|error    | String          |   错误信息          |
-|tile     | Object          |   瓦片对象          |
-|symbol   | Object          |     symbol对象     |
-
-</p>
-</details>
-
------------
-
-### clear
-
-图层被清除事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "clear"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### idchange
-
-图层id变化事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "idchange"  |
-|target   | VectorTileLayer |   this     |
-|old      | String          |   旧的id     |
-|new      | String          |   新的id     |
-
-</p>
-</details>
-
------------
-
-### renderercreate
-
-renderer创建事件
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type       | String          |   "renderercreate"  |
-|target     | VectorTileLayer |   this     |
-|renderer   | VectorTileLayerRenderer |      |
-
-</p>
-</details>
-
------------
-
-### canvascreate
-
-canvas创建事件
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "canvascreate"  |
-|target   | VectorTileLayer |   this     |
-|gl       | WebGLRenderingContext2D |      |
-
-</p>
-</details>
-
------------
-
-### renderstart
-
-开始渲染事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "renderstart"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-### renderend
-
-结束渲染事件。
-
-<details><summary>详细信息</summary>
-<p>
-
-参数属性：
-
-| 属性名           |  类型           |   值 |
-|  ------         | :----:  | ----  |
-|type     | String          |   "renderend"  |
-|target   | VectorTileLayer |   this     |
-
-</p>
-</details>
-
------------
-
-
 ## 静态方法
 
-### compressStyleJSON(stle)
+### compressStyleJSON(style)
 
 通过合并相同定义的渲染插件，把style JSON压缩为尺寸更小的JSON对象。
 
@@ -494,9 +92,7 @@ VectorTileLayer.compressStyleJSON(style);
 -----------
 
 
-### registerPlugin
-
-registerPlugin(Plugin)
+### registerPlugin(Plugin)
 
 注册新的渲染插件。
 
@@ -1307,3 +903,411 @@ const schema = layer.getDataSchema(8);
 返回：
 
 * this
+
+-----------
+
+## 事件
+
+### iblupdated
+
+环境光更新事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "iblupdated"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### canvasisdirty
+
+画布产生绘制的事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "canvasisdirty"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### workerready
+
+worker准备就绪事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "workerready"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### datareceived
+
+获取到瓦片数据事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "datareceived"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### pluginsinited
+
+渲染插件初始化结束事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "pluginsinited"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### setstyle
+
+设置样式事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "dataerror"  |
+|target   | VectorTileLayer |   this     |
+|styles   | Object[] |   样式对象     |
+|computedStyles   | Object[] |   Feature样式对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatesceneconfig
+
+updatesceneconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesceneconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   样式序号              |
+|sceneConfig | Object          |   scene config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesceneconfig
+
+updatefeaturesceneconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesceneconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|sceneConfig | Object          |   scene config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatedataconfig
+
+updatedataconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatedataconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   样式序号              |
+|dataConfig | Object        |   data config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesdataconfig
+
+updatefeaturesdataconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesdataconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|dataConfig | Object        |   data config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatesymbol
+
+updatesymbol事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|index    | Number          |   样式序号        |
+|symbol   | Object          |   symbol对象      |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesymbol
+
+updatefeaturesymbol事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|symbol   | Object          |     symbol对象     |
+
+</p>
+</details>
+
+-----------
+
+### tileload
+
+瓦片载入事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|tile     | Object          |   瓦片对象          |
+|tileImage| Object          |   瓦片数据     |
+
+</p>
+</details>
+
+-----------
+
+### tileerror
+
+瓦片载入错误事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|error    | String          |   错误信息          |
+|tile     | Object          |   瓦片对象          |
+|symbol   | Object          |     symbol对象     |
+
+</p>
+</details>
+
+-----------
+
+### clear
+
+图层被清除事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "clear"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### idchange
+
+图层id变化事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "idchange"  |
+|target   | VectorTileLayer |   this     |
+|old      | String          |   旧的id     |
+|new      | String          |   新的id     |
+
+</p>
+</details>
+
+-----------
+
+### renderercreate
+
+renderer创建事件
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type       | String          |   "renderercreate"  |
+|target     | VectorTileLayer |   this     |
+|renderer   | VectorTileLayerRenderer |      |
+
+</p>
+</details>
+
+-----------
+
+### canvascreate
+
+canvas创建事件
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "canvascreate"  |
+|target   | VectorTileLayer |   this     |
+|gl       | WebGLRenderingContext2D |      |
+
+</p>
+</details>
+
+-----------
+
+### renderstart
+
+开始渲染事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "renderstart"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### renderend
+
+结束渲染事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "renderend"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
