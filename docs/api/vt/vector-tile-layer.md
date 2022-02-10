@@ -58,11 +58,418 @@ new VectorTileLayer('vt0', {
 </p>
 </details>
 
+## 事件
+
+### iblupdated
+
+环境光更新事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "iblupdated"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
 -----------
+
+### canvasisdirty
+
+画布产生绘制的事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "canvasisdirty"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### workerready
+
+worker准备就绪事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "workerready"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### datareceived
+
+获取到瓦片数据事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "datareceived"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### pluginsinited
+
+渲染插件初始化结束事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "pluginsinited"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### setstyle
+
+设置样式事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "dataerror"  |
+|target   | VectorTileLayer |   this     |
+|styles   | Object[] |   样式对象     |
+|computedStyles   | Object[] |   Feature样式对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatesceneconfig
+
+updatesceneconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesceneconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   样式序号              |
+|sceneConfig | Object          |   scene config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesceneconfig
+
+updatefeaturesceneconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesceneconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|sceneConfig | Object          |   scene config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatedataconfig
+
+updatedataconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatedataconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   样式序号              |
+|dataConfig | Object        |   data config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesdataconfig
+
+updatefeaturesdataconfig事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesdataconfig"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|dataConfig | Object        |   data config对象     |
+
+</p>
+</details>
+
+-----------
+
+### updatesymbol
+
+updatesymbol事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|index    | Number          |   样式序号        |
+|symbol   | Object          |   symbol对象      |
+
+</p>
+</details>
+
+-----------
+
+### updatefeaturesymbol
+
+updatefeaturesymbol事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|symbol   | Object          |     symbol对象     |
+
+</p>
+</details>
+
+-----------
+
+### tileload
+
+瓦片载入事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|tile     | Object          |   瓦片对象          |
+|tileImage| Object          |   瓦片数据     |
+
+</p>
+</details>
+
+-----------
+
+### tileerror
+
+瓦片载入错误事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatesymbol"  |
+|target   | VectorTileLayer |   this            |
+|error    | String          |   错误信息          |
+|tile     | Object          |   瓦片对象          |
+|symbol   | Object          |     symbol对象     |
+
+</p>
+</details>
+
+-----------
+
+### clear
+
+图层被清除事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "clear"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### idchange
+
+图层id变化事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "idchange"  |
+|target   | VectorTileLayer |   this     |
+|old      | String          |   旧的id     |
+|new      | String          |   新的id     |
+
+</p>
+</details>
+
+-----------
+
+### renderercreate
+
+renderer创建事件
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type       | String          |   "renderercreate"  |
+|target     | VectorTileLayer |   this     |
+|renderer   | VectorTileLayerRenderer |      |
+
+</p>
+</details>
+
+-----------
+
+### canvascreate
+
+canvas创建事件
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "canvascreate"  |
+|target   | VectorTileLayer |   this     |
+|gl       | WebGLRenderingContext2D |      |
+
+</p>
+</details>
+
+-----------
+
+### renderstart
+
+开始渲染事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "renderstart"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
+### renderend
+
+结束渲染事件。
+
+<details><summary>详细信息</summary>
+<p>
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "renderend"  |
+|target   | VectorTileLayer |   this     |
+
+</p>
+</details>
+
+-----------
+
 
 ## 静态方法
 
-### compressStyleJSON(style): Object
+### compressStyleJSON(stle)
 
 通过合并相同定义的渲染插件，把style JSON压缩为尺寸更小的JSON对象。
 
@@ -77,15 +484,19 @@ VectorTileLayer.compressStyleJSON(style);
 
 * style **Object** 样式对象
 
+返回：
+
+* **Object**
+
 </p>
 </details>
-
-* style **Object** 样式对象
 
 -----------
 
 
-### registerPlugin(Plugin)
+### registerPlugin
+
+registerPlugin(Plugin)
 
 注册新的渲染插件。
 
@@ -105,7 +516,7 @@ VectorTileLayer.registerPlugin(PluginClazz);
 
 -----------
 
-### getPlugins(): PainterPlugin[]
+### getPlugins()
 
 获取所有注册的渲染插件。
 
@@ -116,31 +527,17 @@ VectorTileLayer.registerPlugin(PluginClazz);
 const pluginClasses = VectorTileLayer.getPlugins();
 ````
 
-</p>
-</details>
+返回：
 
------------
-
-### getPlugins()
-
-注册渲染插件
-
-<details><summary>详细信息</summary>
-<p>
-
-```js
-const pluginClasses = VectorTileLayer.getPlugins();
-````
+* PainterPlugin[]
 
 </p>
 </details>
-
------------
 
 ###
 
 ## 成员方法
-### setStyle(layerStyle): this
+### setStyle(layerStyle)
 
 设置图层的样式，样式说明请参考该链接。
 
@@ -181,24 +578,38 @@ layer.setStyle(style);
 | featureStyles | Object[] | 单个Feature的渲染插件列表  | [] |
 | $root         | String   | 资源目录根路径 | null |
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### getStyle(): Object
+### getStyle()
 
 获取图层样式
 
+返回：
+
+* Object
+
 -----------
 
-### getComputedStyle(): Object
+### getComputedStyle()
 
 获取处理后的图层样式，与style的区别主要是：
 * 如果style中定义了$root, computedStyle中的资源路径都是合并后的路径
 * style中的样式定义可能是被压缩后的，computedStyle中都是未压缩的
 
-### outlineAll(): this
+返回：
+
+* Object
+
+-----------
+
+### outlineAll()
 
 高亮图层上所有的数据。
 
@@ -215,12 +626,17 @@ const layer = new VectorTileLayer('vt0', {
 layer.addTo(groupGLLayer);
 layer.outlineAll();
 ```
+
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### outlineBatch(idx): this
+### outlineBatch(idx)
 
 高亮style中序号为idx的渲染插件渲染的数据。
 
@@ -242,12 +658,16 @@ layer.outlineBatch(0);
 
 * idx **Number** style的序号
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### outline(idx, featureIds): this
+### outline(idx, featureIds)
 
 序号为idx的渲染插件渲染的数据中，高亮指定的feature。
 
@@ -268,18 +688,22 @@ layer.outline(0, [0]);
 * idx **Number** style的序号
 * featureIds **Number[] | String[]** feature id 数组
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### cancelOutline(): this
+### cancelOutline()
 
 取消高亮
 
 -----------
 
-### updateSymbol(idx, symbol): this
+### updateSymbol(idx, symbol)
 
 更新序号为idx的渲染插件的symbol。
 
@@ -299,12 +723,16 @@ layer.updateSymbol(0, { polygonFill: '#0f0' });
 * idx **Number** 渲染插件序号
 * symbol **Object** 要更新的symbol属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### updateFeatureSymbol(idx, styleIdx, symbol): this
+### updateFeatureSymbol(idx, styleIdx, symbol)
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的symbol。
 
@@ -348,12 +776,16 @@ layer.updateFeatureSymbol(0, 0, { polygonFill: '#0f0' });
 * styleIdx **Number** 样式编号
 * symbol **Object** 要更新的sceneConfig属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### updateSceneConfig(idx, sceneConfig): this
+### updateSceneConfig(idx, sceneConfig)
 
 更新序号为idx的渲染插件的sceneConfig。
 
@@ -373,12 +805,16 @@ layer.updateSceneConfig(0, { collision: false });
 * idx **Number** 渲染插件序号
 * sceneConfig **Object** 要更新的sceneConfig属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### updateFeatureSceneConfig(idx, styleIdx, sceneConfig): this
+### updateFeatureSceneConfig(idx, styleIdx, sceneConfig)
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
 
@@ -422,12 +858,16 @@ layer.updateFeatureSceneConfig(0, 0, { antialias: true });
 * styleIdx **Number** 渲染插件编号
 * sceneConfig **Object** 要更新的sceneConfig属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### updateDataConfig(idx, dataConfig): this
+### updateDataConfig(idx, dataConfig)
 
 更新序号为idx的渲染插件的dataConfig。
 
@@ -447,12 +887,16 @@ layer.updateDataConfig(0, { altitudeProperty: 'height' });
 * idx **Number** 渲染插件序号
 * dataConfig **Object** 要更新的dataConfig属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### updateFeatureDataConfig(idx, styleIdx, dataConfig): this
+### updateFeatureDataConfig(idx, styleIdx, dataConfig)
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
 
@@ -496,12 +940,16 @@ layer.updateFeatureDataConfig(0, 0, { foo: 1 });
 * styleIdx **Number** 渲染插件编号
 * dataConfig **Object** 要更新的dataConfig属性
 
+返回：
+
+* this
+
 </p>
 </details>
 
 -----------
 
-### identify(coordinates, options): Object[]
+### identify(coordinates, options)
 
 在图层上查询给定坐标处的数据。
 
@@ -526,12 +974,16 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 |  ------         | :----:  | ----  |   :-----------:  |
 | tolerance       | Number  | 查询时的像素冗余值 | 3 |
 
+返回：
+
+* Object[]
+
 </p>
 </details>
 
 -----------
 
-### identifyAtPoint(containerPoint, options): Object[]
+### identifyAtPoint(containerPoint, options)
 
 在图层上查询给定屏幕坐标处的数据
 
@@ -555,12 +1007,16 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 |  ------         | :----:  | ----  |   :-----------:  |
 | tolerance       | Number  | 查询时的像素冗余值 | 3 |
 
+返回：
+
+* Object[]
+
 </p>
 </details>
 
 -----------
 
-### getDataSchema(zoom): Object[]
+### getDataSchema(zoom)
 
 获取给定级别上的图层定义和属性定义。
 
@@ -581,7 +1037,273 @@ const schema = layer.getDataSchema(8);
 
 * zoom **Number** 瓦片级别
 
+返回：
+
+* Object[]
+
 </p>
 </details>
 
 -----------
+
+## 继承的TileLayer方法
+
+具体可以参考[父类TileLayer的API文档](https://maptalks.org/maptalks.js/api/0.x/TileLayer.html)。
+
+### getTileSize()
+
+获取瓦片高宽
+
+返回：
+
+* Size
+
+-----------
+
+### getTiles()
+
+获取瓦片
+
+返回：
+
+* Object
+
+-----------
+
+### getTileUrl(x, y, z)
+
+获取瓦片url
+
+返回：
+
+* String
+
+-----------
+
+### clear()
+
+清空图层
+
+-----------
+
+### toJSON()
+
+获得图层的JSON对象，这个JSON对象可以通过 maptalks.Layer.fromJSDN(json) 方法还原为图层对象。
+
+返回：
+
+* Object
+
+-----------
+
+### getSpatialReference()
+
+获得图层的空间参考对象。
+
+返回：
+
+* SpatialReference
+
+-----------
+
+## 继承的Layer方法
+
+具体可以参考[父类Layer的API文档](https://maptalks.org/maptalks.js/api/0.x/Layer.html)。
+
+### getId()
+
+获得图层id
+
+返回：
+
+* Number | String
+
+-----------
+
+### setId(id)
+
+设置图层id
+
+返回：
+
+* this
+
+-----------
+
+### addTo(map)
+
+添加到地图上。
+
+返回：
+
+* this
+
+-----------
+
+### getMinZoom()
+
+获取最小瓦片级别。
+
+返回：
+
+* Number
+
+-----------
+
+### getMaxZoom()
+
+获取最大瓦片级别。
+
+返回：
+
+* Number
+
+-----------
+
+### getMap()
+
+获取图层添加到的map对象。
+
+返回：
+
+* Map
+
+-----------
+
+### getProjection()
+
+获取图层的projection。
+
+返回：
+
+* Projection
+
+-----------
+
+### show()
+
+隐藏图层。
+
+返回：
+
+* this
+
+-----------
+
+### hide()
+
+隐藏图层。
+
+返回：
+
+* this
+
+-----------
+
+### isVisible()
+
+判定图层是否显示。
+
+返回：
+
+* Boolean
+
+-----------
+
+### remove()
+
+删除图层。
+
+返回：
+
+* this
+
+-----------
+
+### on(events, handler, context)
+
+注册图层的监听事件
+
+返回：
+
+* this
+
+-----------
+
+### addEventListener(events, handler, context)
+
+同 on 方法
+
+返回：
+
+* this
+
+-----------
+
+### once(events, handler, context)
+
+注册图层的监听事件，响应后即删除
+
+返回：
+
+* this
+
+-----------
+
+### off(events, handler, context)
+
+移除图层注册的监听事件
+
+返回：
+
+* this
+
+-----------
+
+### removeEventListener(events, handler, context)
+
+同 off 方法
+
+返回：
+
+* this
+
+-----------
+
+### listens(events, handler, context)
+
+判断图层是否监听了events事件。
+
+返回：
+
+* Boolean
+
+-----------
+
+### fire(event, params)
+
+手动发射一个事件，params是时间参数。
+
+返回：
+
+* this
+
+-----------
+
+### setOptions(options)
+
+设置图层配置。
+
+返回：
+
+* this
+
+-----------
+
+### config(key, value)
+
+更新某个图层配置。
+
+返回：
+
+* this
