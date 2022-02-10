@@ -111,7 +111,10 @@ details > summary{
   cursor: pointer;
 }
 
-details > summary:hover{
+html[data-theme='dark'] details > summary:hover{
   background-color: #3f3f3f;
+}
 
+html[data-theme='light'] details > summary:hover{
+  background-color: #efefef;
 }
