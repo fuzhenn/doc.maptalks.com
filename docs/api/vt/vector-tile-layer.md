@@ -11,17 +11,11 @@
 
 :::
 
-## 目录
-
-* [静态方法](#静态方法)
-* [成员方法](#成员方法)
-* [继承的TileLayer方法#](#继承的TileLayer方法#)
-* [继承的Layer方法](#继承的Layer方法)
-* [事件](#事件)
-
 ## 构造函数
 
 ```javascript
+import { VectorTileLayer } from '@maptalks/vt';
+
 new VectorTileLayer('vt0', {
   urlTemplate: 'https://tiles.maptalks.com/test/{z}/{x}/{y}.mvt'
 });
@@ -69,15 +63,14 @@ new VectorTileLayer('vt0', {
 
 ## 静态方法
 
-### compressStyleJSON(style)
+<details><summary>compressStyleJSON(style)</summary>
+<p>
+<br/>
 
 通过合并相同定义的渲染插件，把style JSON压缩为尺寸更小的JSON对象。
 
-<details><summary>详细信息</summary>
-<p>
-
 ```js
-VectorTileLayer.compressStyleJSON(style);
+const compressedStyle = VectorTileLayer.compressStyleJSON(style);
 ````
 
 参数：
@@ -91,15 +84,11 @@ VectorTileLayer.compressStyleJSON(style);
 </p>
 </details>
 
------------
-
-
-### registerPlugin(Plugin)
+<details><summary>registerPlugin(Plugin)</summary>
+<p>
+<br/>
 
 注册新的渲染插件。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 VectorTileLayer.registerPlugin(PluginClazz);
@@ -112,14 +101,11 @@ VectorTileLayer.registerPlugin(PluginClazz);
 </p>
 </details>
 
------------
-
-### getPlugins()
+<details><summary>getPlugins()</summary>
+<p>
+<br/>
 
 获取所有注册的渲染插件。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const pluginClasses = VectorTileLayer.getPlugins();
@@ -135,12 +121,11 @@ const pluginClasses = VectorTileLayer.getPlugins();
 ###
 
 ## 成员方法
-### setStyle(layerStyle)
+<details><summary>setStyle(layerStyle)</summary>
+<p>
+<br/>
 
 设置图层的样式，样式说明请参考该链接。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -171,7 +156,7 @@ layer.setStyle(style);
 * style **Object** 图层样式对象，可选的属性如下:
 
 | 属性名        |  类型           |  描述                 | 默认值 |
-|  ----         | :----:  | ----  |   :-----------:  |
+|  ------         | :----:  | ----  |   :-----------:  |
 | styles        | Object[] | 渲染插件数组              | [] |
 | featureStyles | Object[] | 单个Feature的渲染插件列表  | [] |
 | $root         | String   | 资源目录根路径 | null |
@@ -183,9 +168,9 @@ layer.setStyle(style);
 </p>
 </details>
 
------------
-
-### getStyle()
+<details><summary>getStyle()</summary>
+<p>
+<br/>
 
 获取图层样式
 
@@ -193,9 +178,12 @@ layer.setStyle(style);
 
 * Object
 
------------
+</p>
+</details>
 
-### getComputedStyle()
+<details><summary>getComputedStyle()</summary>
+<p>
+<br/>
 
 获取处理后的图层样式，与style的区别主要是：
 * 如果style中定义了$root, computedStyle中的资源路径都是合并后的路径
@@ -205,18 +193,19 @@ layer.setStyle(style);
 
 * Object
 
------------
+</p>
+</details>
 
-### outlineAll()
+<details><summary>outlineAll()</summary>
+<p>
+<br/>
 
 高亮图层上所有的数据。
 
 因为高亮是采用后处理实现的，图层需要加入[GroupGLLayer](../gl/group-gl-layer)，且[outline后处理](../gl/group-gl-layer#outline)是开启的。
 
-<details><summary>详细信息</summary>
-<p>
-
 ```js
+
 const layer = new VectorTileLayer('vt0', {
   urlTemplate: 'https://tiles.maptalks.com/test/{z}/{x}/{y}.mvt',
   style
@@ -232,16 +221,14 @@ layer.outlineAll();
 </p>
 </details>
 
------------
 
-### outlineBatch(idx)
+<details><summary>outlineBatch(idx)</summary>
+<p>
+<br/>
 
 高亮style中序号为idx的渲染插件渲染的数据。
 
 同outlineAll相同，需要加入[GroupGLLayer](../gl/group-gl-layer)并开启outline后处理。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -263,14 +250,11 @@ layer.outlineBatch(0);
 </p>
 </details>
 
------------
-
-### outline(idx, featureIds)
+<details><summary>outline(idx, featureIds)</summary>
+<p>
+<br/>
 
 序号为idx的渲染插件渲染的数据中，高亮指定的feature。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -293,20 +277,24 @@ layer.outline(0, [0]);
 </p>
 </details>
 
------------
-
-### cancelOutline()
+<details><summary>cancelOutline()</summary>
+<p>
+<br/>
 
 取消高亮
 
------------
+返回：
 
-### updateSymbol(idx, symbol)
+* this
+
+</p>
+</details>
+
+<details><summary>updateSymbol(idx, symbol)</summary>
+<p>
+<br/>
 
 更新序号为idx的渲染插件的symbol。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -328,14 +316,11 @@ layer.updateSymbol(0, { polygonFill: '#0f0' });
 </p>
 </details>
 
------------
-
-### updateFeatureSymbol(idx, styleIdx, symbol)
+<details><summary>updateFeatureSymbol(idx, styleIdx, symbol)</summary>
+<p>
+<br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的symbol。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const style = {
@@ -381,14 +366,11 @@ layer.updateFeatureSymbol(0, 0, { polygonFill: '#0f0' });
 </p>
 </details>
 
------------
-
-### updateSceneConfig(idx, sceneConfig)
+<details><summary>updateSceneConfig(idx, sceneConfig)</summary>
+<p>
+<br/>
 
 更新序号为idx的渲染插件的sceneConfig。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -410,14 +392,11 @@ layer.updateSceneConfig(0, { collision: false });
 </p>
 </details>
 
------------
-
-### updateFeatureSceneConfig(idx, styleIdx, sceneConfig)
+<details><summary>updateFeatureSceneConfig(idx, styleIdx, sceneConfig)</summary>
+<p>
+<br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const style = {
@@ -463,14 +442,11 @@ layer.updateFeatureSceneConfig(0, 0, { antialias: true });
 </p>
 </details>
 
------------
-
-### updateDataConfig(idx, dataConfig)
+<details><summary>updateDataConfig(idx, dataConfig)</summary>
+<p>
+<br/>
 
 更新序号为idx的渲染插件的dataConfig。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -492,14 +468,11 @@ layer.updateDataConfig(0, { altitudeProperty: 'height' });
 </p>
 </details>
 
------------
-
-### updateFeatureDataConfig(idx, styleIdx, dataConfig)
+<details><summary>updateFeatureDataConfig(idx, styleIdx, dataConfig)</summary>
+<p>
+<br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const style = {
@@ -545,16 +518,12 @@ layer.updateFeatureDataConfig(0, 0, { foo: 1 });
 </p>
 </details>
 
------------
-
-### identify(coordinates, options)
+<details><summary>identify(coordinates, options)</summary>
+<p>
+<br/>
 
 在图层上查询给定坐标处的数据。
-
-需要注意的是，因为VectorTileLayer的特性，只有绘制出来的数据是才能被查询到。
-
-<details><summary>详细信息</summary>
-<p>
+需要注意的是，只有绘制出来的数据才能被查询到。
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -579,15 +548,12 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 </p>
 </details>
 
------------
-
-### identifyAtPoint(containerPoint, options)
+<details><summary>identifyAtPoint(containerPoint, options)</summary>
+<p>
+<br/>
 
 在图层上查询给定屏幕坐标处的数据
 
-<details><summary>详细信息</summary>
-<p>
-
 ```js
 const layer = new VectorTileLayer('vt0', {
   urlTemplate: 'https://tiles.maptalks.com/test/{z}/{x}/{y}.mvt',
@@ -612,16 +578,13 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 </p>
 </details>
 
------------
-
-### getDataSchema(zoom)
+<details><summary>getDataSchema(zoom)</summary>
+<p>
+<br/>
 
 获取给定级别上的图层定义和属性定义。
 
 需要注意的是，只有某个级别的瓦片的曾经载入过，才能正常获取，未载入过的瓦片级别的data schema是无法获取的。
-
-<details><summary>详细信息</summary>
-<p>
 
 ```js
 const layer = new VectorTileLayer('vt0', {
@@ -642,13 +605,13 @@ const schema = layer.getDataSchema(8);
 </p>
 </details>
 
------------
-
-## 继承的TileLayer方法
+## 继承自TileLayer的方法
 
 具体可以参考[父类TileLayer的API文档](https://maptalks.org/maptalks.js/api/0.x/TileLayer.html)。
 
-### getTileSize()
+<details><summary>getTileSize()</summary>
+<p>
+<br/>
 
 获取瓦片高宽
 
@@ -656,9 +619,12 @@ const schema = layer.getDataSchema(8);
 
 * Size
 
------------
+</p>
+</details>
 
-### getTiles()
+<details><summary>getTiles()</summary>
+<p>
+<br/>
 
 获取瓦片
 
@@ -666,9 +632,12 @@ const schema = layer.getDataSchema(8);
 
 * Object
 
------------
+</p>
+</details>
 
-### getTileUrl(x, y, z)
+<details><summary>getTileUrl(x, y, z)</summary>
+<p>
+<br/>
 
 获取瓦片url
 
@@ -676,15 +645,21 @@ const schema = layer.getDataSchema(8);
 
 * String
 
------------
+</p>
+</details>
 
-### clear()
+<details><summary>clear()</summary>
+<p>
+<br/>
 
 清空图层
 
------------
+</p>
+</details>
 
-### toJSON()
+<details><summary>toJSON()</summary>
+<p>
+<br/>
 
 获得图层的JSON对象，这个JSON对象可以通过 maptalks.Layer.fromJSDN(json) 方法还原为图层对象。
 
@@ -692,9 +667,12 @@ const schema = layer.getDataSchema(8);
 
 * Object
 
------------
+</p>
+</details>
 
-### getSpatialReference()
+<details><summary>getSpatialReference()</summary>
+<p>
+<br/>
 
 获得图层的空间参考对象。
 
@@ -702,13 +680,16 @@ const schema = layer.getDataSchema(8);
 
 * SpatialReference
 
------------
+</p>
+</details>
 
-## 继承的Layer方法
+## 继承自Layer的方法
 
 具体可以参考[父类Layer的API文档](https://maptalks.org/maptalks.js/api/0.x/Layer.html)。
 
-### getId()
+<details><summary>getId()</summary>
+<p>
+<br/>
 
 获得图层id
 
@@ -716,9 +697,12 @@ const schema = layer.getDataSchema(8);
 
 * Number | String
 
------------
+</p>
+</details>
 
-### setId(id)
+<details><summary>setId(id)</summary>
+<p>
+<br/>
 
 设置图层id
 
@@ -726,9 +710,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### addTo(map)
+<details><summary>addTo(map)</summary>
+<p>
+<br/>
 
 添加到地图上。
 
@@ -736,9 +723,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### getMinZoom()
+<details><summary>getMinZoom()</summary>
+<p>
+<br/>
 
 获取最小瓦片级别。
 
@@ -746,9 +736,12 @@ const schema = layer.getDataSchema(8);
 
 * Number
 
------------
+</p>
+</details>
 
-### getMaxZoom()
+<details><summary>getMaxZoom()</summary>
+<p>
+<br/>
 
 获取最大瓦片级别。
 
@@ -756,9 +749,12 @@ const schema = layer.getDataSchema(8);
 
 * Number
 
------------
+</p>
+</details>
 
-### getMap()
+<details><summary>getMap()</summary>
+<p>
+<br/>
 
 获取图层添加到的map对象。
 
@@ -766,9 +762,12 @@ const schema = layer.getDataSchema(8);
 
 * Map
 
------------
+</p>
+</details>
 
-### getProjection()
+<details><summary>getProjection()</summary>
+<p>
+<br/>
 
 获取图层的projection。
 
@@ -776,19 +775,12 @@ const schema = layer.getDataSchema(8);
 
 * Projection
 
------------
+</p>
+</details>
 
-### show()
-
-隐藏图层。
-
-返回：
-
-* this
-
------------
-
-### hide()
+<details><summary>show()</summary>
+<p>
+<br/>
 
 隐藏图层。
 
@@ -796,9 +788,25 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### isVisible()
+<details><summary>hide()</summary>
+<p>
+<br/>
+
+隐藏图层。
+
+返回：
+
+* this
+
+</p>
+</details>
+
+<details><summary>isVisible()</summary>
+<p>
+<br/>
 
 判定图层是否显示。
 
@@ -806,9 +814,12 @@ const schema = layer.getDataSchema(8);
 
 * Boolean
 
------------
+</p>
+</details>
 
-### remove()
+<details><summary>remove()</summary>
+<p>
+<br/>
 
 删除图层。
 
@@ -816,9 +827,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### on(events, handler, context)
+<details><summary>on(events, handler, context)</summary>
+<p>
+<br/>
 
 注册图层的监听事件
 
@@ -826,9 +840,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### addEventListener(events, handler, context)
+<details><summary>addEventListener(events, handler, context)</summary>
+<p>
+<br/>
 
 同 on 方法
 
@@ -836,9 +853,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### once(events, handler, context)
+<details><summary>once(events, handler, context)</summary>
+<p>
+<br/>
 
 注册图层的监听事件，响应后即删除
 
@@ -846,9 +866,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### off(events, handler, context)
+<details><summary>off(events, handler, context)</summary>
+<p>
+<br/>
 
 移除图层注册的监听事件
 
@@ -856,9 +879,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### removeEventListener(events, handler, context)
+<details><summary>removeEventListener(events, handler, context)</summary>
+<p>
+<br/>
 
 同 off 方法
 
@@ -866,9 +892,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### listens(events, handler, context)
+<details><summary>listens(events, handler, context)</summary>
+<p>
+<br/>
 
 判断图层是否监听了events事件。
 
@@ -876,9 +905,12 @@ const schema = layer.getDataSchema(8);
 
 * Boolean
 
------------
+</p>
+</details>
 
-### fire(event, params)
+<details><summary>fire(event, params)</summary>
+<p>
+<br/>
 
 手动发射一个事件，params是时间参数。
 
@@ -886,9 +918,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### setOptions(options)
+<details><summary>setOptions(options)</summary>
+<p>
+<br/>
 
 设置图层配置。
 
@@ -896,9 +931,12 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
-### config(key, value)
+<details><summary>config(key, value)</summary>
+<p>
+<br/>
 
 更新某个图层配置。
 
@@ -906,16 +944,24 @@ const schema = layer.getDataSchema(8);
 
 * this
 
------------
+</p>
+</details>
 
 ## 事件
 
-### iblupdated
+图层事件监听示例代码：
+```js
+// 监听tileload事件
+layer.on('tileload', e => {
+  // e为事件参数
+});
+````
+
+<details><summary>iblupdated</summary>
+<p>
+<br/>
 
 环境光更新事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -927,14 +973,11 @@ const schema = layer.getDataSchema(8);
 </p>
 </details>
 
------------
-
-### canvasisdirty
+<details><summary>canvasisdirty</summary>
+<p>
+<br/>
 
 画布产生绘制的事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -946,14 +989,11 @@ const schema = layer.getDataSchema(8);
 </p>
 </details>
 
------------
-
-### workerready
+<details><summary>workerready</summary>
+<p>
+<br/>
 
 worker准备就绪事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -965,14 +1005,11 @@ worker准备就绪事件。
 </p>
 </details>
 
------------
-
-### datareceived
+<details><summary>datareceived</summary>
+<p>
+<br/>
 
 获取到瓦片数据事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -984,14 +1021,11 @@ worker准备就绪事件。
 </p>
 </details>
 
------------
-
-### pluginsinited
+<details><summary>pluginsinited</summary>
+<p>
+<br/>
 
 渲染插件初始化结束事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1003,14 +1037,11 @@ worker准备就绪事件。
 </p>
 </details>
 
------------
-
-### setstyle
+<details><summary>setstyle</summary>
+<p>
+<br/>
 
 设置样式事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1024,14 +1055,11 @@ worker准备就绪事件。
 </p>
 </details>
 
------------
-
-### updatesceneconfig
+<details><summary>updatesceneconfig</summary>
+<p>
+<br/>
 
 updatesceneconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1045,14 +1073,11 @@ updatesceneconfig事件。
 </p>
 </details>
 
------------
-
-### updatefeaturesceneconfig
+<details><summary>updatefeaturesceneconfig</summary>
+<p>
+<br/>
 
 updatefeaturesceneconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1067,14 +1092,11 @@ updatefeaturesceneconfig事件。
 </p>
 </details>
 
------------
-
-### updatedataconfig
+<details><summary>updatedataconfig</summary>
+<p>
+<br/>
 
 updatedataconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1088,14 +1110,11 @@ updatedataconfig事件。
 </p>
 </details>
 
------------
-
-### updatefeaturesdataconfig
+<details><summary>updatefeaturesdataconfig</summary>
+<p>
+<br/>
 
 updatefeaturesdataconfig事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1110,14 +1129,11 @@ updatefeaturesdataconfig事件。
 </p>
 </details>
 
------------
-
-### updatesymbol
+<details><summary>updatesymbol</summary>
+<p>
+<br/>
 
 updatesymbol事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1131,14 +1147,11 @@ updatesymbol事件。
 </p>
 </details>
 
------------
-
-### updatefeaturesymbol
+<details><summary>updatefeaturesymbol</summary>
+<p>
+<br/>
 
 updatefeaturesymbol事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1153,14 +1166,11 @@ updatefeaturesymbol事件。
 </p>
 </details>
 
------------
-
-### tileload
+<details><summary>tileload</summary>
+<p>
+<br/>
 
 瓦片载入事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1174,14 +1184,11 @@ updatefeaturesymbol事件。
 </p>
 </details>
 
------------
-
-### tileerror
+<details><summary>tileerror</summary>
+<p>
+<br/>
 
 瓦片载入错误事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1196,14 +1203,11 @@ updatefeaturesymbol事件。
 </p>
 </details>
 
------------
-
-### clear
+<details><summary>clear</summary>
+<p>
+<br/>
 
 图层被清除事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1215,14 +1219,11 @@ updatefeaturesymbol事件。
 </p>
 </details>
 
------------
-
-### idchange
+<details><summary>idchange</summary>
+<p>
+<br/>
 
 图层id变化事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1236,14 +1237,11 @@ updatefeaturesymbol事件。
 </p>
 </details>
 
------------
-
-### renderercreate
+<details><summary>renderercreate</summary>
+<p>
+<br/>
 
 renderer创建事件
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1256,14 +1254,11 @@ renderer创建事件
 </p>
 </details>
 
------------
-
-### canvascreate
+<details><summary>canvascreate</summary>
+<p>
+<br/>
 
 canvas创建事件
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1276,14 +1271,11 @@ canvas创建事件
 </p>
 </details>
 
------------
-
-### renderstart
+<details><summary>renderstart</summary>
+<p>
+<br/>
 
 开始渲染事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
@@ -1295,14 +1287,11 @@ canvas创建事件
 </p>
 </details>
 
------------
-
-### renderend
+<details><summary>renderend</summary>
+<p>
+<br/>
 
 结束渲染事件。
-
-<details><summary>详细信息</summary>
-<p>
 
 参数属性：
 
