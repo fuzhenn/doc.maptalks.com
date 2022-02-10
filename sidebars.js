@@ -117,75 +117,6 @@ module.exports = {
         "ide/guide/crash/report"
       ],
     },
-    // {
-    //   type: "doc",
-    //   id: "ide/basic/full-demo",
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/basic/size",
-    // },
-    // {
-    //   type: "category",
-    //   label: "概览",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/basic/soft",
-    //     "ide/basic/layer",
-    //     "ide/basic/coord",
-    //     "ide/basic/mode",
-    //     "ide/basic/data-properties",
-    //     "ide/basic/environment",
-    //     "ide/basic/post-processing",
-    //     "ide/basic/gltf",
-    //     "ide/basic/pbr",
-    //     "ide/basic/material",
-    //     "ide/basic/animation",
-    //     "ide/basic/mime",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "初级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/basic/roof-building",
-    //     "ide/basic/shadow-water",
-    //     "ide/basic/bloom-material",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "中级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/intermediate/bloom-road",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "高级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/advanced/advanced-bloom-road",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "数据",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/data/geojson",
-    //   ],
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/tip",
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/faq",
-    // },
   ],
   designer: [
     {
@@ -231,4 +162,48 @@ module.exports = {
       id: "bds/api"
     },
   ],
+  api: [
+    {
+      type: "doc",
+      id: "api/intro"
+    },
+    {
+      type: "category",
+      label: "矢量瓦片图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/vt/vector-tile-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/geojson-vector-tile-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/point-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/linestring-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/polygon-layer"
+        },
+      ]
+    },
+    {
+      type: "category",
+      label: "GLTF图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/gltf/gltf-layer"
+        }
+      ]
+    }
+  ]
 };
