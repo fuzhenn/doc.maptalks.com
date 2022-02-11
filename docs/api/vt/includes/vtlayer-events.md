@@ -1,5 +1,5 @@
 <details><summary>iblupdated</summary>
-<p>
+<div>
 <br/>
 
 环境光更新事件。
@@ -11,11 +11,12 @@
 |type     | String          |   "iblupdated"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>canvasisdirty</summary>
-<p>
+<div>
 <br/>
 
 画布产生绘制的事件。
@@ -27,11 +28,12 @@
 |type     | String          |   "canvasisdirty"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>workerready</summary>
-<p>
+<div>
 <br/>
 
 worker准备就绪事件。
@@ -43,11 +45,12 @@ worker准备就绪事件。
 |type     | String          |   "workerready"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>datareceived</summary>
-<p>
+<div>
 <br/>
 
 获取到瓦片数据事件。
@@ -59,11 +62,12 @@ worker准备就绪事件。
 |type     | String          |   "datareceived"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>pluginsinited</summary>
-<p>
+<div>
 <br/>
 
 渲染插件初始化结束事件。
@@ -75,11 +79,12 @@ worker准备就绪事件。
 |type     | String          |   "pluginsinited"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>setstyle</summary>
-<p>
+<div>
 <br/>
 
 设置样式事件。
@@ -93,11 +98,12 @@ worker准备就绪事件。
 |styles   | Object[] |   样式对象     |
 |computedStyles   | Object[] |   Feature样式对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updatesceneconfig</summary>
-<p>
+<div>
 <br/>
 
 updatesceneconfig事件。
@@ -111,11 +117,12 @@ updatesceneconfig事件。
 |index    | Number          |   样式序号              |
 |sceneConfig | Object          |   scene config对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updatefeaturesceneconfig</summary>
-<p>
+<div>
 <br/>
 
 updatefeaturesceneconfig事件。
@@ -130,11 +137,12 @@ updatefeaturesceneconfig事件。
 |styleIdx | Number          |   Feature渲染插件序号    |
 |sceneConfig | Object          |   scene config对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updatedataconfig</summary>
-<p>
+<div>
 <br/>
 
 updatedataconfig事件。
@@ -148,11 +156,12 @@ updatedataconfig事件。
 |index    | Number          |   样式序号              |
 |dataConfig | Object        |   data config对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updatefeaturesdataconfig</summary>
-<p>
+<div>
 <br/>
 
 updatefeaturesdataconfig事件。
@@ -167,11 +176,12 @@ updatefeaturesdataconfig事件。
 |styleIdx | Number          |   Feature渲染插件序号    |
 |dataConfig | Object        |   data config对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updatesymbol</summary>
-<p>
+<div>
 <br/>
 
 updatesymbol事件。
@@ -185,5 +195,6 @@ updatesymbol事件。
 |index    | Number          |   样式序号        |
 |symbol   | Object          |   symbol对象      |
 
-</p>
+</div>
 </details>
+

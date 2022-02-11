@@ -1,5 +1,5 @@
 <details><summary>clear</summary>
-<p>
+<div>
 <br/>
 
 图层被清除事件。
@@ -11,11 +11,12 @@
 |type     | String          |   "clear"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>idchange</summary>
-<p>
+<div>
 <br/>
 
 图层id变化事件。
@@ -29,11 +30,12 @@
 |old      | String          |   旧的id     |
 |new      | String          |   新的id     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>renderercreate</summary>
-<p>
+<div>
 <br/>
 
 renderer创建事件
@@ -46,11 +48,12 @@ renderer创建事件
 |target     | VectorTileLayer |   this     |
 |renderer   | VectorTileLayerRenderer |      |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>canvascreate</summary>
-<p>
+<div>
 <br/>
 
 canvas创建事件
@@ -63,11 +66,12 @@ canvas创建事件
 |target   | VectorTileLayer |   this     |
 |gl       | WebGLRenderingContext2D |      |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>renderstart</summary>
-<p>
+<div>
 <br/>
 
 开始渲染事件。
@@ -79,11 +83,12 @@ canvas创建事件
 |type     | String          |   "renderstart"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>renderend</summary>
-<p>
+<div>
 <br/>
 
 结束渲染事件。
@@ -95,5 +100,6 @@ canvas创建事件
 |type     | String          |   "renderend"  |
 |target   | VectorTileLayer |   this     |
 
-</p>
+</div>
 </details>
+

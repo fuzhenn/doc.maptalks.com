@@ -30,7 +30,7 @@ new GeoJSONVectorTileLayer('geojson0', {
 });
 ```
 <details><summary>详细信息</summary>
-<p>
+<div>
 
 参数：
 
@@ -43,13 +43,14 @@ new GeoJSONVectorTileLayer('geojson0', {
 |features         | String          | 瓦片是否返回feature数据，默认只返回id | "id" |
 {@include: includes/vtlayer-options.md}
 
-</p>
+</div>
 </details>
+
 
 ## 成员方法
 
 <details><summary>getData()</summary>
-<p>
+<div>
 <br/>
 
 获取GeoJSON数据。
@@ -65,11 +66,12 @@ const data = layer.getData();
 
 * String | Object
 
-</p>
+</div>
 </details>
 
+
 <details><summary>setData(data)</summary>
-<p>
+<div>
 <br/>
 
 更新图层数据。
@@ -88,11 +90,12 @@ layer.setData('path/to/another.geojson');
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getExtent()</summary>
-<p>
+<div>
 <br/>
 
 获取GeoJSON数据的Extent。
@@ -108,11 +111,12 @@ const extent = layer.getExtent();
 
 * maptalks.Extent
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getFeature(id)</summary>
-<p>
+<div>
 <br/>
 
 获取给定ID的Feature。
@@ -128,8 +132,9 @@ const feature = layer.getFeature(id);
 
 * Object
 
-</p>
+</div>
 </details>
+
 
 ## 继承自VectorTileLayer的方法
 {@include: includes/vtlayer-methods.md}
@@ -141,7 +146,7 @@ const feature = layer.getFeature(id);
 ## 静态方法
 
 <details><summary>compressStyleJSON(style)</summary>
-<p>
+<div>
 <br/>
 
 通过合并相同定义的渲染插件，把style JSON压缩为尺寸更小的JSON对象。
@@ -158,11 +163,12 @@ const compressedStyle = GeoJSONVectorTileLayer.compressStyleJSON(style);
 
 * **Object**
 
-</p>
+</div>
 </details>
 
+
 <details><summary>registerPlugin(Plugin)</summary>
-<p>
+<div>
 <br/>
 
 注册新的渲染插件。
@@ -175,11 +181,12 @@ GeoJSONVectorTileLayer.registerPlugin(PluginClazz);
 
 * PluginClazz **PainterPlugin** 要注册的渲染插件类
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getPlugins()</summary>
-<p>
+<div>
 <br/>
 
 获取所有注册的渲染插件。
@@ -192,11 +199,12 @@ const pluginClasses = GeoJSONVectorTileLayer.getPlugins();
 
 * PainterPlugin[]
 
-</p>
+</div>
 </details>
 
+
 <details><summary>fromJSON(json)</summary>
-<p>
+<div>
 <br/>
 
 从图层的json对象创建一个GeoJSONVectorTileLayer对象。
@@ -211,8 +219,9 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 
 * GeoJSONVectorTileLayer
 
-</p>
+</div>
 </details>
+
 
 ## 事件
 
@@ -221,7 +230,7 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 ### 图层事件
 
 <details><summary>dataload</summary>
-<p>
+<div>
 <br/>
 
 数据成功加载事件。
@@ -234,11 +243,12 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 |target   | GeoJSONVectorTileLayer |   this     |
 |extent   | Number[] |   数据Extent范围     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>dataerror</summary>
-<p>
+<div>
 <br/>
 
 数据加载错误事件。
@@ -251,8 +261,9 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 |target   | GeoJSONVectorTileLayer |   this     |
 |error    | String |   错误信息     |
 
-</p>
+</div>
 </details>
+
 
 ### 继承自VectorTilLayer的事件
 

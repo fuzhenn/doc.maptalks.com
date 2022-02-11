@@ -1,5 +1,5 @@
 <details><summary>setStyle(layerStyle)</summary>
-<p>
+<div>
 <br/>
 
 设置图层的样式，样式说明请参考该链接。
@@ -39,11 +39,12 @@ layer.setStyle(style);
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getStyle()</summary>
-<p>
+<div>
 <br/> 
 
 获取图层样式
@@ -52,11 +53,12 @@ layer.setStyle(style);
 
 * Object
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getComputedStyle()</summary>
-<p>
+<div>
 <br/>
 
 获取处理后的图层样式，与style的区别主要是：
@@ -67,11 +69,12 @@ layer.setStyle(style);
 
 * Object
 
-</p>
+</div>
 </details>
 
+
 <details><summary>outlineAll()</summary>
-<p>
+<div>
 <br/>
 
 高亮图层上所有的数据。
@@ -87,12 +90,13 @@ layer.outlineAll();
 
 * this
 
-</p>
+</div>
 </details>
 
 
+
 <details><summary>outlineBatch(idx)</summary>
-<p>
+<div>
 <br/>
 
 高亮style中序号为idx的渲染插件渲染的数据。
@@ -112,11 +116,12 @@ layer.outlineBatch(0);
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>outline(idx, featureIds)</summary>
-<p>
+<div>
 <br/>
 
 序号为idx的渲染插件渲染的数据中，高亮指定的feature。
@@ -135,11 +140,12 @@ layer.outline(0, [0]);
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>cancelOutline()</summary>
-<p>
+<div>
 <br/>
 
 取消高亮
@@ -148,11 +154,12 @@ layer.outline(0, [0]);
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateSymbol(idx, symbol)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的渲染插件的symbol。
@@ -170,11 +177,12 @@ layer.updateSymbol(0, { polygonFill: '#0f0' });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateFeatureSymbol(idx, styleIdx, symbol)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的symbol。
@@ -216,11 +224,12 @@ layer.updateFeatureSymbol(0, 0, { polygonFill: '#0f0' });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateSceneConfig(idx, sceneConfig)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的渲染插件的sceneConfig。
@@ -238,11 +247,12 @@ layer.updateSceneConfig(0, { collision: false });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateFeatureSceneConfig(idx, styleIdx, sceneConfig)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
@@ -284,11 +294,12 @@ layer.updateFeatureSceneConfig(0, 0, { antialias: true });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateDataConfig(idx, dataConfig)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的渲染插件的dataConfig。
@@ -306,11 +317,12 @@ layer.updateDataConfig(0, { altitudeProperty: 'height' });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>updateFeatureDataConfig(idx, styleIdx, dataConfig)</summary>
-<p>
+<div>
 <br/>
 
 更新序号为idx的Feature样式里，序号为styleIdx的渲染插件的sceneConfig。
@@ -352,11 +364,12 @@ layer.updateFeatureDataConfig(0, 0, { foo: 1 });
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>identify(coordinates, options)</summary>
-<p>
+<div>
 <br/>
 
 在图层上查询给定坐标处的数据。
@@ -378,11 +391,12 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 
 * Object[]
 
-</p>
+</div>
 </details>
 
+
 <details><summary>identifyAtPoint(containerPoint, options)</summary>
-<p>
+<div>
 <br/>
 
 在图层上查询给定屏幕坐标处的数据
@@ -404,11 +418,12 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 
 * Object[]
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getDataSchema(zoom)</summary>
-<p>
+<div>
 <br/>
 
 获取给定级别上的图层定义和属性定义。
@@ -427,5 +442,6 @@ const schema = layer.getDataSchema(8);
 
 * Object[]
 
-</p>
+</div>
 </details>
+

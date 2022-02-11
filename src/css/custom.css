@@ -99,7 +99,7 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
 
 
 /** detail summary **/
-details > p{
+details > div{
   border: 1px solid;
   border-color: #6f6f6f;
   padding: 0px 10px 0px 10px;

@@ -3,7 +3,7 @@
 具体可以参考[父类TileLayer的API文档](https://maptalks.org/maptalks.js/api/0.x/TileLayer.html)。
 
 <details><summary>getTileSize()</summary>
-<p>
+<div>
 <br/>
 
 获取瓦片高宽
@@ -12,11 +12,12 @@
 
 * Size
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getTiles()</summary>
-<p>
+<div>
 <br/>
 
 获取瓦片
@@ -25,11 +26,12 @@
 
 * Object
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getTileUrl(x, y, z)</summary>
-<p>
+<div>
 <br/>
 
 获取瓦片url
@@ -38,20 +40,22 @@
 
 * String
 
-</p>
+</div>
 </details>
 
+
 <details><summary>clear()</summary>
-<p>
+<div>
 <br/>
 
 清空图层
 
-</p>
+</div>
 </details>
 
+
 <details><summary>toJSON()</summary>
-<p>
+<div>
 <br/>
 
 获得图层的JSON对象，这个JSON对象可以通过 maptalks.Layer.fromJSDN(json) 方法还原为图层对象。
@@ -60,11 +64,12 @@
 
 * Object
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getSpatialReference()</summary>
-<p>
+<div>
 <br/>
 
 获得图层的空间参考对象。
@@ -73,5 +78,6 @@
 
 * SpatialReference
 
-</p>
+</div>
 </details>
+

@@ -21,7 +21,7 @@ new VectorTileLayer('vt0', {
 });
 ```
 <details><summary>详细信息</summary>
-<p>
+<div>
 
 参数：
 
@@ -33,7 +33,7 @@ new VectorTileLayer('vt0', {
 |urlTemplate\*    | String          | url模板               |  null  |
 {@include: includes/vtlayer-options.md}
 
-</p>
+</div>
 </details>
 
 
@@ -48,7 +48,7 @@ new VectorTileLayer('vt0', {
 ## 静态方法
 
 <details><summary>compressStyleJSON(style)</summary>
-<p>
+<div>
 <br/>
 
 通过合并相同定义的渲染插件，把style JSON压缩为尺寸更小的JSON对象。
@@ -65,11 +65,11 @@ const compressedStyle = VectorTileLayer.compressStyleJSON(style);
 
 * **Object**
 
-</p>
+</div>
 </details>
 
 <details><summary>registerPlugin(Plugin)</summary>
-<p>
+<div>
 <br/>
 
 注册新的渲染插件。
@@ -82,11 +82,11 @@ VectorTileLayer.registerPlugin(PluginClazz);
 
 * PluginClazz **PainterPlugin** 要注册的渲染插件类
 
-</p>
+</div>
 </details>
 
 <details><summary>getPlugins()</summary>
-<p>
+<div>
 <br/>
 
 获取所有注册的渲染插件。
@@ -99,11 +99,11 @@ const pluginClasses = VectorTileLayer.getPlugins();
 
 * PainterPlugin[]
 
-</p>
+</div>
 </details>
 
 <details><summary>fromJSON(json)</summary>
-<p>
+<div>
 <br/>
 
 从图层的json对象创建一个VectorTileLayer对象。
@@ -118,7 +118,7 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 
 * VectorTileLayer
 
-</p>
+</div>
 </details>
 
 ## 事件

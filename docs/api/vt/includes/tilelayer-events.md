@@ -1,5 +1,5 @@
 <details><summary>updatefeaturesymbol</summary>
-<p>
+<div>
 <br/>
 
 updatefeaturesymbol事件。
@@ -14,11 +14,12 @@ updatefeaturesymbol事件。
 |styleIdx | Number          |   Feature渲染插件序号    |
 |symbol   | Object          |     symbol对象     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>tileload</summary>
-<p>
+<div>
 <br/>
 
 瓦片载入事件。
@@ -32,11 +33,12 @@ updatefeaturesymbol事件。
 |tile     | Object          |   瓦片对象          |
 |tileImage| Object          |   瓦片数据     |
 
-</p>
+</div>
 </details>
 
+
 <details><summary>tileerror</summary>
-<p>
+<div>
 <br/>
 
 瓦片载入错误事件。
@@ -51,5 +53,6 @@ updatefeaturesymbol事件。
 |tile     | Object          |   瓦片对象          |
 |symbol   | Object          |     symbol对象     |
 
-</p>
+</div>
 </details>
+

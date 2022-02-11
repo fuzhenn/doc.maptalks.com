@@ -3,7 +3,7 @@
 具体可以参考[父类Layer的API文档](https://maptalks.org/maptalks.js/api/0.x/Layer.html)。
 
 <details><summary>getId()</summary>
-<p>
+<div>
 <br/>
 
 获得图层id
@@ -12,11 +12,12 @@
 
 * Number | String
 
-</p>
+</div>
 </details>
 
+
 <details><summary>setId(id)</summary>
-<p>
+<div>
 <br/>
 
 设置图层id
@@ -25,11 +26,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>addTo(map)</summary>
-<p>
+<div>
 <br/>
 
 添加到地图上。
@@ -38,11 +40,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getMinZoom()</summary>
-<p>
+<div>
 <br/>
 
 获取最小瓦片级别。
@@ -51,11 +54,12 @@
 
 * Number
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getMaxZoom()</summary>
-<p>
+<div>
 <br/>
 
 获取最大瓦片级别。
@@ -64,11 +68,12 @@
 
 * Number
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getMap()</summary>
-<p>
+<div>
 <br/>
 
 获取图层添加到的map对象。
@@ -77,11 +82,12 @@
 
 * Map
 
-</p>
+</div>
 </details>
 
+
 <details><summary>getProjection()</summary>
-<p>
+<div>
 <br/>
 
 获取图层的projection。
@@ -90,11 +96,12 @@
 
 * Projection
 
-</p>
+</div>
 </details>
+
 
 <details><summary>show()</summary>
-<p>
+<div>
 <br/>
 
 隐藏图层。
@@ -103,11 +110,12 @@
 
 * this
 
-</p>
+</div>
 </details>
+
 
 <details><summary>hide()</summary>
-<p>
+<div>
 <br/>
 
 隐藏图层。
@@ -116,11 +124,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>isVisible()</summary>
-<p>
+<div>
 <br/>
 
 判定图层是否显示。
@@ -129,11 +138,12 @@
 
 * Boolean
 
-</p>
+</div>
 </details>
 
+
 <details><summary>remove()</summary>
-<p>
+<div>
 <br/>
 
 删除图层。
@@ -142,11 +152,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>on(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 注册图层的监听事件
@@ -155,11 +166,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>addEventListener(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 同 on 方法
@@ -168,11 +180,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>once(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 注册图层的监听事件，响应后即删除
@@ -181,11 +194,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>off(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 移除图层注册的监听事件
@@ -194,11 +208,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>removeEventListener(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 同 off 方法
@@ -207,11 +222,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>listens(events, handler, context)</summary>
-<p>
+<div>
 <br/>
 
 判断图层是否监听了events事件。
@@ -220,11 +236,12 @@
 
 * Boolean
 
-</p>
+</div>
 </details>
 
+
 <details><summary>fire(event, params)</summary>
-<p>
+<div>
 <br/>
 
 手动发射一个事件，params是时间参数。
@@ -233,11 +250,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>setOptions(options)</summary>
-<p>
+<div>
 <br/>
 
 设置图层配置。
@@ -246,11 +264,12 @@
 
 * this
 
-</p>
+</div>
 </details>
 
+
 <details><summary>config(key, value)</summary>
-<p>
+<div>
 <br/>
 
 更新某个图层配置。
@@ -259,5 +278,6 @@
 
 * this
 
-</p>
+</div>
 </details>
+
