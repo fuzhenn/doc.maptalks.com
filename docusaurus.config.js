@@ -58,4 +58,33 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      'docusaurus-plugin-includes',
+      {
+        sharedFolders: [
+          { source: '../../_shared', target: '../docs/shared'},
+        ],
+
+        postBuildDeletedFolders: ['shared'],
+
+        replacements: [
+          { key: '{ProductName}', value: 'My long product name for XYZ' },
+          { key: '{ShortName}', value: 'XYZ' },
+        ],
+
+        embeds: [
+          {
+            key: 'myAwesomePlugin',
+            embedFunction: function(code) {
+              return `...`;
+            }
+          }
+        ],
+        injectedHtmlTags: {
+          preBodyTags: [`<link rel="stylesheet" href="https://cdn.example.com/style.css" type="text/css">`]
+        }
+      },
+    ],
+  ]
 };
