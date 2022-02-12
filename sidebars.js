@@ -29,16 +29,14 @@ module.exports = {
       id: "ide/guide/purchase",
     },
     {
-      type: "doc",
-      id: "ide/guide/ui",
-    },
-    {
       type: "category",
       label: "入门指南",
       collapsed: false,
       items: [
-        "ide/guide/tutorial/create",
         
+        "ide/guide/tutorial/create",
+        "ide/guide/tutorial/ui",
+        "ide/guide/tutorial/save",
       ],
     },
     {
