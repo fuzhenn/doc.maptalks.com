@@ -98,3 +98,23 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
 /** code block **/
 
 
+/** detail summary **/
+details > div{
+  border: 1px solid;
+  border-color: #6f6f6f;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+details > summary{
+  cursor: pointer;
+}
+
+html[data-theme='dark'] details > summary:hover{
+  background-color: #3f3f3f;
+}
+
+html[data-theme='light'] details > summary:hover{
+  background-color: #efefef;
+}

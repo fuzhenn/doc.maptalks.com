@@ -22,6 +22,10 @@ module.exports = {
     },
     {
       type: "doc",
+      id: "ide/guide/browser",
+    },
+    {
+      type: "doc",
       id: "ide/guide/install",
     },
     {
@@ -42,16 +46,36 @@ module.exports = {
     {
       type: "category",
       label: "基础知识",
-      collapsed: false,
+      collapsed: true,
       items: [
+        {
+          type: 'link',
+          label: 'GIS知识入门',
+          href: 'https://mp.weixin.qq.com/s/UkQvMFEWyHDbsmh7LDWU7A',
+        },
         "ide/guide/basic/vt",
         "ide/guide/basic/gltf",
         
       ],
     },
     {
-      type: "doc",
-      id: "ide/guide/formats",
+      type: "category",
+      label: "导入数据",
+      collapsed: false,
+      items: [
+        "ide/guide/data/formats",
+        "ide/guide/data/errors",
+        "ide/guide/data/coord",
+      ],
+    },
+    {
+      type: "category",
+      label: "发布",
+      collapsed: false,
+      items: [
+        "ide/guide/publish/publish",
+        "ide/guide/publish/iis"
+      ],
     },
     {
       type: "category",
@@ -59,7 +83,25 @@ module.exports = {
       collapsed: false,
       items: [
         "ide/guide/useInProgram/intro",
-        "ide/guide/useInProgram/path"
+        "ide/guide/useInProgram/path",
+        {
+          type: 'link',
+          label: 'MSDJSONLoader接口',
+          href: 'https://github.com/maptalks/MSDJSONLoader',
+        },
+        {
+          type: 'link',
+          label: '程序加载示例',
+          href: 'https://github.com/maptalks/MSDJSONLoader',
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "性能优化",
+      collapsed: false,
+      items: [
+        "ide/guide/performance/resource",
       ],
     },
     {
@@ -73,75 +115,6 @@ module.exports = {
         "ide/guide/crash/report"
       ],
     },
-    // {
-    //   type: "doc",
-    //   id: "ide/basic/full-demo",
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/basic/size",
-    // },
-    // {
-    //   type: "category",
-    //   label: "概览",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/basic/soft",
-    //     "ide/basic/layer",
-    //     "ide/basic/coord",
-    //     "ide/basic/mode",
-    //     "ide/basic/data-properties",
-    //     "ide/basic/environment",
-    //     "ide/basic/post-processing",
-    //     "ide/basic/gltf",
-    //     "ide/basic/pbr",
-    //     "ide/basic/material",
-    //     "ide/basic/animation",
-    //     "ide/basic/mime",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "初级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/basic/roof-building",
-    //     "ide/basic/shadow-water",
-    //     "ide/basic/bloom-material",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "中级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/intermediate/bloom-road",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "高级教程",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/advanced/advanced-bloom-road",
-    //   ],
-    // },
-    // {
-    //   type: "category",
-    //   label: "数据",
-    //   collapsed: false,
-    //   items: [
-    //     "ide/data/geojson",
-    //   ],
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/tip",
-    // },
-    // {
-    //   type: "doc",
-    //   id: "ide/faq",
-    // },
   ],
   designer: [
     {
@@ -169,4 +142,66 @@ module.exports = {
       id: "designer/faq",
     },
   ],
+  bds: [
+    {
+      type: "doc",
+      id: "bds/intro"
+    },
+    {
+      type: "doc",
+      id: "bds/install"
+    },
+    {
+      type: "doc",
+      id: "bds/configuration"
+    },
+    {
+      type: "doc",
+      id: "bds/api"
+    },
+  ],
+  api: [
+    {
+      type: "doc",
+      id: "api/intro"
+    },
+    {
+      type: "category",
+      label: "矢量瓦片图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/vt/vector-tile-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/geojson-vector-tile-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/point-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/linestring-layer"
+        },
+        {
+          type: "doc",
+          id: "api/vt/polygon-layer"
+        },
+      ]
+    },
+    {
+      type: "category",
+      label: "GLTF图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/gltf/gltf-layer"
+        }
+      ]
+    }
+  ]
 };

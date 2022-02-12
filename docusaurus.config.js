@@ -28,6 +28,8 @@ module.exports = {
       items: [
         {to: '/docs/ide/guide/intro', activeBasePath: '/docs/ide', label: 'IDE', position: 'left'},
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
+        {to: '/docs/bds/intro', activeBasePath: '/docs/bds', label: 'BDS', position: 'left'},
+        {to: '/docs/api/intro', activeBasePath: '/docs/api', label: 'API', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
     },
@@ -56,4 +58,33 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      'docusaurus-plugin-includes',
+      {
+        sharedFolders: [
+          { source: '../../_shared', target: '../docs/shared'},
+        ],
+
+        postBuildDeletedFolders: ['shared'],
+
+        replacements: [
+          { key: '{ProductName}', value: 'My long product name for XYZ' },
+          { key: '{ShortName}', value: 'XYZ' },
+        ],
+
+        embeds: [
+          {
+            key: 'myAwesomePlugin',
+            embedFunction: function(code) {
+              return `...`;
+            }
+          }
+        ],
+        injectedHtmlTags: {
+          preBodyTags: [`<link rel="stylesheet" href="https://cdn.example.com/style.css" type="text/css">`]
+        }
+      },
+    ],
+  ]
 };

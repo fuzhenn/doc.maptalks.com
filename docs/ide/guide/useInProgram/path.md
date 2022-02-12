@@ -5,9 +5,9 @@ title: 资源路径
 
 ## 资源的相对路径问题
 
-MSD JSON中的资源路径都是相对路径，相对的是map.json的存储路径。
+msd JSON中的资源路径都是相对路径，相对的是map.json的存储路径。
 
-例如下面的 foo.jpg，在MSD JSON 中的路径为 `./res/resources/foo.jpg`。
+例如下面的 foo.jpg，在msd JSON 中的路径为 `./res/resources/foo.jpg`。
 
 ```
 +-- res
@@ -21,7 +21,7 @@ MSD JSON中的资源路径都是相对路径，相对的是map.json的存储路�
 
 最简单的方法是把 `map.json` 以及 `res` 目录永远和页面存储在同一路径下。 这样就不需要转换路径了。
 
-但现实中`map.json`和`res`目录往往没和页面在一起，此时需要将MSD JSON中的相对路径转换为绝对路径。
+但现实中`map.json`和`res`目录往往没和页面在一起，此时需要将msd JSON中的相对路径转换为绝对路径。
 
 ## 通过 MSDJSONLoader 转换路径
 
@@ -80,7 +80,7 @@ symbol: {
 
 ## 人工转换路径
 
-如果某种特殊情况下，需要人工将MSD JSON中的相对路径替换为绝对路径，您可以按如下代码将json中的相对路径都替换为绝对路径：
+如果某种特殊情况下，需要人工将msd JSON中的相对路径替换为绝对路径，您可以按如下代码将json中的相对路径都替换为绝对路径：
 
 ```js
 let jsonString = JSON.stringify(msdJSON);

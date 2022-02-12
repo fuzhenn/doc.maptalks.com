@@ -7,9 +7,9 @@ IDE的设计成果最终是服务于web前端程序的，导出的数据能在�
 
 要在程序中调用IDE的设计成果，只需如下两步：
 
-## 导出MSD JSON数据
+## 导出msd JSON数据
 
-在文件菜单中选择`导出`即可导出MSD JSON数据。
+用IDE打开某个msd文件后，在文件菜单中选择`导出`即可导出msd JSON数据。
 
 ![导出数据](./assets/export.jpg)
 
