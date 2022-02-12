@@ -9,13 +9,12 @@
 |picking          | Boolean         | 是否允许图层用identify或identifyAtPoint方法查询数据 | true |
 |pickingPoint     | Boolean         | identify或identifyAtPoint方法的查询结果是否返回查询点的三维空间坐标 | false |
 |pickingGeometry  | Boolean         | identify或identifyAtPoint方法的查询结果是否包含Geometry | false |
-|pickingGeometry  | Boolean         | identify或identifyAtPoint方法的查询结果是否包含Geometry | false |
 |iconErrorUrl     | Boolean         | icon请求失败后的替换图片url                             | null |
 |collisionFrameLimit | Number       | 每帧用于计算Collision的时间限制，单位ms                  | 1.5  |
 |defaultRendering | Boolean         | 是否开启没有style时的默认样式绘制                        | true |
 |textGamma        | Number          | 文字的Gamma值，可以用于调整文字清晰度                     | 1   |
 |maxIconSize      | Number          | 图标最大尺寸限制                                        | 254  |
-|styleScale       | Number          | 可以用来对图层图标和文字整体放大                          | 1    |
+|styleScale       | Number          | 图层图标和文字的整体放大系数                        		 | 1    |
 |spatialReference | String / Object | 图层的空间参考         | "preset-vt-3857" |
 |tileSystem       | Number[]        | 一个四位数数组，用于描述 TileSystem，TileSystem用于定义瓦片的起始坐标和X/Y轴上的编号规律，具体含义参考该[链接](https://github.com/maptalks/maptalks.js/wiki/Tile-System) | [1, -1, -6378137 \* Math.PI, 6378137 * Math.PI] |maxAvailableZoom | Number          | 最大可用级别，当地图级别超过maxAvailableZoom后，则显示maxAvailableZoom级别的瓦片。 | null |
 |repeatWorld      | Boolean         | 在低级别时，整个世界不满一屏时，是否重复显示世界  | true |
