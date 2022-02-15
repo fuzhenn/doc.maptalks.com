@@ -202,6 +202,25 @@ module.exports = {
         {
           type: "doc",
           id: "api/gltf/gltf-layer"
+        },
+        {
+          type: "doc",
+          id: "api/gltf/gltf-marker"
+        },
+        {
+          type: "doc",
+          id: "api/gltf/multi-gltf-marker"
+        }
+      ]
+    },
+    {
+      type: "category",
+      label: "GL图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/gl/group-gl-layer"
         }
       ]
     }
