@@ -31,7 +31,6 @@
 |target   | VectorTileLayer |   this            |
 |error    | String          |   错误信息          |
 |tile     | Object          |   瓦片对象          |
-|symbol   | Object          |     symbol对象     |
 
 </div>
 </details>

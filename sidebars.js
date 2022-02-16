@@ -215,6 +215,17 @@ module.exports = {
     },
     {
       type: "category",
+      label: "3dtiles图层",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          id: "api/3dtiles/geo-3dtiles-layer"
+        }
+      ]
+    },
+    {
+      type: "category",
       label: "GL图层",
       collapsed: false,
       items: [
