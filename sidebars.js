@@ -172,26 +172,11 @@ module.exports = {
       label: "矢量瓦片图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/vt/vector-tile-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/geojson-vector-tile-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/point-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/linestring-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/polygon-layer"
-        },
+        "api/vt/vector-tile-layer",
+        "api/vt/geojson-vector-tile-layer",
+        "api/vt/point-layer",
+        "api/vt/linestring-layer",
+        "api/vt/polygon-layer",
       ]
     },
     {
@@ -199,18 +184,9 @@ module.exports = {
       label: "GLTF图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/gltf/gltf-layer"
-        },
-        {
-          type: "doc",
-          id: "api/gltf/gltf-marker"
-        },
-        {
-          type: "doc",
-          id: "api/gltf/multi-gltf-marker"
-        }
+        "api/gltf/gltf-layer",
+        "api/gltf/gltf-marker",
+        "api/gltf/multi-gltf-marker",
       ]
     },
     {
@@ -218,10 +194,7 @@ module.exports = {
       label: "3dtiles图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/3dtiles/geo-3dtiles-layer"
-        }
+        "api/3dtiles/geo-3dtiles-layer"
       ]
     },
     {
@@ -229,10 +202,11 @@ module.exports = {
       label: "GL图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/gl/group-gl-layer"
-        }
+        "api/gl/group-gl-layer",
+        "api/gl/viewshed-analysis",
+        "api/gl/skyline-analysis",
+        "api/gl/flood-analysis",
+        "api/gl/analysis",
       ]
     }
   ]
