@@ -2,6 +2,12 @@
 
 矢量瓦片图层 VectorTileLayer 用于在地图上加载并绘制[矢量瓦片](../guide/basic/vt)数据，并提供了必要的数据交互方法。
 
+VectorTileLayer的样式是在options.style中用JSON数据格式的。 样式定义采用了插件式架构，用户可以在style中用不同过滤条件选取数据，用指定的渲染插件和相应样式来渲染数据。
+
+具体有哪些渲染插件，各插件的样式定义可以参考这篇文档。
+
+因为VectorTileLayer的样式属性非常丰富，用户可以采用 [MapTalks IDE](../../ide/guide/intro) 软件来用所见即所得的方式来定制VectorTileLayer的样式，然后在[程序中加载](../../ide/guide/useInProgram/intro)。
+
 它是 [maptalks](https://maptalks.org)核心库 [TileLayer](https://maptalks.org/maptalks.js/api/0.x/TileLayer.html)的子类，同样继承了TileLayer上的方法和配置。
 
 :::note
@@ -136,4 +142,3 @@ const layerCopied = maptalks.Layer.fromJSON(json);
 ### 继承自Layer的事件
 
 {@include: includes/layer-events.md}
-

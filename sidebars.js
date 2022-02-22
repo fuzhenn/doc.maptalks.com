@@ -209,5 +209,35 @@ module.exports = {
         "api/gl/analysis",
       ]
     }
+  ],
+  style: [
+    {
+      type: "doc",
+      id: "style/intro"
+    },
+    {
+      type: "doc",
+      id: "style/symbols"
+    },
+    {
+      type: "category",
+      label: "矢量渲染插件",
+      collapsed: false,
+      items: [
+        "style/plugin-icon",
+        "style/plugin-text",
+        "style/plugin-line",
+        "style/plugin-line-gradient",
+        "style/plugin-fill",
+        "style/plugin-native-point",
+        "style/plugin-native-line",
+        "style/plugin-lit",
+        "style/plugin-phong",
+        "style/plugin-wireframe",
+        "style/plugin-gltf-lit",
+        "style/plugin-gltf-phong",
+        "style/plugin-water"
+      ]
+    }
   ]
 };
