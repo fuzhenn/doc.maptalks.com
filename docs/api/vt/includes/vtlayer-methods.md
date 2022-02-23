@@ -402,7 +402,7 @@ layer.identify([121.23, 39.34], { tolerance: 2 })
 在图层上查询给定屏幕坐标处的数据
 
 ```js
-layer.identify([121.23, 39.34], { tolerance: 2 })
+layer.identifyAtPoint([400, 300], { tolerance: 2 })
 ```
 
 参数：
@@ -444,4 +444,3 @@ const schema = layer.getDataSchema(8);
 
 </div>
 </details>
-

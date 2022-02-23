@@ -35,6 +35,7 @@ const layer = new LineStringLayer('line0');
 | 配置名               |  类型   |  描述                     | 默认值 |
 |  ------             | :----:  | ----                      |   :-----------:  |
 {@include: includes/vector3d-layer-options.md}
+{@include: includes/layer-options.md}
 
 </div>
 </details>

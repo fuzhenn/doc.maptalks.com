@@ -19,7 +19,7 @@
 <div>
 <br/>
 
-画布产生绘制的事件。
+图层画布产生绘制的事件。
 
 参数属性：
 
@@ -198,3 +198,21 @@ updatesymbol事件。
 </div>
 </details>
 
+<details><summary>updatefeaturesymbol</summary>
+<div>
+<br/>
+
+updatefeaturesymbol事件。
+
+参数属性：
+
+| 属性名           |  类型           |   值 |
+|  ------         | :----:  | ----  |
+|type     | String          |   "updatefeaturesymbol"  |
+|target   | VectorTileLayer |   this                  |
+|index    | Number          |   Feature样式序号        |
+|styleIdx | Number          |   Feature渲染插件序号    |
+|symbol   | Object          |     symbol对象     |
+
+</div>
+</details>

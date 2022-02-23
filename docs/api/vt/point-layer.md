@@ -41,6 +41,7 @@ const layer = new PointLayer('point0');
 |sceneConfig.fadingDuration | Number | 碰撞检测渐隐渐变持续时间，单位ms | 16 * 14 |
 |sceneConfig.depthFunc| String  | 深度测试函数，可选的值有:'always', '<=', '<', '>=', '>', '=', '!=', 'never' | 'always' |
 {@include: includes/vector3d-layer-options.md}
+{@include: includes/layer-options.md}
 
 </div>
 </details>

@@ -31,6 +31,7 @@ module.exports = {
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
         {to: '/docs/bds/intro', activeBasePath: '/docs/bds', label: 'BDS', position: 'left'},
         {to: '/docs/api/intro', activeBasePath: '/docs/api', label: 'API', position: 'left'},
+        {to: '/docs/style/intro', activeBasePath: '/docs/style/intro', label: '样式手册', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
     },

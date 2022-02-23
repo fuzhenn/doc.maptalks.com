@@ -170,26 +170,11 @@ module.exports = {
       label: "矢量瓦片图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/vt/vector-tile-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/geojson-vector-tile-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/point-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/linestring-layer"
-        },
-        {
-          type: "doc",
-          id: "api/vt/polygon-layer"
-        },
+        "api/vt/vector-tile-layer",
+        "api/vt/geojson-vector-tile-layer",
+        "api/vt/point-layer",
+        "api/vt/linestring-layer",
+        "api/vt/polygon-layer",
       ]
     },
     {
@@ -197,10 +182,59 @@ module.exports = {
       label: "GLTF图层",
       collapsed: false,
       items: [
-        {
-          type: "doc",
-          id: "api/gltf/gltf-layer"
-        }
+        "api/gltf/gltf-layer",
+        "api/gltf/gltf-marker",
+        "api/gltf/multi-gltf-marker",
+      ]
+    },
+    {
+      type: "category",
+      label: "3dtiles图层",
+      collapsed: false,
+      items: [
+        "api/3dtiles/geo-3dtiles-layer"
+      ]
+    },
+    {
+      type: "category",
+      label: "GL图层",
+      collapsed: false,
+      items: [
+        "api/gl/group-gl-layer",
+        "api/gl/viewshed-analysis",
+        "api/gl/skyline-analysis",
+        "api/gl/flood-analysis",
+        "api/gl/analysis",
+      ]
+    }
+  ],
+  style: [
+    {
+      type: "doc",
+      id: "style/intro"
+    },
+    {
+      type: "doc",
+      id: "style/symbols"
+    },
+    {
+      type: "category",
+      label: "矢量渲染插件",
+      collapsed: false,
+      items: [
+        "style/plugin-icon",
+        "style/plugin-text",
+        "style/plugin-line",
+        "style/plugin-line-gradient",
+        "style/plugin-fill",
+        "style/plugin-native-point",
+        "style/plugin-native-line",
+        "style/plugin-lit",
+        "style/plugin-phong",
+        "style/plugin-wireframe",
+        "style/plugin-gltf-lit",
+        "style/plugin-gltf-phong",
+        "style/plugin-water"
       ]
     }
   ]
