@@ -37,7 +37,7 @@ module.exports = {
       label: "入门指南",
       collapsed: false,
       items: [
-        
+
         "ide/guide/tutorial/create",
         "ide/guide/tutorial/ui",
         "ide/guide/tutorial/save",
@@ -55,7 +55,7 @@ module.exports = {
         },
         "ide/guide/basic/vt",
         "ide/guide/basic/gltf",
-        
+        "ide/guide/basic/pbr",
       ],
     },
     {
@@ -114,6 +114,41 @@ module.exports = {
         "ide/guide/crash/log",
         "ide/guide/crash/report"
       ],
+    },
+  ],
+  "design-guide":[
+    {
+      type: "doc",
+      id: "design-guide/intro"
+    },
+    {
+      type: "category",
+      label: "设计入门",
+      collapsed: false,
+      items: [
+        "design-guide/basic/layer",
+        "design-guide/basic/select",
+        "design-guide/basic/resource",
+        "design-guide/basic/light-hdr",
+        "design-guide/basic/light-hdrcolor",
+        "design-guide/basic/light-direction",
+        "design-guide/basic/light-skybox",
+        "design-guide/basic/light-save",
+        "design-guide/basic/texture",
+        "design-guide/basic/height",
+        "design-guide/basic/gltf",
+      ]
+    },
+    {
+      type: "category",
+      label: "设计案例",
+      collapsed: false,
+      items: [
+        "design-guide/design-tutorial/road",
+        "design-guide/design-tutorial/fill-animation",
+        "design-guide/design-tutorial/classification",
+        "design-guide/design-tutorial/reflection",
+      ]
     },
   ],
   designer: [
