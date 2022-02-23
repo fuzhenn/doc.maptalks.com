@@ -17,6 +17,8 @@ VectorTileLayer的样式是在options.style中用JSON数据格式的。 样式�
 
 :::
 
+{@include: includes/vector-tile-layer-style.md}
+
 ## 构造函数
 
 ```javascript

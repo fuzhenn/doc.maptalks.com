@@ -6,9 +6,7 @@ LineStringLayer的用法和maptalks核心库中[VectorLayer](https://maptalks.or
 
 LineStringLayer仅支持添加[LineString](https://maptalks.org/maptalks.js/api/0.x/LineString.html) 和 [MultiLineString](https://maptalks.org/maptalks.js/api/0.x/MultiLineString.html)，添加其他数据时会报错。
 
-LineStringLayer除了支持[maptalks核心库](https://maptalks.org)中的[所有line样式](https://github.com/maptalks/maptalks.js/wiki/Symbol-Reference)外，还支持一些额外的样式，具体的样式定义可以参考这篇文档。
-
-同时，LineStringLayer也支持设置marker和text属性，在线端点或线段中段指定位置绘制图标或沿线文字。
+LineStringLayer支持[Symbol样式](../../style/symbols)中的所有marker，text和line样式。 marker和text样式主要用于在线端点或线段中段指定位置绘制图标或沿线文字。
 
 ![沿线文字](./assets/line-text.jpg)
 

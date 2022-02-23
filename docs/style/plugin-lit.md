@@ -106,4 +106,4 @@ filter 数据过滤条件的具体说明请点击[这里](filter)。
 
 默认值：null
 
-**Object**，pbr材质设置，具体属性可以参考[材质说明文档](material#phong材质)。
+**Object**，pbr材质设置，具体属性可以参考[材质说明文档](material#pbr材质)。

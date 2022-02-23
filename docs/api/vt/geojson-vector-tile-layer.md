@@ -20,6 +20,8 @@ GeoJSONVectorTileLayer 是用于在地图上绘制渲染GeoJSON数据的矢量�
 
 :::
 
+{@include: includes/vector-tile-layer-style.md}
+
 ## 构造函数
 
 ```javascript

@@ -253,6 +253,10 @@ module.exports = {
       id: "style/symbols"
     },
     {
+      type: "doc",
+      id: "style/material"
+    },
+    {
       type: "category",
       label: "矢量渲染插件",
       collapsed: false,

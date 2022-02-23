@@ -1,4 +1,4 @@
-# Symbol样式属性说明
+# Symbol样式文档
 
 矢量的Symbol样式分为以下几个大类：
 

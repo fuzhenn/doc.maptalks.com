@@ -6,9 +6,7 @@ PolygonLayer的用法和maptalks核心库中[VectorLayer](https://maptalks.org/m
 
 PolygonLayer仅支持添加[Polygon](https://maptalks.org/maptalks.js/api/0.x/Polygon.html) 和 [MultiPolygon](https://maptalks.org/maptalks.js/api/0.x/MultiPolygon.html)，添加其他数据时会报错。
 
-PolygonLayer除了支持[maptalks核心库](https://maptalks.org)中的[所有line样式](https://github.com/maptalks/maptalks.js/wiki/Symbol-Reference)外，还支持一些额外的样式，具体的样式定义可以参考这篇文档。
-
-同时，PolygonLayer也支持设置marker和text属性，在指定位置绘制图标或文字。
+PolygonLayer支持[Symbol样式](../../style/symbols)中的所有marker，text，line和polygon样式。 line样式用于指定面边框的样式，marker和text样式主要用于在面的可达性极点绘制图标或沿线文字。
 
 它是[maptalks.OverlayLayer](https://maptalks.org/maptalks.js/api/0.x/OverlayLayer.html)的子类，继承了 OverlayerLayer 上所有的方法。
 

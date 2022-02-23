@@ -1,10 +1,12 @@
-# 材质属性说明
+# 材质说明文档
 
-材质指的是三维渲染算法中，物体和光的交互过程中设计到的参数。当前可用到的材质包括[pbr材质](#pbr材质)和[phong（冯氏光照）](#phong材质)两种材质。
+材质是指三维渲染算法中，物体和光的交互过程中涉及到的参数。当前可用到的材质有[pbr材质](#pbr材质)和[phong（冯氏光照）](#phong材质)两种材质。
 
-材质主要用于VectorTileLayer的[lit](plugin-lit)(pbr材质)和[phong](plugin-phong)渲染插件中。
+目前材质主要用于：
 
-GLTF图层默认的渲染材质是pbr材质，3dtiles默认用的phong材质。
+* [VectorTileLayer](../api/vt/vector-tile-layer)的[lit渲染插件](plugin-lit)(pbr材质)和[phong渲染插件](plugin-phong)。
+* [GLTF图层](../api/gltf/gltf-layer)渲染模型默认的渲染材质是pbr材质。
+* [Geo3DTilesLayer](../api/3dtiles/geo-3dtiles-layer)默认用的phong材质。
 
 ## pbr材质
 
