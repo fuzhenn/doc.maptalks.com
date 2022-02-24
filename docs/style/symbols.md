@@ -32,7 +32,7 @@ marker样式属性分为以下几类：
 | 矢量图标   | markerType, markerFill, markerFillPatternFile, markerFillOpacity, markerLineColor, markerLineWidth, markerLineOpacity, markerLineDasharray, markerLinePatternFile  |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](function-type)。
+属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
 
 :::
 
@@ -270,7 +270,7 @@ text样式属性分为以下几类：
 | 三维透视   | textPerspectiveRatio* |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](function-type)。
+属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
 
 :::
 
