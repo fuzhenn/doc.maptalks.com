@@ -1,3 +1,3 @@
-* 如果是矢量瓦片数据，支持type为Point, LineString，Polygon的Feature
+* 如果是矢量瓦片数据，支持type为Point, LineString，Polygon，MultiPoint, MultiLineString或者MultiPolygon类型的Feature
 * 如果是GeoJSON数据，支持type为Point, LineString，Polygon，MultiPoint, MultiLineString或者MultiPolygon类型的Feature
 * 如果是矢量图层，则支持[maptalks.Marker](https://maptalks.org/maptalks.js/api/0.x/Marker.html), [maptalks.MultiPoint](https://maptalks.org/maptalks.js/api/0.x/MultiPoint.html), [maptalks.LineString](https://maptalks.org/maptalks.js/api/0.x/LineString.html), [maptalks.MultiLineString](https://maptalks.org/maptalks.js/api/0.x/MultiLineString.html), [maptalks.Polygon](https://maptalks.org/maptalks.js/api/0.x/Polygon.html), [maptalks.MultiPolygon](https://maptalks.org/maptalks.js/api/0.x/MultiPolygon.html).
