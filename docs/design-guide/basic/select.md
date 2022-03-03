@@ -1,6 +1,6 @@
 ---
 id: select
-title: 地图上选择数据
+title: 选择数据
 ---
 IDE提供了2种选择方法
 

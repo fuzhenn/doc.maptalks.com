@@ -1,6 +1,6 @@
 ---
 id: material
-title: 材质球
+title: 三维渲染属性面板介绍
 ---
 
 ## 导入新的材质球

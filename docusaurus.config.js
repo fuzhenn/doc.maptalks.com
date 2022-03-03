@@ -27,7 +27,7 @@ module.exports = {
       },
       items: [
         {to: '/docs/ide/guide/intro', activeBasePath: '/docs/ide', label: 'IDE', position: 'left'},
-        {to: '/docs/design-guide/intro', activeBasePath: '/docs/design-guide', label: '设计指南', position: 'left'},
+        {to: '/docs/design-guide/intro', activeBasePath: '/docs/design-guide', label: 'IDE设计指南', position: 'left'},
         {to: '/docs/designer/intro', activeBasePath: '/docs/designer', label: 'Designer', position: 'left'},
         {to: '/docs/api/intro', activeBasePath: '/docs/api', label: 'API', position: 'left'},
         {to: '/docs/style/intro', activeBasePath: '/docs/style/intro', label: '样式手册', position: 'left'},
