@@ -127,7 +127,10 @@ module.exports = {
       collapsed: false,
       items: [
         "design-guide/basic/layer",
+        "design-guide/basic/vt",
+        "design-guide/basic/gltf",
         "design-guide/basic/select",
+        "design-guide/basic/select2",
         "design-guide/basic/resource",
         "design-guide/basic/light-hdr",
         "design-guide/basic/light-hdrcolor",
@@ -135,8 +138,12 @@ module.exports = {
         "design-guide/basic/light-skybox",
         "design-guide/basic/light-save",
         "design-guide/basic/texture",
+        "design-guide/basic/material",
+        "design-guide/basic/material2",
         "design-guide/basic/height",
-        "design-guide/basic/gltf",
+        "design-guide/basic/shader-ball",
+        "design-guide/basic/setting",
+        "design-guide/basic/attribute",
       ]
     },
     {
@@ -148,6 +155,25 @@ module.exports = {
         "design-guide/design-tutorial/fill-animation",
         "design-guide/design-tutorial/classification",
         "design-guide/design-tutorial/reflection",
+        "design-guide/design-tutorial/windows",
+        "design-guide/design-tutorial/roof",
+        "design-guide/design-tutorial/transparent",
+      ]
+    },
+    {
+      type: "category",
+      label: "更多设计",
+      collapsed: false,
+      items: [
+        "design-guide/design-more/city",
+      ]
+    },
+    {
+      type: "category",
+      label: "常见问题",
+      collapsed: false,
+      items: [
+        "design-guide/faqs/group",
       ]
     },
   ],
