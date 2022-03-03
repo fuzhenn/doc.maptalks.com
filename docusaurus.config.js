@@ -72,20 +72,20 @@ module.exports = {
         postBuildDeletedFolders: ['shared'],
 
         replacements: [
-          { key: '{ProductName}', value: 'My long product name for XYZ' },
-          { key: '{ShortName}', value: 'XYZ' },
+          // { key: '{ProductName}', value: 'My long product name for XYZ' },
+          // { key: '{ShortName}', value: 'XYZ' },
         ],
 
         embeds: [
-          {
-            key: 'myAwesomePlugin',
-            embedFunction: function(code) {
-              return `...`;
-            }
-          }
+          // {
+          //   key: 'myAwesomePlugin',
+          //   embedFunction: function(code) {
+          //     return `...`;
+          //   }
+          // }
         ],
         injectedHtmlTags: {
-          preBodyTags: [`<link rel="stylesheet" href="https://cdn.example.com/style.css" type="text/css">`]
+          // preBodyTags: [`<link rel="stylesheet" href="https://cdn.example.com/style.css" type="text/css">`]
         }
       },
     ],
