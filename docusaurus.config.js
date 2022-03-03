@@ -3,6 +3,7 @@ module.exports = {
   title: 'MapTalks Doc',
   tagline: 'MapTalks are cool',
   url: 'http://doc.maptalks.com',
+  trailingSlash: true,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

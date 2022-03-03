@@ -86,13 +86,13 @@ module.exports = {
         "ide/guide/useInProgram/path",
         {
           type: 'link',
-          label: 'MSDJSONLoader接口',
-          href: 'https://github.com/maptalks/MSDJSONLoader',
+          label: 'msd-json-loader接口',
+          href: 'https://github.com/maptalks/msd-json-loader',
         },
         {
           type: 'link',
           label: '程序加载示例',
-          href: 'https://github.com/maptalks/MSDJSONLoader',
+          href: 'https://github.com/maptalks/msd-json-loader',
         },
       ],
     },
