@@ -28,10 +28,10 @@ IDE的设计成果最终是服务于web前端程序的，导出的数据能在�
 
 ## 在程序中载入
 
-* 安装 MSDJSONLoader 开源库，详细接口可以参考 [MSDJSONLoader](https://github.com/maptalks/MSDJSONLoader)中的接口说明
+* 安装 msd-json-loader 开源库，详细接口可以参考 [msd-json-loader](https://github.com/maptalks/msd-json-loader)中的接口说明
 
 ```
-npm i @maptalks/msdjsonloader
+npm i @maptalks/msd-json-loader
 ```
 
 * 在应用程序中调用。
@@ -41,7 +41,7 @@ npm i @maptalks/msdjsonloader
 你也可以根据需要选择加载整个地图的样式或者某个图层的数据或样式，更丰富的用法请参考[使用示例](https://maptalks.com)。
 
 ```js
-    import MSDJSONLoader from '@maptalks/msdjsonloader';
+    import MSDJSONLoader from '@maptalks/msd-json-loader';
     
     const loader = MSDJSONLoader({
         data: 'path/to/map.json'
@@ -54,4 +54,3 @@ npm i @maptalks/msdjsonloader
     map.getLayer('group').getLayer('geojson').setStyle(style);
     
 ```
-
