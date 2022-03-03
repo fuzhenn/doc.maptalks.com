@@ -95,8 +95,8 @@ worker准备就绪事件。
 |  ------         | :----:  | ----  |
 |type     | String          |   "dataerror"  |
 |target   | VectorTileLayer |   this     |
-|styles   | Object[] |   样式对象     |
-|computedStyles   | Object[] |   Feature样式对象     |
+|style    | Object[] |   样式对象     |
+|computedStyle    | Object[] |   Feature样式对象     |
 
 </div>
 </details>

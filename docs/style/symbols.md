@@ -32,7 +32,7 @@ marker样式属性分为以下几类：
 | 矢量图标   | markerType, markerFill, markerFillPatternFile, markerFillOpacity, markerLineColor, markerLineWidth, markerLineOpacity, markerLineDasharray, markerLinePatternFile  |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](function-type)。
+属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
 
 :::
 
@@ -174,9 +174,9 @@ marker样式属性分为以下几类：
 ---------
 ### markerTextFit
 
-默认值：false
+默认值： none
 
-**Boolean**，必须设置文字。图标是否根据文字来自动设置自身的高度和宽度。
+**String**，必须设置textName。图标是否根据文字来自动设置自身的高度和宽度，可选值： both（高宽都自适应）, width（仅宽度自适应）, height（仅高度自适应）
 
 ---------
 ### markerTextFitPadding
@@ -270,7 +270,7 @@ text样式属性分为以下几类：
 | 三维透视   | textPerspectiveRatio* |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](function-type)。
+属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
 
 :::
 

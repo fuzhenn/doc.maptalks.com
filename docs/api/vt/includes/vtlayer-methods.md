@@ -189,7 +189,7 @@ layer.updateSymbol(0, { polygonFill: '#0f0' });
 
 ```js
 const style = {
-  featureStyles: [
+  featureStyle: [
     {
       id: 16,
       style: [
@@ -259,7 +259,7 @@ layer.updateSceneConfig(0, { collision: false });
 
 ```js
 const style = {
-  featureStyles: [
+  featureStyle: [
     {
       id: 16,
       style: [
@@ -329,7 +329,7 @@ layer.updateDataConfig(0, { altitudeProperty: 'height' });
 
 ```js
 const style = {
-  featureStyles: [
+  featureStyle: [
     {
       id: 16,
       style: [

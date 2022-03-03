@@ -40,6 +40,7 @@ new VectorTileLayer('vt0', {
 |  ------         | :----:  | ----  |   :-----------:  |
 |urlTemplate\*    | String          | url模板               |  null  |
 {@include: includes/vtlayer-options.md}
+{@include: includes/layer-options.md}
 
 </div>
 </details>

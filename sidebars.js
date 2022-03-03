@@ -86,13 +86,13 @@ module.exports = {
         "ide/guide/useInProgram/path",
         {
           type: 'link',
-          label: 'MSDJSONLoader接口',
-          href: 'https://github.com/maptalks/MSDJSONLoader',
+          label: 'msd-json-loader接口',
+          href: 'https://github.com/maptalks/msd-json-loader',
         },
         {
           type: 'link',
           label: '程序加载示例',
-          href: 'https://github.com/maptalks/MSDJSONLoader',
+          href: 'https://github.com/maptalks/msd-json-loader',
         },
       ],
     },
@@ -228,14 +228,17 @@ module.exports = {
     },
     {
       type: "category",
-      label: "矢量瓦片图层",
+      label: "矢量数据图层",
       collapsed: false,
       items: [
+        "api/vt/intro",
         "api/vt/vector-tile-layer",
         "api/vt/geojson-vector-tile-layer",
         "api/vt/point-layer",
         "api/vt/linestring-layer",
         "api/vt/polygon-layer",
+        "api/vt/vector-perf",
+        "api/vt/compare",
       ]
     },
     {
@@ -267,7 +270,7 @@ module.exports = {
         "api/gl/flood-analysis",
         "api/gl/analysis",
       ]
-    }
+    },
   ],
   style: [
     {
@@ -281,6 +284,15 @@ module.exports = {
     {
       type: "doc",
       id: "style/material"
+    },
+    {
+      type: "category",
+      label: "数据过滤与函数类型",
+      collapsed: false,
+      items: [
+        'style/filter/feature-filter',
+        'style/filter/function-type',
+      ]
     },
     {
       type: "category",

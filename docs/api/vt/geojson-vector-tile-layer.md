@@ -44,6 +44,7 @@ new GeoJSONVectorTileLayer('geojson0', {
 |data\*           | Object/String   | GeoJSON数据对象或者url  | null |
 |features         | String          | 瓦片是否返回feature数据，默认只返回id | "id" |
 {@include: includes/vtlayer-options.md}
+{@include: includes/layer-options.md}
 
 </div>
 </details>

@@ -1,12 +1,14 @@
 ## 动态样式
 
-目前只有visible，polygonFll，polygonOpacity支持[function-type](function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
+目前只有visible，polygonFll，polygonOpacity支持[function-type](./filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
 
 例如以下示例，能让模型的透明度在不同地图级别上由小变大：
 
 ```json
 {
- "polygonOpacity": [[1, 0.1], [20, 1]],
+ "polygonOpacity": {
+    "stops": [[1, 0.1], [20, 1]]
+  }
 }
 ```
 

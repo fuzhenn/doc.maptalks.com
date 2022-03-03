@@ -13,7 +13,7 @@
 
 ```json
 {
-  "styles": [
+  "style": [
     {
       "renderPlugin": {
         "type": "fill",

@@ -66,7 +66,7 @@
 }
 ```
 
-filter 数据过滤条件的具体说明请点击[这里](filter)。
+filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filter)。
 
 ## 支持的数据类型
 
@@ -74,13 +74,15 @@ filter 数据过滤条件的具体说明请点击[这里](filter)。
 
 ## 动态样式
 
-大部分样式属性都支持 [function-type](function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
+大部分样式属性都支持 [function-type](./filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
 
 例如以下示例，能让文字在不同地图级别上由小变大：
 
 ```json
 {
- "textSize": [[1, 2], [20, 40]]
+ "textSize": {
+    "stops": [[1, 2], [20, 40]]
+  }
 }
 ```
 
