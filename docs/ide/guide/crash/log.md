@@ -14,7 +14,7 @@ IDE会以天为单位，记录使用过程中的错误信息。
 ![错误恢复对话框](./assets/log.jpg)
 
 其中 error.log 是当天的错误日志文件。历史日志以errors.log.yyyy-mm-DD 的格式命名，其中 yyyy-mm-DD 是日志的年月日。
-[报告bug](report)时，请提供相应的错误日志，以帮助开发团队定位和修正bug。
+[报告bug](../report)时，请提供相应的错误日志，以帮助开发团队定位和修正bug。
 
 ## 敏感数据
 

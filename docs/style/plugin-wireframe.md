@@ -39,7 +39,7 @@
 }
 ```
 
-filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filter)。
+filter 数据过滤条件的具体说明请点击[这里](../filter/feature-filter)。
 
 ## 支持的数据类型
 
@@ -47,7 +47,7 @@ filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filte
 
 ## 动态样式
 
-目前只有lineColor支持[function-type](./filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
+目前只有lineColor支持[function-type](../filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
 
 ## 支持的Symbol样式属性
 

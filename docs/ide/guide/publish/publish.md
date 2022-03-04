@@ -29,7 +29,7 @@ IDE导出的数据可以发布到MapHub服务或是您自己的HTTP服务上。
 
 导出的数据均为静态文件，您可以根据喜好选用任意HTTP服务软件来发布文件，例如 [Apache](https://httpd.apache.org/)， [Nginx](https://www.nginx.org/)，IIS等。
 
-默认配置的IIS加载msd JSON数据会报错，这是因为IIS缺少对必要的MIME类型支持，可以参考[IIS的MIME类型](iis)注册必要的MIME类型。
+默认配置的IIS加载msd JSON数据会报错，这是因为IIS缺少对必要的MIME类型支持，可以参考[IIS的MIME类型](../iis)注册必要的MIME类型。
 
 ## 发布到公有云服务
 

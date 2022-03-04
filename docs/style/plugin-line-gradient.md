@@ -57,7 +57,7 @@
 }
 ```
 
-filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filter)。
+filter 数据过滤条件的具体说明请点击[这里](../filter/feature-filter)。
 
 ## 支持的数据类型
 
@@ -65,7 +65,7 @@ filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filte
 
 ## 动态样式
 
-大部分样式属性都支持 [function-type](./filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
+大部分样式属性都支持 [function-type](../filter/function-type) 表达式，支持根据不同zoom级别或数据的属性值设置不同的样式属性。
 
 例如以下示例，能让线宽在不同地图级别上由小变大：
 
@@ -79,7 +79,7 @@ filter 数据过滤条件的具体说明请点击[这里](./filter/feature-filte
 
 ## 支持的Symbol样式属性
 
-line-gradient渲染插件支持[line样式属性](symbols#line样式属性)。
+line-gradient渲染插件支持[line样式属性](../symbols#line样式属性)。
 
 除了上述属性，还支持以下属性：
 

@@ -24,11 +24,10 @@ title: 界面说明
 ![后处理](./assets/ui/6.jpg)
 
 ### 资源区
-资源区有3个库：环境光库、材质库、模型库，可以单击[这里](../../../design-guide/basic/resource)查看打开库的方法
+资源区有3个库：环境光库、材质库、模型库，可以单击[这里](../../../../design-guide/basic/resource)查看打开库的方法
 
 ![环境光库](./assets/ui/7.jpg)
 
 ![材质库](./assets/ui/8.jpg)
 
 ![模型库](./assets/ui/9.jpg)
-

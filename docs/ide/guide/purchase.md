@@ -24,6 +24,6 @@ title: 购买
 
 ## 购买方式
 
-请先[下载安装 MapTalks IDE](install) 后，在IDE中付款购买。
+请先[下载安装 MapTalks IDE](../install) 后，在IDE中付款购买。
 
 目前我们支持微信或支付宝付款，我们会按您提供的开票信息开具电子发票。

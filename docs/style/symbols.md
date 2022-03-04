@@ -7,7 +7,7 @@
 * [line样式属性](#line样式属性)，定义了线相关的样式属性
 * [polygon样式属性](#polygon样式属性)，定义了面相关的样式属性。
 
-本文档包含了矢量的样式属性，三维的样式由渲染材质定义，具体请参考[材质说明文档](material)。
+本文档包含了矢量的样式属性，三维的样式由渲染材质定义，具体请参考[材质说明文档](../material)。
 
 ## marker样式属性
 
@@ -32,7 +32,7 @@ marker样式属性分为以下几类：
 | 矢量图标   | markerType, markerFill, markerFillPatternFile, markerFillOpacity, markerLineColor, markerLineWidth, markerLineOpacity, markerLineDasharray, markerLinePatternFile  |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
+属性名上带*号的，表示该属性不支持[function-type](../filter/function-type)。
 
 :::
 
@@ -270,7 +270,7 @@ text样式属性分为以下几类：
 | 三维透视   | textPerspectiveRatio* |
 
 :::note
-属性名上带*号的，表示该属性不支持[function-type](./filter/function-type)。
+属性名上带*号的，表示该属性不支持[function-type](../filter/function-type)。
 
 :::
 

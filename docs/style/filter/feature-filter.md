@@ -2,7 +2,7 @@
 
 [feature-filter](https://github.com/maptalks/feature-filter)是[maptalks核心库](https://maptalks.org)使用的数据过滤表达式，基于mapbox的[feature-filter](https://github.com/mapbox/feature-filter)(MIT License)开发。
 
-例如它被用于[VectorTileLayer](../../api/vt/vector-tile-layer)中渲染插件的filter属性，用于过滤适用于渲染插件的数据。
+例如它被用于[VectorTileLayer](../../../api/vt/vector-tile-layer)中渲染插件的filter属性，用于过滤适用于渲染插件的数据。
 
 ## 示例
 

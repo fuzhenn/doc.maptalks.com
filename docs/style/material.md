@@ -4,13 +4,13 @@
 
 目前材质主要用于：
 
-* [VectorTileLayer](../api/vt/vector-tile-layer)的[lit渲染插件](plugin-lit)(pbr材质)和[phong渲染插件](plugin-phong)。
-* [GLTF图层](../api/gltf/gltf-layer)渲染模型默认的渲染材质是pbr材质。
-* [Geo3DTilesLayer](../api/3dtiles/geo-3dtiles-layer)默认用的phong材质。
+* [VectorTileLayer](../../api/vt/vector-tile-layer)的[lit渲染插件](../plugin-lit)(pbr材质)和[phong渲染插件](../plugin-phong)。
+* [GLTF图层](../../api/gltf/gltf-layer)渲染模型默认的渲染材质是pbr材质。
+* [Geo3DTilesLayer](../../api/3dtiles/geo-3dtiles-layer)默认用的phong材质。
 
 ## pbr材质
 
-pbr算法是以粗糙度和金属度为中心的材质系统，详细介绍可以参考基础知识中的[什么是pbr](../ide/guide/basic/pbr)。
+pbr算法是以粗糙度和金属度为中心的材质系统，详细介绍可以参考基础知识中的[什么是pbr](../../ide/guide/basic/pbr)。
 
 pbr材质参数如下：
 

@@ -37,7 +37,7 @@ module.exports = {
       ],
     },
     footer: {
-      copyright: `2020&ensp;&copy;&ensp;MapTalks&ensp;3D.com版权所有&ensp;&ensp;&ensp;&ensp;鄂ICP备14002653号-6&ensp;&ensp;&ensp;&ensp;鄂公网安备&ensp;35020302033941号`, // You can also put own HTML here
+      copyright: `2022&ensp;&copy;&ensp;maptalks.com版权所有&ensp;&ensp;&ensp;&ensp;鄂ICP备14002653号-6&ensp;&ensp;&ensp;&ensp;鄂公网安备&ensp;35020302033941号`, // You can also put own HTML here
     },
   },
   i18n: {
@@ -53,7 +53,7 @@ module.exports = {
           // Please change this to your repo.
           editLocalizedFiles: true,
           editUrl:
-            'https://github.com/fuzhenn/doc.maptalks.com/edit/master',
+            'https://github.com/maptalks/doc.maptalks.com/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
