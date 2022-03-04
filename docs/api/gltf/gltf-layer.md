@@ -2,7 +2,7 @@
 
 GLTFLayer是基于WebGL图形技术的的[GLTF三维模型](../ide/guide/basic/gltf)绘制图层。
 
-GLTFLayer仅支持添加[GLTFMarker](gltf-marker) 和 [MultiGLTFMarker](multi-gltf-marker)，添加其他数据时会报错。
+GLTFLayer仅支持添加[GLTFMarker](../gltf-marker) 和 [MultiGLTFMarker](../multi-gltf-marker)，添加其他数据时会报错。
 
 它是[maptalks.OverlayLayer](https://maptalks.org/maptalks.js/api/0.x/OverlayLayer.html)的子类，继承了 OverlayerLayer 上所有的方法。
 

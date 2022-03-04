@@ -2,7 +2,7 @@
 
 ![绘制效果](./assets/multi-gltf-marker.jpg)
 
-MultiGLTFMarker是[GLTFMarker](gltf-marker)的子类，用于将一个GLTF模型绘制在多个坐标上，能设置不同的偏移/缩放/旋转系统，并能进行交互。
+MultiGLTFMarker是[GLTFMarker](../gltf-marker)的子类，用于将一个GLTF模型绘制在多个坐标上，能设置不同的偏移/缩放/旋转系统，并能进行交互。
 
 MultiGLTFMarker能够用symbol设置模型的状态，例如缩放比例，透明度，旋转角度等，同时提供了方法用于更新模型，更新模型状态，开启暂停动画等。
 

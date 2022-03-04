@@ -9,7 +9,7 @@ GeoJSONVectorTileLayer 是用于在地图上绘制渲染GeoJSON数据的矢量�
 * 性能高，轻松支持上百M GeoJSON文件的解析与渲染
 * 体验好，数据处理都在worker中进行，不会造成主线程的卡顿
 
-它是 [VectorTileLayer](vector-tile-layer)的子类，同样继承了VectorTileLayer上的方法和配置。
+它是 [VectorTileLayer](../vector-tile-layer)的子类，同样继承了VectorTileLayer上的方法和配置。
 
 同样的，VectorTileLayer上的样式也无需修改应用到GeoJSONVectorTileLayer上，实现服务端矢量瓦片数据和本地GeoJSON数据的统一化。
 

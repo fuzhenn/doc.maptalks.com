@@ -1,17 +1,17 @@
 # PointLayer
 
-PointLayer是基于WebGL图形技术的的点数据绘制图层。 PointLayer和[VectorTileLayer](vector-tile-layer)采用同样的绘制逻辑，共享同样的Symbol样式。
+PointLayer是基于WebGL图形技术的的点数据绘制图层。 PointLayer和[VectorTileLayer](../vector-tile-layer)采用同样的绘制逻辑，共享同样的Symbol样式。
 
 PointLayer的用法和maptalks核心库中[VectorLayer](https://maptalks.org/maptalks.js/api/0.x/VectorLayer.html)完全一样，但得益于WebGL技术，性能有着显著提升。
 
 PointLayer仅支持添加[Marker](https://maptalks.org/maptalks.js/api/0.x/Marker.html) 和 [MultiPoint](https://maptalks.org/maptalks.js/api/0.x/MultiPoint.html)，添加其他数据时会报错。
 
-PointLayer支持[Symbol样式](../../style/symbols)中的所有marker和text样式。
+PointLayer支持[Symbol样式](../../../style/symbols)中的所有marker和text样式。
 
 它是[maptalks.OverlayLayer](https://maptalks.org/maptalks.js/api/0.x/OverlayLayer.html)的子类，继承了 OverlayerLayer 上所有的方法。
 
 :::info
-PointLayer默认把所有Marker拼装成一个三维Mesh进行绘制，Marker部分样式的更新会导致图层重新构造Mesh，频繁操作会出现性能问题，具体说明请见[矢量图层的性能优化](vector-perf)文档。
+PointLayer默认把所有Marker拼装成一个三维Mesh进行绘制，Marker部分样式的更新会导致图层重新构造Mesh，频繁操作会出现性能问题，具体说明请见[矢量图层的性能优化](../vector-perf)文档。
 :::
 
 ## 构造函数
