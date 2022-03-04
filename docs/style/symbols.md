@@ -533,11 +533,25 @@ text样式属性分为以下几类：
 **Number**，线的描边宽度，取值范围 0 - 127。
 
 ---------
+### lineStrokeColor
+
+默认值: #000
+
+**String** | **Number[]** 线的描边的颜色，可以为[css颜色值](https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value)或者归一化四位数组。
+
+---------
 ### linePatternFile
 
 默认值：null
 
 **String**，线的填充图片，支持url或者base64字符串。
+
+---------
+### lineJoinPatternMode
+
+默认值：0
+
+**Number**，lineJoin处的模型填充方式，为0时，则lineJoin为连续绘制纹理，为1时，则设为图片第一个像素处的颜色。
 
 ---------
 ### linePatternGap
