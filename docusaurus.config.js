@@ -64,6 +64,12 @@ module.exports = {
   ],
   plugins: [
     [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-EMPT1PBFDK'
+      },
+    ],
+    [
       'docusaurus-plugin-includes',
       {
         sharedFolders: [
