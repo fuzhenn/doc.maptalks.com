@@ -37,11 +37,11 @@ MapTalks IDE的所有设计工作和资源都保存在msd文件中，您可以�
 
 ## 案例
 
-![简介](./assets/intro-1.png)
+![简介](./assets/intro-1.jpg)
 
-![简介](./assets/intro-2.png)
+![简介](./assets/intro-2.jpg)
 
-![简介](./assets/intro-3.png)
+![简介](./assets/intro-3.jpg)
 
-![简介](./assets/intro-4.png)
+![简介](./assets/intro-4.jpg)
 
