@@ -18,6 +18,11 @@ MapTalks的三维SDK目前包含以下几个前端库，涵盖了[矢量瓦片](
 |@maptalks/video              | 视频融合绘制              | [示例](http://examples.maptalks.com) | bug报告 |
 |@maptalks/msd-json-loader    | IDE MSD设计成果加载工具   | [示例](http://examples.maptalks.com) | [源代码](https://github.com/maptalks/msd-json-loader)  |
 
+## 技术交流群
+
+* 程序员交流QQ群： 971657972
+* 设计师交流QQ群： 965857373
+
 ## 技术路线
 
 SDK采用JavaScript ES6语法开发，用户可以在HTML页面中加载运行。

@@ -15,6 +15,8 @@ MapTalks IDE是基于以Chrominum为核心的[Electron](https://www.electronjs.o
 * IOS，安卓及鸿蒙操作系统上的现代手机浏览器
 * 微信或手机QQ上的浏览器
 
+> 公测版部分渲染功能在手机浏览器上还存在兼容性问题，正式版会完成修复
+
 我们放弃了对IE浏览器（包括IE11）的支持，主要考虑到以下几个原因：
 * IE不支持最新的Javascript标准，极大的增加了工程的开发和维护难度。
 * IE11的WebGL性能很弱。
