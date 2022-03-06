@@ -4,11 +4,11 @@ title: 道路分级设置
 ---
 随着地图缩放，有些在当前级别设置合适的数值会变的不合适，比如在16.9级别时，道路宽度设置成10px，看起来非常美观。
 
-![地图道路](./assets/classification/image.png)
+![地图道路](./assets/classification/image.jpg)
 
 但是地图跳转到10.4级别时，会发现道路变的拥挤不堪，十分难看。
 
-![地图道路](./assets/classification/image-1.png)
+![地图道路](./assets/classification/image-1.jpg)
 
 为了解决这个问题，IDE增加了分级设置功能，可以简洁高效的在不同的级别设置不同的值，本教程将演示具体如何使用。
 
@@ -19,7 +19,7 @@ title: 道路分级设置
 
 然后选中一条道路数据，打开右边属性面板的基础色，可以看到道路默认宽度是2。
 
-![图片](./assets/classification/image-3.png)
+![图片](./assets/classification/image-3.jpg)
 
 将地图级别调到20，文件准备完毕，我们开始准备道路宽度分级设置。
 
@@ -54,13 +54,13 @@ PS：我们也可以单击地图级别下的箭头，在弹出面板里直接填
 
 在16.8级别我们观察地图，会发现50道路宽度明显太宽了，需要改细一点。
 
-![图片](./assets/classification/image-10.png)
+![图片](./assets/classification/image-10.jpg)
 
 ### （4）增加分级设置列表
 
 我们回到分级设置面板，将宽度下的数值从50改成10，然后单击“+”或者键盘上的enter键，此刻地图上道路宽度随即变窄，同时在分级设置面板上多了一条记录列表。
 
-![图片](./assets/classification/image-11.png)
+![图片](./assets/classification/image-11.jpg)
 ![图片](./assets/classification/image-12.png)
 
 ### （5）完成分级设置

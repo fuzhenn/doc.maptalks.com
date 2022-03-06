@@ -15,7 +15,7 @@ title: 给水面增加倒影
 
 材质库里分别选2个材质球赋予建筑和水系，在地图上应用。
 
-![图片](./assets/reflection/reflection-3.png)
+![图片](./assets/reflection/reflection-3.jpg)
 
 文件准备就绪，让我们进入下一步。
 
@@ -37,7 +37,7 @@ title: 给水面增加倒影
 ### （3）完成反射设置
 此时水系将会出现建筑物的倒影。
 
-![图片](./assets/reflection/reflection-6.png)
+![图片](./assets/reflection/reflection-6.jpg)
 
 同时图层面板上水系图层右边会出现“反”图标，代表该图层反射按钮是开启状态。
 
@@ -51,11 +51,11 @@ title: 给水面增加倒影
 
 金属度是1，粗糙度是0的时候，反射非常清晰，效果如下：
 
-![图片](./assets/reflection/reflection-8.png)
+![图片](./assets/reflection/reflection-8.jpg)
 
 金属度是0，粗糙度是1的时候，反射已不可见，效果如下：
 
-![图片](./assets/reflection/reflection-9.png)
+![图片](./assets/reflection/reflection-9.jpg)
 
 ### （2）法线
 
@@ -63,11 +63,11 @@ title: 给水面增加倒影
 
 法线纹理强度是0，反射非常清晰，效果如下：
 
-![图片](./assets/reflection/reflection-10.png)
+![图片](./assets/reflection/reflection-10.jpg)
 
 法线纹理强度是5，反射非常模糊，效果如下：
 
-![图片](./assets/reflection/reflection-11.png)
+![图片](./assets/reflection/reflection-11.jpg)
 
 
 ### （3）环境光
@@ -76,12 +76,12 @@ title: 给水面增加倒影
 
 HDR曝光数值是5，反射颜色变浅，效果如下：
 
-![图片](./assets/reflection/reflection-12.png)
+![图片](./assets/reflection/reflection-12.jpg)
 
 
 HDR曝光数值是0，反射已不可见，效果如下：
 
-![图片](./assets/reflection/reflection-13.png)
+![图片](./assets/reflection/reflection-13.jpg)
 
 ## 小结
 

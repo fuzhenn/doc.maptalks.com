@@ -2,9 +2,9 @@
 id: city
 title: 制作赛博朋克风格的城市
 ---
-![图片](./assets/city/city-3.png)
+![图片](./assets/city/city-3.jpg)
 
-![图片](./assets/city/city-1.png)
+![图片](./assets/city/city-1.jpg)
 
 
 
@@ -31,17 +31,17 @@ title: 制作赛博朋克风格的城市
 
 * 文件准备就绪，让我们进入下一步。
 
-![图片](../design-more/assets/city/city-4.png)
+![图片](../design-more/assets/city/city-4.jpg)
 
 ### （2）用Photoshop制作纹理图片
 
 * 开始创作前我们可以先参考城市夜景图片，如果仔细观察，可以看到亮灯窗户不规则排列、灯光颜色有暖色和冷色、灯光并不是平滑的而是有深有浅等等。
 
-![图片](../design-more/assets/city/city-6.png)
+![图片](../design-more/assets/city/city-6.jpg)
 
 * 基于上面观察的特点，我们就可以用Photoshop创作合适的基础色纹理图片了，比如下图就是一次尝试方向。
 
-![图片](../design-more/assets/city/city-5.png)
+![图片](../design-more/assets/city/city-5.jpg)
 
 * 用Photoshop制作自发光纹理图片。
 
@@ -56,13 +56,13 @@ title: 制作赛博朋克风格的城市
 
 嗯，加载纹理图片后，现在看起来怪怪的，和“好看”实在相差甚远，不要紧，让我们接下来就开始调整材质吧
 
-![图片](../design-more/assets/city/city-8.png)
+![图片](../design-more/assets/city/city-8.jpg)
 
 ### （4）调整材质
 
 * 调整纹理图片尺寸，让大小合适。
 
-![图片](../design-more/assets/city/city-9.png)
+![图片](../design-more/assets/city/city-9.jpg)
 
 * 根据地图上实际渲染的画面，我们可以直接调整基础色颜色、金属粗糙度等选项，直到颜色满意为止。
 
@@ -80,7 +80,7 @@ title: 制作赛博朋克风格的城市
 
 具体步骤可以查阅 [给建筑物增加屋顶](../design-tutorial/roof)，最后我们得到了下图，建筑的调整就差不多完成了。
 
-![图片](../design-more/assets/city/city-12.png)
+![图片](../design-more/assets/city/city-12.jpg)
 
 
 ## 设置环境光
@@ -88,18 +88,18 @@ title: 制作赛博朋克风格的城市
 环境光能确立整个地图的基调，同时它也会影响三维数据基础色的表现，是三维地图中非常重要的一环，IDE提供了很多默认环境光贴图，同时支持上传新的文件，接下来就是多尝试吧。
 如下图调整了有向光、环境光和天空盒，我们就得到了一个漂亮的天空。
 
-![图片](../design-more/assets/city/city-13.png)
+![图片](../design-more/assets/city/city-13.jpg)
 
 
 ## 地面数据加载材质球
 
 地面我希望是一种深色金属的质感，可以反射天空，所以在材质库里我选择了Black，效果如下：
 
-![图片](../design-more/assets/city/city-14.png)
+![图片](../design-more/assets/city/city-14.jpg)
 
 我希望地面能增加一些质感，不要这么光滑，我们可以在法线纹理里上传一张纹理图片，调整合适的强度。
 
-![图片](../design-more/assets/city/city-15.png)
+![图片](../design-more/assets/city/city-15.jpg)
 
 ## 水面增加建筑物倒影
 
@@ -111,7 +111,7 @@ title: 制作赛博朋克风格的城市
 
 ![图片](../design-more/assets/city/city-16.png)
 
-![图片](../design-more/assets/city/city-17.png)
+![图片](../design-more/assets/city/city-17.jpg)
 
 ## 让水面流动起来
 

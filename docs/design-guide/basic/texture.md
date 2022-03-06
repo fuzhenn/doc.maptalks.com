@@ -13,7 +13,7 @@ title: 三维数据添加材质
 
 切换三维模式后，地图上建筑数据变成三维，同时在界面最下方会自动弹出材质库，准备工作就完成了。
 
-![图片](./assets/texture/texture-4.png)
+![图片](./assets/texture/texture-4.jpg)
 
 ## 材质库里单击材质球
 
@@ -21,7 +21,7 @@ title: 三维数据添加材质
 
 ![图片](./assets/texture/texture-6.png)
 
-![图片](./assets/texture/texture-7.png)
+![图片](./assets/texture/texture-7.jpg)
 
 
 

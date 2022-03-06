@@ -23,3 +23,7 @@ yarn-error.log*
 i18n/en/code.json
 i18n/zh-cn/
 !i18n/zh-cn/code.json
+
+
+启动.bat
+更新.bat

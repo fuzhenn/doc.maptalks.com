@@ -17,7 +17,7 @@ title: 给建筑物增加屋顶
 
 * 文件准备就绪，让我们进入下一步。
 
-![图片](./assets/roof/roof-1.png)
+![图片](./assets/roof/roof-1.jpg)
 
 
 ## 添加侧面
@@ -35,18 +35,18 @@ title: 给建筑物增加屋顶
 
 ![图片](./assets/roof/roof-4.png)
 
-![图片](./assets/roof/roof-5.png)
+![图片](./assets/roof/roof-5.jpg)
 
 ### （3）增加顶部厚度
 
 跳转到渲染>数据高度>顶面厚度,将数值从“0”改到“4”，或者任意觉得合适的数值，顶部就会实时增加厚度了。
 
 ![图片](./assets/roof/roof-6.png)
-![图片](./assets/roof/roof-7.png)
+![图片](./assets/roof/roof-7.jpg)
 
 ## 其他调整
 
 我们还可以给窗户添加灯光，具体做法请查阅上一篇[制作发光的窗户](../design-tutorial/windows), 给与一个夜晚的环境光，在图层面板上将地面图层显示出来，将颜色改成黑色等等，简单调整下我们又可以得到下面的效果，IDE给与了三维地图无限的可能性，大家可以尽情的探索。
 
-![图片](./assets/roof/roof-8.png)
+![图片](./assets/roof/roof-8.jpg)
 

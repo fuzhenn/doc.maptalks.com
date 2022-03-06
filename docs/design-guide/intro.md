@@ -11,4 +11,4 @@ title: 设计指南概述
 
 下面我们就开始吧。
 
-![图片](basic/assets/intro-1.png)
+![图片](basic/assets/intro-1.jpg)

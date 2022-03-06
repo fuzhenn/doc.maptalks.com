@@ -26,7 +26,7 @@ title: 制作发光的窗户
 
 * 文件准备就绪，让我们进入下一步。
 
-![图片](./assets/windows/windows-3.png)
+![图片](./assets/windows/windows-3.jpg)
 
 ## 用photoshop制作自发光纹理图片
 
@@ -60,7 +60,7 @@ title: 制作发光的窗户
 
 * 此时建筑物窗户就出现白色了。
 
-![图片](./assets/windows/windows-8.png)
+![图片](./assets/windows/windows-8.jpg)
 
 ### （2）调整泛光效果
 
@@ -75,7 +75,7 @@ title: 制作发光的窗户
 
 
 * 经过上述步骤，现在我们可以看看最终效果了，是不是还不错？
-![图片](./assets/windows/windows-13.png)
+![图片](./assets/windows/windows-13.jpg)
 
 
 
@@ -89,7 +89,7 @@ title: 制作发光的窗户
 
 * 在弹出的另存为面板里填写新材质球的名字和保存类目。
 
-![图片](./assets/windows/windows-15.png)
+![图片](./assets/windows/windows-15.jpg)
 
 * 确定后，在材质库建筑分类下，你就可以找到刚刚存好的材质球“窗户了。
 

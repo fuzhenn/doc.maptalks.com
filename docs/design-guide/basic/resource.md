@@ -9,7 +9,7 @@ title: 环境光库、材质库、模型库打开方法
 
 ![环境](./assets/resource/10.jpg)
 
-![环境光库](./assets/hdr-1.png)
+![环境光库](./assets/hdr-1.jpg)
 
 
 ## 材质库
@@ -28,7 +28,7 @@ title: 环境光库、材质库、模型库打开方法
 
 ![材质](./assets/resource/11.jpg)
 
-![材质](./assets/resource/1.png)
+![材质](./assets/resource/1.jpg)
 
 
 ## 模型库
@@ -37,4 +37,4 @@ title: 环境光库、材质库、模型库打开方法
 
 ![材质](./assets/resource/12.jpg)
 
-![材质](./assets/resource/2.png)
+![材质](./assets/resource/2.jpg)

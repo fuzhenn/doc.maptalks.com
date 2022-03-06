@@ -4,7 +4,7 @@ title: 三维渲染面板介绍（1）
 ---
 在[《什么是PBR》](../../ide/guide/basic/pbr.md)这篇文章中我们介绍了一些三维渲染的基础原理，现在主流有2种PBR材质工作流：金属/粗糙度工作流（Metal/Roughness）和镜面反射/光泽度工作流（Specular/Glossiness）。
 
-![图片](./assets/texture/texture-1.png)
+![图片](./assets/texture/texture-1.jpg)
 
 Maptalks IDE支持金属/粗糙度工作流（Metal/Roughness），我们可以导入下列6种纹理图片组成材质球：
 
@@ -72,7 +72,7 @@ Maptalks IDE支持金属/粗糙度工作流（Metal/Roughness），我们可以�
 ![图片](./assets/texture/texture-14.png)
 
 
-![图片](./assets/texture/texture-15.png)
+![图片](./assets/texture/texture-15.jpg)
 
 
 ### （7）其他选项

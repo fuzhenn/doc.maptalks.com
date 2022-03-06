@@ -5,7 +5,7 @@ title: 制作半透明材质
 
 IDE可以制作很漂亮的半透明材质三维地图，下面我们来介绍具体步骤。
 
-![图片](./assets/transparent/transparent-22.png)
+![图片](./assets/transparent/transparent-22.jpg)
 
 
 ## 观察真实的半透明材质。
@@ -17,8 +17,8 @@ IDE可以制作很漂亮的半透明材质三维地图，下面我们来介绍�
 
 (3) 内部如果有气泡或者其他杂质，能呈现一种丰富多彩的色彩氛围，明显图1图3就比图2要更有活力的感觉。
 
-![图片](./assets/transparent/transparent-0.png)
-![图片](./assets/transparent/transparent-1.png)
+![图片](./assets/transparent/transparent-0.jpg)
+![图片](./assets/transparent/transparent-1.jpg)
 ![图片](./assets/transparent/transparent-2.png)
 
 当然我们还可以观察到更多特征，不过抓住上面3条最能体现“半透明”特征的点，我们就可以非常简单在IDE里制作半透明材质了。
@@ -31,7 +31,7 @@ IDE可以制作很漂亮的半透明材质三维地图，下面我们来介绍�
 
 * 文件准备完毕，我们开始在属性面板进行下一步的制作。
 
-![图片](./assets/transparent/transparent-5.png)
+![图片](./assets/transparent/transparent-5.jpg)
 
 ## 设置属性面板
 
@@ -78,17 +78,17 @@ IDE可以制作很漂亮的半透明材质三维地图，下面我们来介绍�
 （例1）
 
 ![图片](./assets/transparent/transparent-12.png)
-![图片](./assets/transparent/transparent-14.png)
+![图片](./assets/transparent/transparent-14.jpg)
 
 （例2）
 
 ![图片](./assets/transparent/transparent-15.png)
-![图片](./assets/transparent/transparent-16.png)
+![图片](./assets/transparent/transparent-16.jpg)
 
 （例3）
 
-![图片](./assets/transparent/transparent-17.png)
-![图片](./assets/transparent/transparent-18.png)
+![图片](./assets/transparent/transparent-17.jpg)
+![图片](./assets/transparent/transparent-18.jpg)
 
 
 
