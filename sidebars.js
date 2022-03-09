@@ -166,6 +166,7 @@ module.exports = {
       collapsed: false,
       items: [
         "design-guide/design-more/city",
+        "design-guide/design-more/glass",
       ]
     },
     {
