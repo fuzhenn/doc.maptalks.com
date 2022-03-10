@@ -41,3 +41,5 @@ IIS中推荐注册的与MapTalks IDE相关的MIME类型如下：
 | .i3dm   | application/octet-stream | 3dtiles i3dm格式 |
 | .cmpt   | application/octet-stream | 3dtiles cmpt格式 |
 | .pnts   | application/octet-stream | 3dtiles pnts格式 |
+| .s3mb   | application/octet-stream | 超图S3M格式      |
+| .scp    | application/json         | 超图S3M索引文件  |
