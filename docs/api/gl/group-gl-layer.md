@@ -47,6 +47,7 @@ const layer = new GroupGLLayer('group', [layer0, layer1, layer2], options);
 |extensions           | String[] | 必须开启的webgl扩展， [所有的扩展列表](https://github.com/regl-project/regl/blob/master/API.md#extensions)   | [] |
 |optionalExtensions   | String[] | 可以选择开启的webgl扩展， [所有的扩展列表](https://github.com/regl-project/regl/blob/master/API.md#extensions) | 见下方注解 |
 |sceneConfig          | Object   | 全局效果设置，[配置说明](#sceneconfig配置说明)          | null |
+|onlyWebGL1           | Boolean | 是否强制用WebGL 1渲染，用以解决少数webgl2环境存在问题的设备 | false |
 {@include: ../vt/includes/layer-options.md}
 
 默认的optionalExtensions:
