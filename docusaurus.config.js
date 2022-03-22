@@ -33,7 +33,7 @@ module.exports = {
         {to: '/docs/api/intro/', activeBasePath: '/docs/api', label: 'SDK', position: 'left'},
         {to: '/docs/style/intro', activeBasePath: '/docs/style', label: '样式手册', position: 'left'},
         {to: '/docs/download/', activeBasePath: '/docs/download', label: '产品下载', position: 'left'},
-        {to: '/docs/api/plan/', activeBasePath: '/docs/download', label: '开发计划', position: 'left'},
+        {to: '/docs/api/plan/', activeBasePath: '/docs/api/plan', label: '开发计划', position: 'left'},
         // {to: '/docs/bds/intro', activeBasePath: '/docs/bds', label: '服务端软件文档', position: 'left'},
         {type: 'localeDropdown', position: 'right'},
       ],
