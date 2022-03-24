@@ -6,7 +6,7 @@
 
 ```js
 const style = {
-  styles: [
+  style: [
     {
       filter : true,            // 数据的过滤条件
       renderPlugin: {           // 渲染插件
@@ -31,8 +31,8 @@ layer.setStyle(style);
 
 | 属性名        |  类型           |  描述                 | 默认值 |
 |  ------         | :----:  | ----  |   :-----------:  |
-| styles        | Object[] | 渲染插件数组              | [] |
-| featureStyles | Object[] | 单个Feature的渲染插件列表  | [] |
+| style        | Object[] | 渲染插件数组              | [] |
+| featureStyle | Object[] | 单个Feature的渲染插件列表  | [] |
 | $root         | String   | 资源目录根路径 | null |
 
 返回：
