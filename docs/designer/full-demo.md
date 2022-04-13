@@ -53,7 +53,6 @@ title: 完整示例
         <script src="./js/maptalks.js"></script>
         <script src="./js/maptalksgl.js"></script>
         <script src="./js/maptalks.vt.js"></script>
-        <script src="./js/maptalks.vt.basic.js"></script>
       </head>
       <body>
         <div id="mapContainer" style="width: 100vw; height: 100vh;"></div>
@@ -76,7 +75,7 @@ title: 完整示例
 
           //init layer
           var layer = new maptalks.VectorTileLayer("vt", {
-            urlTemplate: "http://116.63.251.32:8080/tile/planet-single/{z}/{x}/{y}.mvt",
+            urlTemplate: "http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt",
             spatialReference: 'preset-vt-3857',
           }).addTo(map);
 
@@ -137,7 +136,6 @@ title: 完整示例
         <script src="./js/maptalks.js"></script>
         <script src="./js/maptalksgl.js"></script>
         <script src="./js/maptalks.vt.js"></script>
-        <script src="./js/maptalks.vt.basic.js"></script>
         <script src="./style.js"></script>
       </head>
       <body>
@@ -162,7 +160,7 @@ title: 完整示例
 
           //init layer
           var layer = new maptalks.VectorTileLayer("vt", {
-            urlTemplate: "http://116.63.251.32:8080/tile/planet-single/{z}/{x}/{y}.mvt",
+            urlTemplate: "http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt",
             spatialReference: 'preset-vt-3857',
           }).addTo(map);
 
@@ -203,4 +201,3 @@ title: 完整示例
 　　注意，不要缺少background.depthRange: [1,1], 这个非常重要。
 
 　　如果您需要将此处的底图作为IDE的背景底图，那么只能走第一种发布这条路，然后再参考IDE的文档，接入底图。
-
