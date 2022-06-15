@@ -15,7 +15,7 @@ MapTalks的三维SDK目前包含以下几个前端库，涵盖了[矢量瓦片](
 |@maptalks/gltf-layer         | 加载GLTF三维模型数据      | [示例](http://examples.maptalks.com) | bug报告 |
 |@maptalks/transform-control  | GLTF模型的交互操作控件    | [示例](http://examples.maptalks.com) | bug报告 |
 |@maptalks/3dtiles            | 加载3dtiles三维模型数据   | [示例](http://examples.maptalks.com) | [bug报告](https://github.com/fuzhenn/3dtiles-issues) |
-|@maptalks/video              | 视频融合绘制              | [示例](http://examples.maptalks.com) | bug报告 |
+|@maptalks/video-layer              | 视频融合绘制              | [示例](http://examples.maptalks.com) | bug报告 |
 |@maptalks/msd-json-loader    | IDE MSD设计成果加载工具   | [示例](http://examples.maptalks.com) | [源代码](https://github.com/maptalks/msd-json-loader)  |
 
 ## 技术交流群
