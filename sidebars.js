@@ -203,6 +203,10 @@ module.exports = {
       type: "doc",
       id: "designer/faq",
     },
+    {
+      type: "doc",
+      id: "designer/mapbox",
+    },
   ],
   bds: [
     {
