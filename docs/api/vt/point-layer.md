@@ -17,7 +17,7 @@ PointLayer默认把所有Marker拼装成一个三维Mesh进行绘制，Marker部
 ## 构造函数
 
 ```javascript
-import { PointLayer } from '@maptalks/vt';
+import { PointLayer } from '@maptalks/gl-layers';
 
 const layer = new PointLayer('point0');
 ```

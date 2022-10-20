@@ -25,7 +25,7 @@ GeoJSONVectorTileLayer 是用于在地图上绘制渲染GeoJSON数据的矢量�
 ## 构造函数
 
 ```javascript
-import { GeoJSONVectorTileLayer } from '@maptalks/vt';
+import { GeoJSONVectorTileLayer } from '@maptalks/gl-layers';
 
 new GeoJSONVectorTileLayer('geojson0', {
   data: 'path/to/example.geojson'

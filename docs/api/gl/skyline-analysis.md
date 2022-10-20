@@ -5,7 +5,7 @@
 ## 构造函数
 
 ```js
-import { SkylineAnalysis } from '@maptalks/gl';
+import { SkylineAnalysis } from '@maptalks/gl-layers';
 
 const skylineAnalysis = new SkylineAnalysis({
   lineColr: [1, 0, 0]

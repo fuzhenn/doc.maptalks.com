@@ -19,7 +19,7 @@ LineStringLayer默认把所有LineString拼装成一个三维Mesh进行绘制，
 ## 构造函数
 
 ```javascript
-import { LineStringLayer } from '@maptalks/vt';
+import { LineStringLayer } from '@maptalks/gl-layers';
 
 const layer = new LineStringLayer('line0');
 ```

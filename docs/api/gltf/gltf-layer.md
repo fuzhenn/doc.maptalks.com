@@ -9,7 +9,7 @@ GLTFLayer仅支持添加[GLTFMarker](../gltf-marker) 和 [MultiGLTFMarker](../mu
 ## 构造函数
 
 ```javascript
-import { GLTFLayer } from '@maptalks/gltf-layer';
+import { GLTFLayer } from '@maptalks/gl-layers';
 
 const layer = new GLTFLayer('gltf0');
 ```

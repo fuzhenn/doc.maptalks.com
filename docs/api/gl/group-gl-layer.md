@@ -28,7 +28,7 @@ GroupGLLayer是一个WebGL容器图层，它可以添加多个WebGL子图层，�
 ## 构造函数
 
 ```javascript
-import { GroupGLLayer } from '@maptalks/gl';
+import { GroupGLLayer } from '@maptalks/gl-layers';
 
 const layer = new GroupGLLayer('group', [layer0, layer1, layer2], options);
 ```

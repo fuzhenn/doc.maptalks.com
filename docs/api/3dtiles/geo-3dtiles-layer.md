@@ -87,28 +87,26 @@ layer.once('loadtileset', e => {
 
 ## npm安装
 ```
-npm i @maptalks/3dtiles
+npm i @maptalks/gl-layers
 ```
 ### 使用
 esm方式:
 ```js
-import { GroupGLLayer } from '@maptalks/gl';
+import { GroupGLLayer, Geo3DTilesLayer } from '@maptalks/gl-layers';
 // 可选的draco插件
 // import '@maptalks/transcoders.draco';
 // 可选的crn纹理解析插件
 // import '@maptalks/transcoders.crn';
 // 可选的ktx2纹理解析插件
 // import '@maptalks/transcoders.ktx2';
-import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 ```
 commonjs方式：
 ```js
-const { GroupGLLayer } = require('@maptalks/gl');
+const { GroupGLLayer, Geo3DTilesLayer } = require('@maptalks/gl-layers');
 // 可选的draco插件
 // require('@maptalks/transcoders.draco');
 // require('@maptalks/transcoders.crn');
 // require('@maptalks/transcoders.ktx2');
-const { Geo3DTilesLayer } = require('@maptalks/3dtiles');
 ```
 
 ## 坐标系适配
@@ -161,10 +159,9 @@ KHR_draco_mesh_compression is required but @maptalks/transcoders.draco is not lo
 此时加载draco解码插件即可。
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@maptalks/gl/dist/maptalksgl.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
 <!-- draco插件，必须写在gl后面，其他插件的前面，es方式加载时同理 -->
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.draco/dist/transcoders.draco.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@maptalks/3dtiles/dist/maptalks.3dtiles.js"></script>
 ```
 npm安装draco插件
 ```
@@ -172,22 +169,20 @@ npm i @maptalks/transcoders.draco
 ```
 esm方式:
 ```js
-import { GroupGLLayer } from '@maptalks/gl';
+import { GroupGLLayer, Geo3DTilesLayer } from '@maptalks/gl-layers';
 import '@maptalks/transcoders.draco';
-import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 ```
 commonjs方式：
 ```js
-const { GroupGLLayer } = require('@maptalks/gl');
+const { GroupGLLayer, Geo3DTilesLayer } = require('@maptalks/gl-layers');
 require('@maptalks/transcoders.draco');
-const { Geo3DTilesLayer } = require('@maptalks/3dtiles');
 ```
 ## CRN纹理支持
 和Draco一样，crn纹理也是采用通用插件方式实现的，添加crn解码插件即可。
 因为crn插件是umd格式，采用esm载入时，需要webpack或rollup的commonjs插件支持。
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@maptalks/gl/dist/maptalksgl.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
 <!-- crn插件，必须写在gl后面，其他插件的前面，es方式加载时同理 -->
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.crn/dist/transcoders.crn.js"></script>
 ```
@@ -197,22 +192,20 @@ npm i @maptalks/transcoders.crn
 ```
 esm加载方式:
 ```js
-import { GroupGLLayer } from '@maptalks/gl';
+import { GroupGLLayer, Geo3DTilesLayer } from '@maptalks/gl-layers';
 import '@maptalks/transcoders.crn';
-import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 ```
 commonjs方式：
 ```js
-const { GroupGLLayer } = require('@maptalks/gl');
+const { GroupGLLayer, Geo3DTilesLayer } = require('@maptalks/gl-layers');
 require('@maptalks/transcoders.crn');
-const { Geo3DTilesLayer } = require('@maptalks/3dtiles');
 ```
 ## KTX2纹理支持
 和Draco一样，ktx2纹理也是采用通用插件方式实现的，添加ktx2解码插件即可。
 因为ktx2插件是umd格式，采用esm载入时，需要webpack或rollup的commonjs插件支持。
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@maptalks/gl/dist/maptalksgl.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
 <!-- ktx2插件，必须写在gl后面，其他插件的前面，es方式加载时同理 -->
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.ktx2/dist/transcoders.ktx2.js"></script>
 ```
@@ -222,15 +215,13 @@ npm i @maptalks/transcoders.ktx2
 ```
 esm方式加载:
 ```js
-import { GroupGLLayer } from '@maptalks/gl';
+import { GroupGLLayer, Geo3DTilesLayer } from '@maptalks/gl-layers';
 import '@maptalks/transcoders.ktx2';
-import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 ```
 commonjs方式：
 ```js
-const { GroupGLLayer } = require('@maptalks/gl');
+const { GroupGLLayer, Geo3DTilesLayer } = require('@maptalks/gl-layers');
 require('@maptalks/transcoders.ktx2');
-const { Geo3DTilesLayer } = require('@maptalks/3dtiles');
 ```
 ## 抗锯齿
 默认情况下3dtiles绘制时会有很多锯齿，可以在GroupGLLayer上开启抗锯齿来解决。
@@ -254,7 +245,6 @@ const { Geo3DTilesLayer } = require('@maptalks/3dtiles');
 ## 构造函数
 
 ```javascript
-import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 
 const layer = new maptalks.Geo3DTilesLayer('3dtiles', {
     maxGPUMemory: 512,

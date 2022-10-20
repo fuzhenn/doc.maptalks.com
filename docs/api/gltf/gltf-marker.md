@@ -7,7 +7,7 @@ GLTFMarker能够用symbol设置模型的状态，例如缩放比例，透明度�
 ## 构造函数
 
 ```javascript
-import { GLTFMarker } from '@maptalks/gltf-layer';
+import { GLTFMarker } from '@maptalks/gl-layers';
 
 const gltfMarker = new GLTFMarker([0, 0], {
   symbol: {

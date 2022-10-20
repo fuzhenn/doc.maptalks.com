@@ -5,7 +5,7 @@
 ## 构造函数
 
 ```js
-import { FloodAnalysis } from '@maptalks/gl';
+import { FloodAnalysis } from '@maptalks/gl-layers';
 
 const floodAnalysis = new FloodAnalysis({
   waterHeight: 100,

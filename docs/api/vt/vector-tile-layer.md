@@ -22,7 +22,7 @@ VectorTileLayer的样式是在options.style中用JSON数据格式的。 样式�
 ## 构造函数
 
 ```javascript
-import { VectorTileLayer } from '@maptalks/vt';
+import { VectorTileLayer } from '@maptalks/gl-layers';
 
 new VectorTileLayer('vt0', {
   urlTemplate: 'https://tiles.maptalks.com/test/{z}/{x}/{y}.mvt'

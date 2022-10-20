@@ -33,7 +33,7 @@ msd JSON中的资源路径都是相对路径，相对的是map.json的存储路�
 
 按照默认方式加载时，msd-json-loader会用map.json的路径 `path/to/map.json` 将资源路径中的 `./res` 替换为 `path/to/res`。
 ```js
-import MSDJSONLoader from '@maptalks/msd-json-loader';
+import MSDJSONLoader from '@maptalks/gl-layers';
 const loader = new MSDJSONLoader({
 	data: 'http://example.com/map.json'
 });
@@ -59,7 +59,7 @@ symbol: {
 
 您也可以在创建MSDJSONLoader时，通过 basePath 参数指定一个根路径，例如：
 ```js
-import MSDJSONLoader from '@maptalks/msd-json-loader';
+import MSDJSONLoader from '@maptalks/gl-layers';
 const loader = new MSDJSONLoader({
 	data: 'http://example.com/map.json',
 	basePath: 'http://resources.example.com'

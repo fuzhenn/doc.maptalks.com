@@ -5,7 +5,7 @@
 ## 构造函数
 
 ```js
-import { ViewshedAnalysis } from '@maptalks/gl';
+import { ViewshedAnalysis } from '@maptalks/gl-layers';
 
 const viewshedAnalysis = new ViewshedAnalysis({
   eyePos: [121, 39, 100],

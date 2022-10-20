@@ -11,7 +11,7 @@ MultiGLTFMarker利用了WebGL的instancing技术绘制，以提升批量绘制�
 ## 构造函数
 
 ```javascript
-import { MultiGLTFMarker } from '@maptalks/gltf-layer';
+import { MultiGLTFMarker } from '@maptalks/gl-layers';
 
 const multiGLTFMarker = new MultiGLTFMarker([
   {

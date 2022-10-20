@@ -17,7 +17,7 @@ PolygonLayer默认把所有Polygon拼装成一个三维Mesh进行绘制，Marker
 ## 构造函数
 
 ```javascript
-import { PolygonLayer } from '@maptalks/vt';
+import { PolygonLayer } from '@maptalks/gl-layers';
 
 const layer = new PolygonLayer('polygon0');
 ```
