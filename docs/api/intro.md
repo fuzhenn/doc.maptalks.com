@@ -11,13 +11,6 @@ MapTalks的三维SDK目前包含以下几个前端库，涵盖了[矢量瓦片](
 | :-------   |:-------------| ----- | --- |
 |maptalks.js | maptalks开源核心库，以下所有功能的基础库。 | [示例](https://maptalks.org/examples/cn/map/load/) | [源代码](https://github.com/maptalks/maptalks.js) |
 |@maptalks/gl-layers | WebGL图层汇总包，包含以下所有插件 | [示例](http://examples.maptalks.com) | [源代码](https://github.com/fuzhenn/maptalks-gl-layers/) |
-|@maptalks/gl | WebGL基础设施，材质，抗锯齿，阴影等全局后处理和空间分析 | [示例](http://examples.maptalks.com) | bug报告 |
-|@maptalks/vt | 加载矢量瓦片数据，同时提供矢量点，线，面的三维绘制能力 | [示例](http://examples.maptalks.com) | bug报告 |
-|@maptalks/gltf-layer         | 加载GLTF三维模型数据      | [示例](http://examples.maptalks.com) | bug报告 |
-|@maptalks/transform-control  | GLTF模型的交互操作控件    | [示例](http://examples.maptalks.com) | bug报告 |
-|@maptalks/3dtiles            | 加载3dtiles三维模型数据   | [示例](http://examples.maptalks.com) | [bug报告](https://github.com/fuzhenn/3dtiles-issues) |
-|@maptalks/video-layer              | 视频融合绘制              | [示例](http://examples.maptalks.com) | bug报告 |
-|@maptalks/msd-json-loader    | IDE MSD设计成果加载工具   | [示例](http://examples.maptalks.com) | [源代码](https://github.com/maptalks/msd-json-loader)  |
 
 ## 技术交流群
 
