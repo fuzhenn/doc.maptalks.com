@@ -10,7 +10,7 @@ MapTalks的三维SDK目前包含以下几个前端库，涵盖了[矢量瓦片](
 | 库名称     |  功能         | 示例 | 项目 |
 | :-------   |:-------------| ----- | --- |
 |maptalks.js | maptalks开源核心库，以下所有功能的基础库。 | [示例](https://maptalks.org/examples/cn/map/load/) | [源代码](https://github.com/maptalks/maptalks.js) |
-|@maptalks/gl-layers | WebGL图层汇总包，包含以下所有插件 | [示例](http://examples.maptalks.com) | [源代码](https://github.com/fuzhenn/maptalks-gl-layers/) |
+|@maptalks/gl-layers | WebGL图层汇总包，包含所有webgl的图层插件 | [示例](http://examples.maptalks.com) | [源代码](https://github.com/fuzhenn/maptalks-gl-layers/) |
 
 ## 技术交流群
 
