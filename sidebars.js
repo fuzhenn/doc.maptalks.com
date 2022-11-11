@@ -37,7 +37,6 @@ module.exports = {
       label: "入门指南",
       collapsed: false,
       items: [
-
         "ide/guide/tutorial/create",
         "ide/guide/tutorial/ui",
         "ide/guide/tutorial/save",
@@ -49,9 +48,9 @@ module.exports = {
       collapsed: true,
       items: [
         {
-          type: 'link',
-          label: 'GIS知识入门',
-          href: 'https://mp.weixin.qq.com/s/UkQvMFEWyHDbsmh7LDWU7A',
+          type: "link",
+          label: "GIS知识入门",
+          href: "https://mp.weixin.qq.com/s/UkQvMFEWyHDbsmh7LDWU7A",
         },
         "ide/guide/basic/vt",
         "ide/guide/basic/gltf",
@@ -72,10 +71,7 @@ module.exports = {
       type: "category",
       label: "发布",
       collapsed: false,
-      items: [
-        "ide/guide/publish/publish",
-        "ide/guide/publish/iis"
-      ],
+      items: ["ide/guide/publish/publish", "ide/guide/publish/iis"],
     },
     {
       type: "category",
@@ -85,14 +81,14 @@ module.exports = {
         "ide/guide/useInProgram/intro",
         "ide/guide/useInProgram/path",
         {
-          type: 'link',
-          label: 'msd-json-loader接口',
-          href: 'https://github.com/maptalks/msd-json-loader',
+          type: "link",
+          label: "msd-json-loader接口",
+          href: "https://github.com/maptalks/msd-json-loader",
         },
         {
-          type: 'link',
-          label: '程序加载示例',
-          href: 'https://github.com/maptalks/msd-json-loader',
+          type: "link",
+          label: "程序加载示例",
+          href: "https://github.com/maptalks/msd-json-loader",
         },
       ],
     },
@@ -100,9 +96,7 @@ module.exports = {
       type: "category",
       label: "性能优化",
       collapsed: false,
-      items: [
-        "ide/guide/performance/resource",
-      ],
+      items: ["ide/guide/performance/resource"],
     },
     {
       type: "category",
@@ -112,14 +106,14 @@ module.exports = {
         "ide/guide/crash/crashRecovery",
         "ide/guide/crash/autosave",
         "ide/guide/crash/log",
-        "ide/guide/crash/report"
+        "ide/guide/crash/report",
       ],
     },
   ],
-  "design-guide":[
+  "design-guide": [
     {
       type: "doc",
-      id: "design-guide/intro"
+      id: "design-guide/intro",
     },
     {
       type: "category",
@@ -144,7 +138,7 @@ module.exports = {
         "design-guide/basic/shader-ball",
         "design-guide/basic/setting",
         "design-guide/basic/attribute",
-      ]
+      ],
     },
     {
       type: "category",
@@ -158,7 +152,7 @@ module.exports = {
         "design-guide/design-tutorial/windows",
         "design-guide/design-tutorial/roof",
         "design-guide/design-tutorial/transparent",
-      ]
+      ],
     },
     {
       type: "category",
@@ -167,21 +161,29 @@ module.exports = {
       items: [
         "design-guide/design-more/city",
         "design-guide/design-more/glass",
-      ]
+      ],
     },
     {
       type: "category",
       label: "常见问题",
       collapsed: false,
-      items: [
-        "design-guide/faqs/group",
-      ]
+      items: ["design-guide/faqs/group"],
     },
   ],
   designer: [
     {
       type: "doc",
-      id: "designer/intro"
+      id: "designer/intro",
+    },
+    {
+      type: "category",
+      label: "新建设计",
+      collapsed: false,
+      items: [
+        "designer/create/data-source",
+        "designer/create/vector",
+        "designer/create/maptalks",
+      ],
     },
     {
       type: "doc",
@@ -211,25 +213,25 @@ module.exports = {
   bds: [
     {
       type: "doc",
-      id: "bds/intro"
+      id: "bds/intro",
     },
     {
       type: "doc",
-      id: "bds/install"
+      id: "bds/install",
     },
     {
       type: "doc",
-      id: "bds/configuration"
+      id: "bds/configuration",
     },
     {
       type: "doc",
-      id: "bds/api"
+      id: "bds/api",
     },
   ],
   api: [
     {
       type: "doc",
-      id: "api/intro"
+      id: "api/intro",
     },
     {
       type: "category",
@@ -244,7 +246,7 @@ module.exports = {
         "api/vt/polygon-layer",
         "api/vt/vector-perf",
         "api/vt/compare",
-      ]
+      ],
     },
     {
       type: "category",
@@ -254,15 +256,13 @@ module.exports = {
         "api/gltf/gltf-layer",
         "api/gltf/gltf-marker",
         "api/gltf/multi-gltf-marker",
-      ]
+      ],
     },
     {
       type: "category",
       label: "3dtiles图层",
       collapsed: false,
-      items: [
-        "api/3dtiles/geo-3dtiles-layer"
-      ]
+      items: ["api/3dtiles/geo-3dtiles-layer"],
     },
     {
       type: "category",
@@ -274,30 +274,27 @@ module.exports = {
         "api/gl/skyline-analysis",
         "api/gl/flood-analysis",
         "api/gl/analysis",
-      ]
+      ],
     },
   ],
   style: [
     {
       type: "doc",
-      id: "style/intro"
+      id: "style/intro",
     },
     {
       type: "doc",
-      id: "style/symbols"
+      id: "style/symbols",
     },
     {
       type: "doc",
-      id: "style/material"
+      id: "style/material",
     },
     {
       type: "category",
       label: "数据过滤与函数类型",
       collapsed: false,
-      items: [
-        'style/filter/feature-filter',
-        'style/filter/function-type',
-      ]
+      items: ["style/filter/feature-filter", "style/filter/function-type"],
     },
     {
       type: "category",
@@ -316,8 +313,8 @@ module.exports = {
         "style/plugin-wireframe",
         "style/plugin-gltf-lit",
         "style/plugin-gltf-phong",
-        "style/plugin-water"
-      ]
-    }
-  ]
+        "style/plugin-water",
+      ],
+    },
+  ],
 };
