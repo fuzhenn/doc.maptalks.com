@@ -51,8 +51,7 @@ title: 完整示例
         </style>
         <link rel="stylesheet" href="./css/maptalks.css" />
         <script src="./js/maptalks.js"></script>
-        <script src="./js/maptalksgl.js"></script>
-        <script src="./js/maptalks.vt.js"></script>
+        <script src="./js/maptalks-gl-layers.js"></script>
       </head>
       <body>
         <div id="mapContainer" style="width: 100vw; height: 100vh;"></div>
@@ -134,8 +133,7 @@ title: 完整示例
         </style>
         <link rel="stylesheet" href="./css/maptalks.css" />
         <script src="./js/maptalks.js"></script>
-        <script src="./js/maptalksgl.js"></script>
-        <script src="./js/maptalks.vt.js"></script>
+        <script src="./js/maptalks-gl-layers.js"></script>
         <script src="./style.js"></script>
       </head>
       <body>
