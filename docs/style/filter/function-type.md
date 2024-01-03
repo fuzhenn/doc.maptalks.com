@@ -111,8 +111,7 @@ class属性为motorway时用白色，而class属性为countyway时用浅白。
       [3, '#0f0'],
       [10, '#ff0'],
       [20, '#f00']
-    ],
-    default: '#fff'
+    ]
   }
 }
 ```
