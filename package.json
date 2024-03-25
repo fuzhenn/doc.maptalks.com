@@ -19,7 +19,6 @@
     "@docusaurus/preset-classic": "^3.1.1",
     "@mankeheaven/oss-publish": "^1.0.0",
     "@mdx-js/react": "^3.0.1",
-    "docusaurus-plugin-includes": "^1.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
