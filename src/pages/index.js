@@ -1,6 +1,5 @@
 import React from 'react';
-import  { Redirect } from 'react-router-dom';
 
 export default function Home() {
-  return <Redirect to='docs/ide/guide/intro/' />;
+  window.location.href = window.location.href + 'docs/ide/guide/intro/';
 }

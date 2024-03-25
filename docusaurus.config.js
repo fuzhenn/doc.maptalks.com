@@ -13,8 +13,9 @@ module.exports = {
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/vsDark')
+      /*theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/vsDark')*/
+      themes: ['classic']
     },
     colorMode: {
       defaultMode: 'dark',
